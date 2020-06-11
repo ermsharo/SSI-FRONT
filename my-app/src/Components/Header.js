@@ -5,15 +5,11 @@ import styled, { css } from 'styled-components'
 function Header(cores) {
 
 
-    var color = 'purple';
-    var font1 = "Arial"; 
-    var font2 = "helvetica"; 
     const HeaderBox = styled.div`
  
     width: 100%;
     padding: 10px; 
-    color:${color};  
-    font-family:${font1} ;
+    background-color:white; 
     display:flex;
 
     `;
