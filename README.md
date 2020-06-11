@@ -1,7 +1,7 @@
 # SSI-FRONT.
 ## Repositorio com o site da SSI. 
   
-## Comandos com node ou yarn. 
+## Comandos com node. 
    
    E necessario ter um gerenciador de pacotes instalado na maquina. 
    
@@ -18,7 +18,7 @@
 ## Estilos globais
    
    Dentro do arquivo App.css, existem todos os arquivos globais e variaveis de estilo. 
-   As variaveis de cor e de fonte poddem ser encontradas lá 
+   As variaveis de cor e de fonte podem ser encontradas lá 
   
 
    
