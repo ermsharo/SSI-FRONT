@@ -14,6 +14,10 @@ function Header(cores) {
     display:flex; 
     justify-content: space-around;
     max-height:60px;
+    position: fixed;
+  top: 0;
+  width: 100%;
+    
 
 
     `; 
@@ -39,7 +43,7 @@ const HeaderUlBox = styled.ul`
  font-weight: 0.4px; 
  text-transform:uppercase;
  cursor:pointer;
- 
+
  }
 
 `;
