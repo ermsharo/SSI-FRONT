@@ -1,0 +1,120 @@
+/* Declarando as varioaveis de estilo globais  */
+
+:root {
+    /* fontes  */
+    --fontTitulo: Nunito;
+    --fontCorpo: Roboto;
+    --fontCorpo2: green;
+    /* Cores  */
+    /* Breakpoints*/
+    --Desktop: 1200px;
+    --Tablet: 960px;
+    --Mobile: 768px;
+    /*    Artigo de referencia para os breaks  */
+    /*    https://www.chiefofdesign.com.br/design-responsivo/breakpoints/ */
+}
+
+body {
+    background-color: #1C043C;
+    margin: 0;
+}
+
+#banner {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 15%, rgba(0, 0, 0, 0.7) 50%, rgba(255, 255, 255, 0) 85%);
+}
+
+#banner #fundoBanner {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#banner #fundoBanner video {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    right: 0;
+    bottom: 0;
+}
+
+#banner #logoBanner {
+    margin-top: 10px;
+    height: auto;
+    width: 300px;
+    overflow: hidden;
+    transform: translatey(-10px);
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(-10px);
+    }
+    50% {
+        transform: translatey(-45px);
+    }
+    100% {
+        transform: translatey(-10px);
+    }
+}
+
+#banner #tituloBanner {
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+#banner #socialBanner {
+    width: 350px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#banner #botoesBanner {
+    width: 400px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#banner #socialBanner span a {
+    font-size: 46px;
+    color: #cccccc;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+#banner #socialBanner span a:hover {
+    color: #ffffff;
+    font-size: 56px;
+}
+
+.botao {
+    font-family: var(--fontCorpo);
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 4px;
+    border-color: #fff;
+    margin: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.botao:hover {
+    font-size: 26px;
+}
