@@ -4,7 +4,9 @@
   
 /* Declarando as varioaveis de estilo globais  */
 
-
+html{
+  scroll-behavior: smooth;
+}
 
 :root {
    
