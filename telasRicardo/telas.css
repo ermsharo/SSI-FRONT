@@ -1,0 +1,187 @@
+/* Declarando as varioaveis de estilo globais  */
+
+:root {
+    /* fontes  */
+    --fontTitulo: Nunito;
+    --fontCorpo: Roboto;
+    --fontCorpo2: green;
+    /* Cores  */
+    /* Breakpoints*/
+    --Desktop: 1200px;
+    --Tablet: 960px;
+    --Mobile: 768px;
+    /*    Artigo de referencia para os breaks  */
+    /*    https://www.chiefofdesign.com.br/design-responsivo/breakpoints/ */
+}
+
+body {
+    background-color: #1C043C;
+    margin: 0;
+}
+
+.botao {
+    font-family: var(--fontCorpo);
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 4px;
+    border-color: #fff;
+    margin: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.botao:hover {
+    color: #520082;
+    background-color: #fff;
+}
+
+#banner {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 10%, rgba(58, 0, 110, 0.5) 50%, rgba(255, 255, 255, 0) 90%);
+}
+
+#banner #fundoBanner {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#banner #fundoBanner video {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    right: 0;
+    bottom: 0;
+}
+
+#banner #logoBanner {
+    margin-top: 10px;
+    height: auto;
+    width: 300px;
+    overflow: hidden;
+    transform: translatey(-10px);
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(-10px);
+    }
+    50% {
+        transform: translatey(-45px);
+    }
+    100% {
+        transform: translatey(-10px);
+    }
+}
+
+#banner #tituloBanner {
+    width: 300px;
+    margin-bottom: 25px;
+}
+
+#banner #socialBanner {
+    width: 350px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#banner #socialBanner span a {
+    font-size: 46px !important;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    color: #cccccc;
+    text-shadow: none;
+}
+
+#banner #socialBanner span a:hover {
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);
+}
+
+#banner #botoesBanner {
+    width: 400px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#informacoes {
+    min-height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#informacoes #itens {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 40px;
+    margin-bottom: 60px;
+}
+
+#informacoes .item_info {
+    flex: 1;
+    min-width: 400px;
+    background-color: #520082;
+    border-style: solid;
+    border-radius: 15px;
+    border-width: 8px;
+    border-color: #fff;
+    padding: 0;
+    margin: 0 20px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#informacoes .item_info span {
+    margin-top: 50px;
+}
+
+#informacoes .item_info span i {
+    font-size: 66px;
+}
+
+#informacoes .item_info h2 {
+    font-size: 36px;
+    margin: 0;
+    margin-top: 25px;
+    text-align: center;
+}
+
+#informacoes .item_info h2 i {
+    margin-right: 20px;
+}
+
+#informacoes .item_info p {
+    font-size: 22px;
+    text-align: justify;
+    padding: 40px;
+    padding-bottom: 50px;
+    margin: 0;
+}
+
+.titulo {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    font-size: 50px;
+}
