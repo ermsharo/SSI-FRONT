@@ -39,6 +39,34 @@ body {
     background-color: #fff;
 }
 
+.titulo {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    font-size: 50px;
+}
+
+.itens {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.itens .item {
+    margin-bottom: 30px;
+}
+
+.itens img {
+    max-width: 300px;
+}
+
+
+/* ------- Banner -------- */
+
 #banner {
     height: 100vh;
     display: flex;
@@ -120,21 +148,15 @@ body {
     align-items: center;
 }
 
+
+/* ------- Informações Gerais -------- */
+
 #informacoes {
     min-height: 100vh;
     color: #fff;
     display: flex;
     align-items: center;
     flex-direction: column;
-}
-
-#informacoes #itens {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0 40px;
-    margin-bottom: 60px;
 }
 
 #informacoes .item_info {
@@ -180,8 +202,49 @@ body {
     margin: 0;
 }
 
-.titulo {
-    margin-top: 80px;
-    margin-bottom: 80px;
-    font-size: 50px;
+
+/* ------- Patrocínio -------- */
+
+#patrocinio {
+    min-height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#patrocinio .logo {
+    width: 100%;
+}
+
+
+/* ------- Apoio -------- */
+
+#apoio {
+    min-height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#apoio img {
+    width: 100%;
+}
+
+#apoio .itensApoio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-between;
+}
+
+#apoio .itensApoio .itemApoio {
+    margin: 0 50px;
+    margin-bottom: 60px;
+}
+
+#apoio .itensApoio .itemApoio img {
+    max-width: 400px;
 }
