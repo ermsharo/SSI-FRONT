@@ -1,11 +1,11 @@
 import Header from "./Header";
 /* import Slider from "./Slider"; */
-import Banner from "./Banner";
+import Banner from "./Banner/index";
 import Programacao from "./Programacao";
-import Info from "./Info";
+import Info from "./Info/index";
 import Atividades from "./Atividades";
-import Patrocinadores from "./Patrocinadores";
-import Apoio from "./Apoio";
+import Patrocinadores from "./Patrocinadores/index";
+import Apoio from "./Apoio/index";
 import Inscricoes from "./Inscricao";
 import Footer from "./Footer"; 
 import styled, { css } from "styled-components"; 
@@ -66,6 +66,7 @@ const ref2 = React.createRef();
 const ref3 = React.createRef();  
 const ref4 = React.createRef();  
 const ref5 = React.createRef();  
+const ref6 = React.createRef();
 
 const handleClickBanner = () =>
 ref1.current.scrollIntoView({
@@ -97,6 +98,12 @@ ref5.current.scrollIntoView({
   block: 'start',
 });
 
+const handleClickApoio = () =>
+ref6.current.scrollIntoView({
+  behavior: 'smooth',
+  block: 'start',
+});
+
 const handleClickInscricao = () =>
 ref4.current.scrollIntoView({
   behavior: 'smooth',
@@ -123,9 +130,9 @@ function Site() {
 
         <HeaderUlBox>
             <li onClick= {handleClickProgramacao} >Programação</li> 
-            <li  onClick= {handleClickInfo}>Informações</li>    
-            <li  onClick= {handleClickPatrocinadores}>Patrocinadores</li>    
-            <li >Apoio</li>    
+            <li onClick= {handleClickInfo}>Informações</li>    
+            <li onClick= {handleClickPatrocinadores}>Patrocinadores</li>    
+            <li onClick= {handleClickApoio}>Apoio</li>    
             <li onClick = {handleClickInscricao}>Inscrição</li>    
         </HeaderUlBox>
         
@@ -143,6 +150,7 @@ function Site() {
      <SliderItem ref = {ref3}> <Info/></SliderItem>
      <SliderItem ref = {ref4}> <Atividades /></SliderItem>
      <SliderItem ref = {ref5}> <Patrocinadores /> </SliderItem>
+     <SliderItem ref = {ref6}> <Apoio /> </SliderItem>
      <SliderItem> <Inscricoes /> </SliderItem>
       <Footer />
       

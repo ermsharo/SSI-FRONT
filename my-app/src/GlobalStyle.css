@@ -1,37 +1,19 @@
-
-  
 /* Declarando as varioaveis de estilo globais  */
 
-
-
 :root {
-   
-   /* fontes  */
+    /* fontes  */
     --fontTitulo: Nunito;
-    --fontCorpo: Roboto; 
-    --fontCorpo2: green;  
-
+    --fontCorpo: Roboto;
+    --fontCorpo2: green;
     /* Cores  */
- 
-
     /* Breakpoints*/
-    
-    --Desktop: 1200px; 
-    --Tablet: 960px; 
-    --Mobile:768px; 
+    --Desktop: 1200px;
+    --Tablet: 960px;
+    --Mobile: 768px;
+    /*    Artigo de referencia para os breaks  */
+    /*    https://www.chiefofdesign.com.br/design-responsivo/breakpoints/ */
+}
 
-/*    Artigo de referencia para os breaks  */
-/*    https://www.chiefofdesign.com.br/design-responsivo/breakpoints/ */
-
-
-
-
-  }
-
-
-  body{
-    background-color:#1C043C;
-  }
-
-
-  
+body {
+    background-color: #1C043C;
+}
