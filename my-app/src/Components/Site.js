@@ -58,6 +58,22 @@ cursor:pointer;
 const SliderBox = styled.div`
   `;
 
+const MenuHamburguer = styled.div`
+
+
+
+
+`;
+
+const SideMenuBox  = styled.div`
+
+
+
+
+`;
+
+
+
 const SliderItem = styled.div`
   `;
 

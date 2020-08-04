@@ -9,6 +9,7 @@ export const GenericSize= styled.div`
   justify-content: center;
   align-items: center;
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 10%, rgba(58, 0, 110, 0.5) 50%, rgba(255, 255, 255, 0) 90%);
+  padding-top:5vw;
 `;
 
 export const FundoBanner= styled.div`
@@ -77,12 +78,13 @@ export const ButtonAreaBanner=styled.div`
 `;
 
 export const ButtonBanner= styled.a`
-  font-family: var(--fontCorpo);
+  font-family: var(--fontTitulo);
+  text-transform: uppercase; 
   font-size: 24px;
   color: #fff;
   text-decoration: none;
   font-weight: 600;
-  padding: 10px 15px;
+  padding: 10px 20px;
   border-style: solid;
   border-radius: 5px;
   border-width: 4px;
