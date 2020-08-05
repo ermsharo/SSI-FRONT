@@ -17,8 +17,8 @@ export const Titulo=styled.h1`
 `;
 
 export const LogoStyle=styled.img`
-  width: 100%;
-  max-width: 300px;
+  width: 300px;
+  max-width: 100%;
 `;
 
 export const ItemSpace=styled.div`
@@ -27,10 +27,9 @@ export const ItemSpace=styled.div`
   align-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 1000px;
+  width: 900px;
   max-width: 100%;
   margin: 0;
-  margin-bottom: 40px;
 `;
 
 export const Item=styled.div`
@@ -38,7 +37,7 @@ export const Item=styled.div`
   min-width: 400px;
   padding: 0;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   display: flex;
   align-items: center;
   flex-direction: column;
