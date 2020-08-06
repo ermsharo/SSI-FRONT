@@ -5,18 +5,11 @@ import Info from "./Info/index";
 import Patrocinadores from "./Patrocinadores/index";
 import Apoio from "./Apoio/index";
 import Inscricoes from "./Inscricao";
-<<<<<<< HEAD
 import Footer from "./Footer";
 import styled, { css } from "styled-components";
 import React, { useState } from "react";
 import HamburguerMenuAnimation from "react-hamburger-menu";
-
-=======
-import Footer from "./Footer"; 
-import styled, { css } from "styled-components"; 
-import React , {useState} from 'react';
-import LogoSSI from '../assets/img/logoSSISemFundoComCinzaRoxo.svg'
->>>>>>> 2af0c2c4f4e5847e41032cf33bffca31148b1094
+import Atividades from "./Info/index";
 
 const HeaderBox = styled.div`
   width: 100%;
@@ -53,7 +46,8 @@ const LogoBox = styled.div`
   width: 100px;
 /*   border:2px solid blue;  */
 
-  @media(max-width:992px){
+  @media(max-width:992px){    /*   alert("fechou"); */
+
     margin:auto;
   
   }
@@ -97,7 +91,7 @@ const HeaderUlBoxMobile = styled.ul`
     font-family: var(--fontTitulo);
     font-weight: 0.4px;
     text-transform: uppercase;
-    cursor: pointer;
+    cursor: pointer;    /*   alert("fechou"); */
   }
 `;
 
@@ -151,7 +145,7 @@ const handleClickBanner = () =>
     block: "start",
   });
 
-/*
+
 const handleClickProgramacao = () =>
   ref2.current.scrollIntoView({
     behavior: "smooth",
@@ -203,7 +197,7 @@ function Site() {
   const MenuStatus = () =>{
     if(openHamburguer === true){
       setOpenHamburguer(false); 
-    /*   alert("fechou"); */
+
     }else{
       setOpenHamburguer(true);
   
@@ -302,6 +296,7 @@ function Site() {
       </div>
     </div>
   );
-}
 
+
+  }
 export default Site;
