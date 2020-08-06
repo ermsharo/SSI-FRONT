@@ -2,7 +2,7 @@ import styled, { keyframes } from 'styled-components';
 
 export const GenericSize= styled.div`
   width:100vw; 
-  height:100vh; 
+  height: calc(100vh - 70px); 
   color:white;
   display: flex;
   flex-direction: column;
@@ -36,7 +36,6 @@ export const float = keyframes`
 `;
 
 export const LogoStyleSSI= styled.img`
-  margin-top: 40px;
   width: 90%;
   max-width: 250px;
   transform: translatey(-10px);
@@ -46,7 +45,7 @@ export const LogoStyleSSI= styled.img`
 
 export const TituloStyleSSI= styled.img`
   width: 90%;
-  max-width: 250px;
+  max-width: 400px;
   margin-bottom: 20px;
 `;
 

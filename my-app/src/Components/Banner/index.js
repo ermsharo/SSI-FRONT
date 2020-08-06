@@ -1,11 +1,10 @@
 import React from 'react';
 import VideoFundo from '../../assets/fundo.mp4';
-import LogoSSI from '../../assets/img/logo.png';
-import TituloSSI from '../../assets/img/titulo.png';
+import LogoSSI from '../../assets/img/logoSSISemFundoComCinza.svg';
+import TituloSSI from '../../assets/img/SSITituloSemFundo.svg';
 import { GenericSize, FundoBanner, LogoStyleSSI, TituloStyleSSI, SocialAreaBanner, SocialButton, ButtonBanner, ButtonAreaBanner } from './style';
 
 function Banner() {
-
   return (
     <GenericSize>
         <FundoBanner>

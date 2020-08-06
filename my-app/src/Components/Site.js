@@ -2,15 +2,21 @@
 import Banner from "./Banner/index";
 import Programacao from "./Programacao";
 import Info from "./Info/index";
-import Atividades from "./Atividades";
 import Patrocinadores from "./Patrocinadores/index";
 import Apoio from "./Apoio/index";
 import Inscricoes from "./Inscricao";
+<<<<<<< HEAD
 import Footer from "./Footer";
 import styled, { css } from "styled-components";
 import React, { useState } from "react";
 import HamburguerMenuAnimation from "react-hamburger-menu";
 
+=======
+import Footer from "./Footer"; 
+import styled, { css } from "styled-components"; 
+import React , {useState} from 'react';
+import LogoSSI from '../assets/img/logoSSISemFundoComCinzaRoxo.svg'
+>>>>>>> 2af0c2c4f4e5847e41032cf33bffca31148b1094
 
 const HeaderBox = styled.div`
   width: 100%;
@@ -145,6 +151,7 @@ const handleClickBanner = () =>
     block: "start",
   });
 
+/*
 const handleClickProgramacao = () =>
   ref2.current.scrollIntoView({
     behavior: "smooth",
