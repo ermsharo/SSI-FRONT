@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
 export const GenericSize= styled.div`
   width:100vw; 
@@ -12,13 +12,14 @@ export const GenericSize= styled.div`
 
 export const Titulo=styled.h1`
   margin: 40px 0;
+  margin-bottom: 60px;
   font-size: 50px;
   font-family: var(--fontTitulo);
 `;
 
 export const LogoStyle=styled.img`
-  width: 100%;
-  max-width: 300px;
+  width: 300px;
+  max-width: 100%;
 `;
 
 export const ItemSpace=styled.div`
@@ -29,7 +30,6 @@ export const ItemSpace=styled.div`
   flex-wrap: wrap;
   width: 90%;
   margin: 0;
-  margin-bottom: 40px;
 `;
 
 export const Item=styled.div`

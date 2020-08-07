@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
 export const GenericSize= styled.div`
   width:100vw; 
@@ -12,6 +12,7 @@ export const GenericSize= styled.div`
 
 export const Titulo=styled.h1`
   margin: 40px 0;
+  margin-bottom: 60px;
   font-size: 50px;
   font-family: var(--fontTitulo);
 `;
@@ -41,6 +42,7 @@ export const Item=styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
 `;
 
 export const ItemIcon=styled.span`
@@ -50,16 +52,22 @@ export const ItemIcon=styled.span`
 
 export const ItemTitle=styled.h2`
   font-size: 2.2em;
-  margin: 0;
-  margin-top: 20px;
+  margin: 20px 0;
   text-align: center;
 `;
 
 export const ItemText=styled.p`
-  font-size: 1.1em;
-  text-align: justify;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  text-align: center;
   padding: 20px;
-  padding-bottom: 30px;
+  padding-top: 0px;
   margin: 0;
   font-weight: 550;
+`;
+
+export const Link=styled.a`
+  text-decoration: none;
+  color: #fffc33;
+  cursor: pointer;
 `;

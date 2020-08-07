@@ -9,6 +9,34 @@ function Apoio() {
     <GenericSize>
       <Titulo>Apoio</Titulo>
         <ItemSpace>
+            <Item>
+                <a href="http://www.each.usp.br/si/" style={{display:"block", margin:"auto"}} target="_blank" rel="noopener noreferrer">
+                    <LogoStyle src={LogoSI} class="logo" alt="Logo 1"/>
+                </a>
+            </Item>
+            <Item>
+                <a href="http://www5.each.usp.br/" style={{display:"block", margin:"auto"}} target="_blank" rel="noopener noreferrer">
+                    <LogoStyle src={LogoEACH} class="logo" alt="Logo 1"/>
+                </a>
+            </Item>
+            <Item>
+                <a href="https://www5.usp.br/" style={{display:"block", margin:"auto"}} target="_blank" rel="noopener noreferrer">
+                    <LogoStyle src={LogoUSP} class="logo" alt="Logo 1"/>
+                </a>
+            </Item>
+            <Item>
+                <a href="#apoio" style={{display:"block", margin:"auto"}} target="_blank" rel="noopener noreferrer">
+                    <LogoStyle src={LogoEACH} class="logo" alt="Logo 1"/>
+                </a>
+            </Item>
+            <Item>
+                <a href="#apoio" style={{display:"block", margin:"auto"}} target="_blank" rel="noopener noreferrer">
+                    <LogoStyle src={LogoEACH} class="logo" alt="Logo 1"/>
+                </a>
+            </Item>
+        </ItemSpace>
+        {/*
+        <ItemSpace>
             <Item style={{display:"flex", justifyContent:"center", flexDirection:"column"}}>
                 <a href="http://www.each.usp.br/" style={{display:"block", margin:"auto"}} target="_blank" rel="noopener noreferrer">
                     <center>
@@ -27,6 +55,7 @@ function Apoio() {
         <a href="http://www.each.usp.br/si/" target="_blank" rel="noopener noreferrer">
             <img src={LogoSI} style={{width:"600px", maxWidth:"100%"}} alt=""/>
         </a>
+        */}
     </GenericSize>
   );
 }

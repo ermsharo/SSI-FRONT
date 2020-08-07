@@ -1,41 +1,39 @@
 import React from 'react';
-import VideoFundo from '../../assets/fundo.mp4';
 import LogoSSI from '../../assets/img/logoSSISemFundoComCinza.svg';
 import TituloSSI from '../../assets/img/SSITituloSemFundo.svg';
-import { GenericSize, FundoBanner, LogoStyleSSI, TituloStyleSSI, SocialAreaBanner, SocialButton, ButtonBanner, ButtonAreaBanner } from './style';
+import { GenericSize, LogoStyleSSI, TituloStyleSSI, SocialAreaBanner, SocialButton, ButtonBanner, ButtonAreaBanner } from './style';
 
-function Banner() {
+let LinkFacebook = "https://www.facebook.com/ssiusp"; 
+let LinkTwitch = "https://www.twitch.tv/each_ssi";
+let LinkInstagram = "https://www.instagram.com/semanadesi/"; 
+
+function Banner(props) {
   return (
     <GenericSize>
-        <FundoBanner>
-            <video autoplay muted loop>
-                <source src={VideoFundo} type="video/mp4" />
-            </video>
-        </FundoBanner>
         <LogoStyleSSI src={LogoSSI} alt="Logo SSI" id="logoBanner" />
         <TituloStyleSSI src={TituloSSI} alt="Titulo SSI" id="logoBanner" />
         <SocialAreaBanner>
             <span>
-                <SocialButton href="#">
+                <SocialButton href={LinkFacebook} target="_blank" rel="noopener noreferrer">
                    <i class="fa fa-facebook" aria-hidden="true"></i>
                 </SocialButton>
             </span>
             <span>
-                <SocialButton href="#">
+                <SocialButton href={LinkTwitch} target="_blank" rel="noopener noreferrer">
                    <i class="fa fa-twitch" aria-hidden="true"></i>
                 </SocialButton>
             </span>
             <span>
-                <SocialButton href="#">
+                <SocialButton href={LinkInstagram} target="_blank" rel="noopener noreferrer">
                    <i class="fa fa-instagram" aria-hidden="true"></i>
                 </SocialButton>
             </span>
         </SocialAreaBanner>
         <ButtonAreaBanner>
-            <ButtonBanner href="#informacoes">
+            <ButtonBanner onClick={props.handleClickInfo}>
                 Informações
             </ButtonBanner>
-            <ButtonBanner href="#inscricao">
+            <ButtonBanner onClick={props.handleClickInscricao}>
                 Inscrição
             </ButtonBanner>
         </ButtonAreaBanner>

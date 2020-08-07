@@ -8,25 +8,39 @@ function Patrocinadores() {
       <Titulo>Patrocinio</Titulo>
       <ItemSpace>
           <Item>
-              <LogoStyle src={LogoPatrocinio} class="logo" alt="Logo 1"/>
+            <a href="#patrocinio" style={{display:"block", margin:"auto"}} target="_blank" rel="noopener noreferrer">
+                <LogoStyle src={LogoPatrocinio} class="logo" alt="Logo 1"/>
+            </a>
           </Item>
           <Item>
-              <LogoStyle src={LogoPatrocinio} class="logo" alt="Logo 2"/>
+            <a href="#patrocinio" style={{display:"block", margin:"auto"}} target="_blank" rel="noopener noreferrer">
+                <LogoStyle src={LogoPatrocinio} class="logo" alt="Logo 1"/>
+            </a>
           </Item>
           <Item>
-              <LogoStyle src={LogoPatrocinio} class="logo" alt="Logo 3"/>
+            <a href="#patrocinio" style={{display:"block", margin:"auto"}} target="_blank" rel="noopener noreferrer">
+                <LogoStyle src={LogoPatrocinio} class="logo" alt="Logo 1"/>
+            </a>
           </Item>
           <Item>
-              <LogoStyle src={LogoPatrocinio} class="logo" alt="Logo 4"/>
+            <a href="#patrocinio" style={{display:"block", margin:"auto"}} target="_blank" rel="noopener noreferrer">
+                <LogoStyle src={LogoPatrocinio} class="logo" alt="Logo 1"/>
+            </a>
           </Item>
           <Item>
-              <LogoStyle src={LogoPatrocinio} class="logo" alt="Logo 5"/>
+            <a href="#patrocinio" style={{display:"block", margin:"auto"}} target="_blank" rel="noopener noreferrer">
+                <LogoStyle src={LogoPatrocinio} class="logo" alt="Logo 1"/>
+            </a>
           </Item>
           <Item>
-              <LogoStyle src={LogoPatrocinio} class="logo" alt="Logo 6"/>
+            <a href="#patrocinio" style={{display:"block", margin:"auto"}} target="_blank" rel="noopener noreferrer">
+                <LogoStyle src={LogoPatrocinio} class="logo" alt="Logo 1"/>
+            </a>
           </Item>
           <Item>
-              <LogoStyle src={LogoPatrocinio} class="logo" alt="Logo 7"/>
+            <a href="#patrocinio" style={{display:"block", margin:"auto"}} target="_blank" rel="noopener noreferrer">
+                <LogoStyle src={LogoPatrocinio} class="logo" alt="Logo 1"/>
+            </a>
           </Item>
       </ItemSpace>
     </GenericSize>
