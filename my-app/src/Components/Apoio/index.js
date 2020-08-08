@@ -3,6 +3,7 @@ import { GenericSize, Titulo, ItemSpace, Item, LogoStyle } from './style';
 import LogoEACH from '../../assets/img/logoEACHBranco.svg';
 import LogoSI from '../../assets/img/logoSiteSIBranco.svg';
 import LogoUSP from '../../assets/img/logoUSPBranco.svg';
+import LogoDASI from '../../assets/img/Brasao-DASI-Branco.svg'
 
 function Apoio() {
   return (
@@ -25,12 +26,12 @@ function Apoio() {
                 </a>
             </Item>
             <Item>
-                <a href="#apoio" style={{display:"block", margin:"auto"}} target="_blank" rel="noopener noreferrer">
-                    <LogoStyle src={LogoEACH} class="logo" alt="Logo 1"/>
+                <a href="https://dasiusp.com/" style={{display:"block", margin:"auto"}} target="_blank" rel="noopener noreferrer">
+                    <LogoStyle src={LogoDASI} class="logo" alt="Logo 1"/>
                 </a>
             </Item>
             <Item>
-                <a href="#apoio" style={{display:"block", margin:"auto"}} target="_blank" rel="noopener noreferrer">
+                <a href="http://www.sintesejr.com.br/" style={{display:"block", margin:"auto"}} target="_blank" rel="noopener noreferrer">
                     <LogoStyle src={LogoEACH} class="logo" alt="Logo 1"/>
                 </a>
             </Item>

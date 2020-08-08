@@ -1,15 +1,15 @@
 /* import Slider from "./Slider"; */
-import Banner from "./Banner/index";
-import Programacao from "./Programacao";
-import Info from "./Info/index";
-import Patrocinadores from "./Patrocinadores/index";
-import Apoio from "./Apoio/index";
-import Inscricoes from "./Inscricao";
-import Footer from "./Footer";
 import styled from "styled-components";
 import React, { useState } from "react";
 import HamburguerMenuAnimation from "react-hamburger-menu";
 import LogoSSI from "../assets/img/logoSSISemFundoComCinzaRoxo.svg";
+import Banner from "./Banner/index";
+import Info from "./Info/index";
+import Patrocinadores from "./Patrocinadores/index";
+import Apoio from "./Apoio/index";
+import Inscricoes from "./Inscricao";
+import Programacao from "./Programacao/index";
+import Footer from "./Footer/index";
 
 const HeaderBox = styled.div`
   width: 100%;
@@ -198,13 +198,10 @@ function Site() {
     }
     
   }
+
   
-
-
-
-
   return (
-    <div>
+    <>
       <RegularHeader>
         <HeaderBox>
           <LogoBox onClick={handleClickBanner}>
@@ -226,17 +223,19 @@ function Site() {
 
       <MobileHeader>
         <HeaderBoxMobile>
-          <HamburguerMenu onClick = {MenuStatus}><HamburguerMenuAnimation
-    isOpen={openHamburguer}
-    menuClicked={openHamburguer}
-    width={30}
-    height={25}
-    strokeWidth={4}
-    rotate={0}
-    color='black'
-    borderRadius={0}
-    animationDuration={0.5}
-/></HamburguerMenu>
+          <HamburguerMenu onClick = {MenuStatus}>
+            <HamburguerMenuAnimation
+              isOpen={openHamburguer}
+              menuClicked={openHamburguer}
+              width={30}
+              height={25}
+              strokeWidth={4}
+              rotate={0}
+              color='black'
+              borderRadius={0}
+              animationDuration={0.5}
+            />
+          </HamburguerMenu>
           <LogoBox onClick={handleClickBanner}>
             <img
               style={{ width: "100%", height: "100%" }}
@@ -244,22 +243,21 @@ function Site() {
               alt=""
             ></img>
           </LogoBox>
-          <></>
         </HeaderBoxMobile>
         <HeaderUlBoxMobile>
-            <li onClick={handleClickInfo}>Informações</li>
-            <li onClick={handleClickPatrocinadores}>Patrocínio</li>
-            <li onClick={handleClickApoio}>Apoio</li>
-            <li onClick={handleClickInscricao}>Inscrição</li>
-          </HeaderUlBoxMobile>
+          <li onClick={handleClickInfo}>Informações</li>
+          <li onClick={handleClickPatrocinadores}>Patrocínio</li>
+          <li onClick={handleClickApoio}>Apoio</li>
+          <li onClick={handleClickInscricao}>Inscrição</li>
+        </HeaderUlBoxMobile>
       </MobileHeader>
 
-      <div>
-        {/*      <Slider />      */}
+      <>
+        {/* <Slider /> */}
         <SliderBox>
           <SliderItem ref={ref1}>
             {" "}
-            <Banner handleClickInfo={handleClickInfo} handleClickInscricao={handleClickInscricao}/>
+            <Banner handleClickInfo={handleClickInfo} handleClickInscricao={handleClickInscricao} />
           </SliderItem>
           {/*
           <SliderItem ref={ref2}>
@@ -285,10 +283,9 @@ function Site() {
           </SliderItem >
           <Footer />
         </SliderBox>
-      </div>
-    </div>
+      </>
+    </>
   );
+}
 
-
-  }
 export default Site;
