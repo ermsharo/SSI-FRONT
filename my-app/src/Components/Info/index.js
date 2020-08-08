@@ -1,8 +1,8 @@
 import React from 'react';
-import { GenericSize, Titulo, ItemSpace, Item, ItemIcon, ItemTitle, ItemText } from './style';
+import { GenericSize, Titulo, ItemSpace, Item, ItemIcon, ItemTitle, ItemText, Link } from './style';
 
 
-function Info() {
+function Info(props) {
   return (
     <GenericSize>
       <Titulo>Informações Gerais</Titulo>
@@ -13,7 +13,10 @@ function Info() {
               </ItemIcon>
               <ItemTitle>O que é?</ItemTitle>
               <ItemText>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut est convallis neque pharetra venenatis. Nam eu enim cursus, mollis nibh viverra, sollicitudin justo. Vivamus id augue sed sapien aliquam pellentesque.
+                  A Semana de Sistemas de Informação (SSI) é um evento anual organizado pelas alunas e alunos do curso de Sistemas de Informação da Escola de Artes, Ciências e Humanidades (EACH-USP).
+              </ItemText>
+              <ItemText>
+                  Nessa semana são apresentadas diversas palestras, workshops e outras atividades focadas no mundo de TI, com assuntos como tecnologia, mercado de trabalho, empreendedorismo, e entre outros.
               </ItemText>
           </Item>
           <Item>
@@ -22,7 +25,13 @@ function Info() {
               </ItemIcon>
               <ItemTitle>Onde e quando?</ItemTitle>
               <ItemText>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut est convallis neque pharetra venenatis. Nam eu enim cursus, mollis nibh viverra, sollicitudin justo. Vivamus id augue sed sapien aliquam pellentesque.
+                  Esse ano teríamos a X SSI. Contudo, devido ao contexto de pandemia em que nossa sociedade se encontra, apresentamos a vocês a primeira Semana de Sistemas de Informação Online!
+              </ItemText>
+              <ItemText>
+                  As transmissões ocorrerão entre o dia 21 e 25 de setembro, no canal da Twitch. Então, já deixe nosso canal anotado no caderninho!
+              </ItemText>
+              <ItemText>
+                  <a href='https:\\twitch.tv/each_ssi' style={{textDecoration:"none", color:"#fffc33", }} target="_blank" rel="noopener noreferrer"> twitch.tv/each_ssi </a>
               </ItemText>
           </Item>
           <Item>
@@ -31,7 +40,13 @@ function Info() {
               </ItemIcon>
               <ItemTitle>Como participo?</ItemTitle>
               <ItemText>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut est convallis neque pharetra venenatis. Nam eu enim cursus, mollis nibh viverra, sollicitudin justo. Vivamus id augue sed sapien aliquam pellentesque.
+                  Todo mundo pode se inscrever na SSI Online!
+              </ItemText>
+              <ItemText>
+                  As inscrições começam dia X/X e vão até o dia X/X.
+              </ItemText>
+              <ItemText>
+                  Para realizar a sua inscrição, <Link onClick={props.handleClickInscricao}> clique aqui! </Link>
               </ItemText>
           </Item>
       </ItemSpace>

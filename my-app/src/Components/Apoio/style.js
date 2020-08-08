@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
 export const GenericSize= styled.div`
   width:100vw; 
@@ -12,13 +12,17 @@ export const GenericSize= styled.div`
 
 export const Titulo=styled.h1`
   margin: 40px 0;
+  margin-bottom: 60px;
   font-size: 50px;
   font-family: var(--fontTitulo);
 `;
 
 export const LogoStyle=styled.img`
-  width: 300px;
+  height: 100px;
   max-width: 100%;
+  @media (max-width: 1499px) {
+    max-width: 450px;
+  }
 `;
 
 export const ItemSpace=styled.div`
@@ -27,13 +31,12 @@ export const ItemSpace=styled.div`
   align-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 900px;
-  max-width: 100%;
+  width: 80%;
   margin: 0;
 `;
 
 export const Item=styled.div`
-  flex: 1;
+  flex: 1 0 33%;
   min-width: 400px;
   padding: 0;
   margin: 0;

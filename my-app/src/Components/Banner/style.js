@@ -80,6 +80,11 @@ export const ButtonBanner= styled.a`
   font-family: var(--fontTitulo);
   text-transform: uppercase; 
   font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
   color: #fff;
   text-decoration: none;
   font-weight: 600;

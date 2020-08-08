@@ -70,9 +70,8 @@ const HeaderUlBox = styled.ul`
           </LogoBox>
 
             <HeaderUlBox>
-                <li>Programação</li> 
                 <li>Informações</li>    
-                <li>Patrocinadores</li>    
+                <li>Patrocínio</li>    
                 <li>Apoio</li>    
                 <li>Inscrição</li>    
             </HeaderUlBox>
