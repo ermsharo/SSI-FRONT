@@ -10,6 +10,8 @@ import styled, { css } from "styled-components";
 import React, { useState } from "react";
 import HamburguerMenuAnimation from "react-hamburger-menu";
 import Atividades from "./Info/index";
+import Fundo from "./Fundo"; 
+
 
 const HeaderBox = styled.div`
   width: 100%;
@@ -129,6 +131,16 @@ const HamburguerMenu = styled.div`
 
 `;
 
+const HeaderSpace = styled.div`
+ width:100px; 
+ height: 60px; 
+
+`;
+
+
+
+
+
 
 const SliderItem = styled.div``;
 
@@ -193,6 +205,8 @@ function Site() {
 
   const [openHamburguer, setOpenHamburguer] = useState(false);
 
+  const [ModalOpen, setModalOpen] = useState('0px');
+
 
   const MenuStatus = () =>{
     if(openHamburguer === true){
@@ -204,6 +218,8 @@ function Site() {
     }
     
   }
+
+  
   
 
 
@@ -211,6 +227,7 @@ function Site() {
 
   return (
     <div>
+     <Fundo />
       <RegularHeader>
         <HeaderBox>
           <LogoBox onClick={handleClickBanner}>
@@ -262,33 +279,41 @@ function Site() {
 
       <div>
         {/*      <Slider />      */}
+
         <SliderBox>
           <SliderItem ref={ref1}>
             {" "}
+            <HeaderSpace></HeaderSpace>
             <Banner />
           </SliderItem>
           <SliderItem ref={ref2}>
             {" "}
+            <HeaderSpace></HeaderSpace>
             <Programacao />
           </SliderItem>
           <SliderItem ref={ref3}>
             {" "}
+            <HeaderSpace></HeaderSpace>
             <Info />
           </SliderItem>
           <SliderItem ref={ref4}>
             {" "}
+            <HeaderSpace></HeaderSpace>
             <Atividades />
           </SliderItem>
           <SliderItem ref={ref5}>
             {" "}
+            <HeaderSpace></HeaderSpace>
             <Patrocinadores />{" "}
           </SliderItem>
           <SliderItem ref={ref6}>
             {" "}
+            <HeaderSpace></HeaderSpace>
             <Apoio />{" "}
           </SliderItem>
           <SliderItem>
             {" "}
+            <HeaderSpace></HeaderSpace>
             <Inscricoes />{" "}
           </SliderItem>
           <Footer />

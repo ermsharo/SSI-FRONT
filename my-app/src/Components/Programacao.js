@@ -7,7 +7,7 @@ function Programacao() {
      width:100vw; 
     height:100vh; 
     color:white;
-    background-color:lightslategrey; 
+/*     background-color:lightslategrey;  */
     line-height:50vw; 
     color:black; 
     text-align:center; 

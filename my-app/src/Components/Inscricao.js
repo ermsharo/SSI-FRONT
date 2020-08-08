@@ -7,7 +7,7 @@ const GenericSize= styled.div`
     width:100vw; 
     height:100vh; 
     color:white;
-    background-color:lightpink; 
+/*     background-color:lightpink;  */
     line-height:50vw; 
     color:black; 
     text-align:center; 
