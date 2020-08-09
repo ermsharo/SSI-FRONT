@@ -8,8 +8,9 @@ export const GenericSize= styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 10%, rgba(58, 0, 110, 0.5) 50%, rgba(255, 255, 255, 0) 90%);
+/* background: linear-gradient(90deg, rgba(255, 255, 255, 0) 10%, rgba(58, 0, 110, 0.5) 50%, rgba(255, 255, 255, 0) 90%); */
   padding-top:5vw;
+  margin-top:65px;
 `;
 
 export const FundoBanner= styled.div`
@@ -25,28 +26,29 @@ export const FundoBanner= styled.div`
 
 export const float = keyframes`
   0% {
-      transform: translatey(-10px);
+   /*    transform: translatey(-10px); */
+   transform: translatey(0.5vw);
   }
   50% {
-      transform: translatey(-45px);
+      transform: translatey(-2.25vw);
   }
   100% {
-      transform: translatey(-10px);
+      transform: translatey(0.5vw);
   }
 `;
 
 export const LogoStyleSSI= styled.img`
-  width: 90%;
-  max-width: 250px;
+  width: 20vw;
+  max-width: 20vw;
   transform: translatey(-10px);
   animation: ${float} 5s ease-in-out infinite;
-  margin-bottom: 20px;
+  margin-bottom: 4vw;
 `;
 
 export const TituloStyleSSI= styled.img`
-  width: 90%;
-  max-width: 400px;
-  margin-bottom: 20px;
+  width: 50vw;
+  max-width: 25vw;
+  margin-bottom: 4vw;
 `;
 
 export const SocialAreaBanner= styled.div`
