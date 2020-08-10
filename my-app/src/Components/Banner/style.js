@@ -2,7 +2,7 @@ import styled, { keyframes } from 'styled-components';
 
 export const GenericSize= styled.div`
   width:100vw; 
-  height: calc(100vh - 70px); 
+  height: 100vh; 
   color:white;
   display: flex;
   flex-direction: column;

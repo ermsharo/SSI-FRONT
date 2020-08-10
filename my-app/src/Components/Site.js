@@ -10,9 +10,8 @@ import Apoio from "./Apoio/index";
 import Inscricoes from "./Inscricao";
 import Footer from "./Footer";
 import styled, { css } from "styled-components";
-import Atividades from "./Info/index";
 import Fundo from "./Fundo"; 
-import Programacao from "./Programacao";
+import Programacao from "./Programacao/index";
 
 const HeaderBox = styled.div`
   width: 100%;
@@ -284,20 +283,15 @@ function Site() {
             <Banner />
           </SliderItem>
           /*
-          <SliderItem ref={ref2}>
+          <SliderItem>
             {" "}
             <HeaderSpace></HeaderSpace>
             <Programacao />
           </SliderItem>
-          <SliderItem ref={ref3}>
+          <SliderItem ref={ref2}>
             {" "}
             <HeaderSpace></HeaderSpace>
             <Info />
-          </SliderItem>
-          <SliderItem ref={ref4}>
-            {" "}
-            <HeaderSpace></HeaderSpace>
-            <Atividades />
           </SliderItem>
           <SliderItem ref={ref3}>
             {" "}
