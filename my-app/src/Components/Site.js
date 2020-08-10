@@ -189,6 +189,8 @@ const handleClickInscricao = () =>
   });
 
 function Site() {
+
+
   let Slide = 0;
 
   let handleClick = () => {
@@ -203,13 +205,15 @@ function Site() {
 
 
   const MenuStatus = () =>{
-    if(openHamburguer === true){
+    console.log("Chamado");
+     if(openHamburguer === true){
       setOpenHamburguer(false); 
+      console.log("Aqui tudo bem");
 
     }else{
       setOpenHamburguer(true);
   
-    }
+    } 
     
   }
 
@@ -282,8 +286,8 @@ function Site() {
             <HeaderSpace></HeaderSpace>
             <Banner />
           </SliderItem>
-          /*
-          <SliderItem>
+          
+          <SliderItem ref={ref2}>
             {" "}
             <HeaderSpace></HeaderSpace>
             <Programacao />

@@ -22,26 +22,26 @@ function Fundo( ) {
   return(<div>
 <FundoBox>
 <div className="background">
-  <span><img src ="https://ichef.bbci.co.uk/news/410/cpsprodpb/EB24/production/_112669106_66030514-b1c2-4533-9230-272b8368e25f.jpg"/></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
+  <h7><img src ="https://ichef.bbci.co.uk/news/410/cpsprodpb/EB24/production/_112669106_66030514-b1c2-4533-9230-272b8368e25f.jpg"/></h7>
+  <h7></h7>
+  <h7></h7>
+  <h7></h7>
+  <h7></h7>
+  <h7></h7>
+  <h7></h7>
+  <h7></h7>
+  <h7></h7>
+  <h7></h7>
+  <h7></h7>
+  <h7></h7>
+  <h7></h7>
+  <h7></h7>
+  <h7></h7>
+  <h7></h7>
+  <h7></h7>
+  <h7></h7>
+  <h7></h7>
+  <h7></h7>
 </div>
  </FundoBox>   
 

@@ -6,13 +6,13 @@
   .background {
     width: 100vw;
     height: 100vh;
-    background: #2C0A28;
+    background: rgb(70, 56, 96);
   }
   
   $particleSize: 20vmin;
-  $animationDuration: 120s;
+  $animationDuration: 180s;
   $amount: 20;
-  .background span {
+  .background h7{
     width: $particleSize;
     height: $particleSize;
     border-radius: $particleSize;
