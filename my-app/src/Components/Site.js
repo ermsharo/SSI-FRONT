@@ -140,6 +140,24 @@ const HeaderSpace = styled.div`
 
 const MenuMobileDisplay = styled.div`
 display:block;
+transition: grow;
+
+@keyframes grow {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* Add your own prefixes */
 
 `;
 
