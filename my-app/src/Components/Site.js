@@ -1,6 +1,6 @@
 /* import Slider from "./Slider"; */
 /* import styled from "styled-components"; */
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import HamburguerMenuAnimation from "react-hamburger-menu";
 import LogoSSI from "../assets/img/logoSSISemFundoComCinzaRoxo.svg";
 import Banner from "./Banner/index";
@@ -10,8 +10,15 @@ import Apoio from "./Apoio/index";
 import Inscricoes from "./Inscricao";
 import Footer from "./Footer";
 import styled, { css } from "styled-components";
+<<<<<<< HEAD
 import Fundo from "./Fundo"; 
 import Programacao from "./Programacao/index";
+=======
+import Atividades from "./Info/index";
+import Fundo from "./Fundo";
+import Programacao from "./Programacao";
+import CloseButton from "./CloseButton";
+>>>>>>> ae98c31177f3386e64aecf70c3c297087fdcb7ae
 
 const HeaderBox = styled.div`
   width: 100%;
@@ -34,7 +41,7 @@ const HeaderBoxMobile = styled.div`
   background-color: white;
 
   display: grid;
-  grid-template-columns: 10% auto 10%; 
+  grid-template-columns: 10% auto 10%;
   max-height: 60px;
   position: fixed;
   top: 0;
@@ -47,12 +54,13 @@ const HeaderBoxMobile = styled.div`
 const LogoBox = styled.div`
   width: 100px;
   cursor: pointer;
-/*   border:2px solid blue;  */
+  /*   border:2px solid blue;  */
 
-  @media(max-width:992px){    /*   alert("fechou"); */
+  @media (max-width: 992px) {
+    /*   alert("fechou"); */
 
-    margin:auto;
-  
+    margin: auto;
+    width:55px;
   }
 `;
 
@@ -73,32 +81,28 @@ const HeaderUlBox = styled.ul`
 
 const HeaderUlBoxMobile = styled.ul`
   list-style: none;
-/*   border:2px solid red;  */
-  background-color:white; 
-  position:fixed;
-  top:55px; 
-  padding:0px; 
-  padding-bottom:15px; 
-
-
+  /*   border:2px solid red;  */
+  background-color: white;
+  position: fixed;
+  top: 55px;
+  padding: 0px;
+  padding-bottom: 15px;
 
   li {
-    margin:auto;
-    display:inline-block;
+    margin: auto;
+    display: inline-block;
     list-style: none;
-    width:100vw;
-    text-align:center;
-/*     border:2px solid blue;  */
-    padding:0px; 
-    margin:0px; 
+    width: 100vw;
+    text-align: center;
+    /*     border:2px solid blue;  */
+    padding: 0px;
+    margin: 0px;
     font-family: var(--fontTitulo);
     font-weight: 0.4px;
     text-transform: uppercase;
-    cursor: pointer;    /*   alert("fechou"); */
+    cursor: pointer; /*   alert("fechou"); */
   }
 `;
-
-
 
 const SliderBox = styled.div``;
 
@@ -106,7 +110,7 @@ const MenuHamburguer = styled.div``;
 
 const MobileHeader = styled.div`
   display: none;
-/*   border: 2px solid blue; */
+  /*   border: 2px solid blue; */
   @media (max-width: 992px) {
     display: block;
   }
@@ -123,25 +127,48 @@ const RegularHeader = styled.div`
 
 const HamburguerMenu = styled.div`
   display: block;
-  border: 2px solid blue;
-  background-color:red; 
-  height:auto; 
-  width:30px;
-  height:25px; 
-  cursor:pointer; 
-
+/*   border: 2px solid blue;
+  background-color: red; */
+  position:relative;
+  height: auto;
+  width: 30px;
+  height: 25px;
+  margin-top:12.5px;
+  left:10px;
+  cursor: pointer;
 `;
 
 const HeaderSpace = styled.div`
- width:100px; 
- height: 60px; 
+  width: 100px;
+  height: 60px;
+`;
+
+const MenuMobileDisplay = styled.div`
+display:block;
+transition: grow;
+
+@keyframes grow {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* Add your own prefixes */
 
 `;
 
 
 
-
-
+let Open = false;
 
 const SliderItem = styled.div``;
 
@@ -156,7 +183,6 @@ const handleClickBanner = () =>
     behavior: "smooth",
     block: "start",
   });
-
 
 const handleClickProgramacao = () =>
   ref2.current.scrollIntoView({
@@ -189,45 +215,58 @@ const handleClickInscricao = () =>
   });
 
 function Site() {
+  const [count, setCount] = useState(1);
+  const [Abre, setAbre] = useState(false);
+  const [DisplayMobile, setDisplayMobile] = useState({display:"none"});
 
 
+
+
+
+/*   const MenuStatus = () => {
+    if (count === 1) {
+      setCount(2);
+
+      console.log("Abrindo");
+    } else {
+      setCount(1);
+      setDisplayMobile({display:"block"});
+      console.log("Fechando");
+    }
+  };
+ */
   let Slide = 0;
 
   let handleClick = () => {
     this.setState({
-        open: !this.state.open
+      open: !this.state.open,
     });
-}
+  };
 
-  const [openHamburguer, setOpenHamburguer] = useState(false);
+  let i = 0;
 
-  const [ModalOpen, setModalOpen] = useState('0px');
+  let DisplayModal = {
+    display: "block",
+  };
 
+  let Open = false;
 
-  const MenuStatus = () =>{
-    console.log("Chamado");
-     if(openHamburguer === true){
-      setOpenHamburguer(false); 
-      console.log("Aqui tudo bem");
+  let OpenFunction = () => {
+    if (count === 1) {
+      setCount(2);
+      setDisplayMobile({display:"block"});
 
-    }else{
-      setOpenHamburguer(true);
-  
-    } 
-    
-  }
+    } else {
+      setCount(1);
+      setDisplayMobile({display:"none"});
+    }
+    console.log("VAlor", count == 1);
+    setAbre(count == 1);
+  };
 
-  
-  
-
-
-
-
-  
   return (
     <div>
       <Fundo />
-      
       <RegularHeader>
         <HeaderBox>
           <LogoBox onClick={handleClickBanner}>
@@ -250,18 +289,8 @@ function Site() {
 
       <MobileHeader>
         <HeaderBoxMobile>
-          <HamburguerMenu onClick = {MenuStatus}>
-            <HamburguerMenuAnimation
-              isOpen={openHamburguer}
-              menuClicked={openHamburguer}
-              width={30}
-              height={25}
-              strokeWidth={4}
-              rotate={0}
-              color='black'
-              borderRadius={0}
-              animationDuration={0.5}
-            />
+          <HamburguerMenu onClick={OpenFunction}>
+            <CloseButton CloseButton={Abre} />
           </HamburguerMenu>
           <LogoBox onClick={handleClickBanner}>
             <img
@@ -271,13 +300,15 @@ function Site() {
             ></img>
           </LogoBox>
         </HeaderBoxMobile>
-        <HeaderUlBoxMobile>
+        <MenuMobileDisplay style = {DisplayMobile}>
+        <HeaderUlBoxMobile >
           <li onClick={handleClickBanner}>Início</li>
           <li onClick={handleClickInfo}>Informações</li>
           <li onClick={handleClickPatrocinadores}>Patrocínio</li>
           <li onClick={handleClickApoio}>Apoio</li>
           <li onClick={handleClickInscricao}>Inscrição</li>
         </HeaderUlBoxMobile>
+        </MenuMobileDisplay>
       </MobileHeader>
 
       <div>
@@ -313,7 +344,7 @@ function Site() {
             {" "}
             <HeaderSpace></HeaderSpace>
             <Inscricoes />{" "}
-          </SliderItem >
+          </SliderItem>
           <Footer />
         </SliderBox>
       </div>
