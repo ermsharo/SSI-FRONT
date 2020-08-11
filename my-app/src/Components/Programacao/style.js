@@ -8,6 +8,8 @@ export const GenericSize = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 20px;
+  margin-bottom: 100px;
 `;
 
 export const Titulo=styled.h1`
@@ -42,4 +44,9 @@ export const ArrowBaseRight=styled.div`
     border-top: 0.3em solid #ccc;
     transform: rotate(45deg);
   }
+`;
+
+export const Dots=styled.a`
+  width: 100%;
+  color: #ccc
 `;

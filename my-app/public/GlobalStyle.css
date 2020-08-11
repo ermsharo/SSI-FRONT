@@ -23,6 +23,27 @@
     font-style: bold;
 }
 
+ul.slick-dots li {
+    width: auto;
+    font-weight: 600;
+    margin: 0 0.6em;
+}
+
+ul.slick-dots li a:hover,
+ul.slick-dots li.slick-active a {
+    color: white;
+}
+
+ul.slick-dots {
+    bottom: -45px;
+}
+
+@media (max-width: 541px) {
+    ul.slick-dots {
+        bottom: -75px;
+    }
+}
+
 body {
     background-color: #1C043C;
 }

@@ -10,15 +10,9 @@ import Apoio from "./Apoio/index";
 import Inscricoes from "./Inscricao";
 import Footer from "./Footer";
 import styled, { css } from "styled-components";
-<<<<<<< HEAD
-import Fundo from "./Fundo"; 
-import Programacao from "./Programacao/index";
-=======
-import Atividades from "./Info/index";
 import Fundo from "./Fundo";
-import Programacao from "./Programacao";
+import Programacao from "./Programacao/index";
 import CloseButton from "./CloseButton";
->>>>>>> ae98c31177f3386e64aecf70c3c297087fdcb7ae
 
 const HeaderBox = styled.div`
   width: 100%;

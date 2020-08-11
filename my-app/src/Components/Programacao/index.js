@@ -1,5 +1,5 @@
 import React from 'react';
-import { GenericSize, Titulo, ArrowBaseLeft, ArrowBaseRight } from './style';
+import { GenericSize, Titulo, ArrowBaseLeft, ArrowBaseRight, Dots } from './style';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -27,6 +27,8 @@ function ArrowLeft(props) {
   );
 }
 
+let dias = ['Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta']
+
 function Programacao() {
   var settings = {
     dots: true,
@@ -36,7 +38,12 @@ function Programacao() {
     slidesToScroll: 1,
     slidesToShow: 1,
     nextArrow: <ArrowRight className='teste'/>,
-    prevArrow: <ArrowLeft className='teste'/>
+    prevArrow: <ArrowLeft className='teste'/>,
+    customPaging: i => (
+      <Dots>
+        {dias[i]}
+      </Dots>
+    )
   };
   
   return (
@@ -91,55 +98,6 @@ function Programacao() {
                           horaFim:'00:00',
                           descricao:'Descrição'
                         },
-                        {
-                          titulo:'Titulo',
-                          horaInicio:'00:00',
-                          horaFim:'00:00',
-                          descricao:'Descrição'
-                        },
-                        {
-                          titulo:'Titulo',
-                          horaInicio:'00:00',
-                          horaFim:'00:00',
-                          descricao:'Descrição'
-                        }
-                      ]
-            ]}
-        />
-        <Cronograma
-            eventos={[
-                      // Eventos Manhã
-                      [
-                        {
-                          titulo:'Titulo',
-                          horaInicio:'00:00',
-                          horaFim:'00:00',
-                          descricao:'Descrição'
-                        },
-                        {
-                          titulo:'Titulo',
-                          horaInicio:'00:00',
-                          horaFim:'00:00',
-                          descricao:'Descrição'
-                        }
-                      ],
-                      // Eventos Tarde                      
-                      [
-                        {
-                          titulo:'Titulo',
-                          horaInicio:'00:00',
-                          horaFim:'00:00',
-                          descricao:'Descrição'
-                        },
-                        {
-                          titulo:'Titulo',
-                          horaInicio:'00:00',
-                          horaFim:'00:00',
-                          descricao:'Descrição'
-                        }
-                      ],
-                      // Eventos Noite
-                      [
                         {
                           titulo:'Titulo',
                           horaInicio:'00:00',
