@@ -55,6 +55,7 @@ const LogoBox = styled.div`
     /*   alert("fechou"); */
 
     margin: auto;
+    width:55px;
   }
 `;
 
@@ -121,11 +122,14 @@ const RegularHeader = styled.div`
 
 const HamburguerMenu = styled.div`
   display: block;
-  border: 2px solid blue;
-  background-color: red;
+/*   border: 2px solid blue;
+  background-color: red; */
+  position:relative;
   height: auto;
   width: 30px;
   height: 25px;
+  margin-top:12.5px;
+  left:10px;
   cursor: pointer;
 `;
 
@@ -133,6 +137,12 @@ const HeaderSpace = styled.div`
   width: 100px;
   height: 60px;
 `;
+
+const MenuMobileDisplay = styled.div`
+display:block;
+
+`;
+
 
 
 let Open = false;
@@ -184,26 +194,24 @@ const handleClickInscricao = () =>
 function Site() {
   const [count, setCount] = useState(1);
   const [Abre, setAbre] = useState(false);
-  const [DisplayMobile, setDisplayMobile] = useState("none");
+  const [DisplayMobile, setDisplayMobile] = useState({display:"none"});
 
 
 
-  const MenuMobileDisplay = styled.div`
-  display:block;
-
-`;
 
 
-  const MenuStatus = () => {
-    if (count == 1) {
+/*   const MenuStatus = () => {
+    if (count === 1) {
       setCount(2);
-      setDisplayMobile("block");
+
+      console.log("Abrindo");
     } else {
       setCount(1);
-      setDisplayMobile("none");
+      setDisplayMobile({display:"block"});
+      console.log("Fechando");
     }
   };
-
+ */
   let Slide = 0;
 
   let handleClick = () => {
@@ -223,8 +231,11 @@ function Site() {
   let OpenFunction = () => {
     if (count === 1) {
       setCount(2);
+      setDisplayMobile({display:"block"});
+
     } else {
       setCount(1);
+      setDisplayMobile({display:"none"});
     }
     console.log("VAlor", count == 1);
     setAbre(count == 1);
@@ -265,8 +276,8 @@ function Site() {
             ></img>
           </LogoBox>
         </HeaderBoxMobile>
-        <MenuMobileDisplay>
-        <HeaderUlBoxMobile style={DisplayModal}>
+        <MenuMobileDisplay style = {DisplayMobile}>
+        <HeaderUlBoxMobile >
           <li onClick={handleClickInfo}>Informações</li>
           <li onClick={handleClickPatrocinadores}>Patrocínio</li>
           <li onClick={handleClickApoio}>Apoio</li>
