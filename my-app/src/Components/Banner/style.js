@@ -1,16 +1,14 @@
 import styled, { keyframes } from 'styled-components';
 
 export const GenericSize= styled.div`
-  width:100vw; 
+  width:100%; 
   height: 100vh; 
   color:white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-/* background: linear-gradient(90deg, rgba(255, 255, 255, 0) 10%, rgba(58, 0, 110, 0.5) 50%, rgba(255, 255, 255, 0) 90%); */
-  padding-top:5vw;
-  margin-top:65px;
+  /* background: linear-gradient(90deg, rgba(255, 255, 255, 0) 10%, rgba(58, 0, 110, 0.5) 50%, rgba(255, 255, 255, 0) 90%); */
 `;
 
 export const FundoBanner= styled.div`
@@ -27,28 +25,34 @@ export const FundoBanner= styled.div`
 export const float = keyframes`
   0% {
    /*    transform: translatey(-10px); */
-   transform: translatey(0.5vw);
+    transform: translatey(0.5vw);
   }
   50% {
-      transform: translatey(-2.25vw);
+    transform: translatey(-2.25vw);
   }
   100% {
-      transform: translatey(0.5vw);
+    transform: translatey(0.5vw);
   }
 `;
 
 export const LogoStyleSSI= styled.img`
-  width: 20vw;
-  max-width: 20vw;
+  width: 280px;
+  max-width: 80%;
   transform: translatey(-10px);
   animation: ${float} 5s ease-in-out infinite;
-  margin-bottom: 4vw;
+  margin-bottom: 20px;
+  @media (max-width:960px) {
+    width: 230px;
+  }
 `;
 
 export const TituloStyleSSI= styled.img`
-  width: 50vw;
-  max-width: 25vw;
-  margin-bottom: 4vw;
+  width: 350px;
+  max-width: 90%;
+  margin-bottom: 20px;
+  @media (max-width:960px) {
+    width: 300px;
+  }
 `;
 
 export const SocialAreaBanner= styled.div`
@@ -59,7 +63,7 @@ export const SocialAreaBanner= styled.div`
 `;
 
 export const SocialButton=styled.a`
-  font-size: 46px;
+  font-size: 45px;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
   color: #cccccc;
@@ -67,6 +71,9 @@ export const SocialButton=styled.a`
   &:hover{
     color: #ffffff;
     text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);
+  }
+  @media (max-width:960px) {
+    font-size: 40px;
   }
 `;
 
@@ -100,5 +107,8 @@ export const ButtonBanner= styled.a`
   &:hover{
     color: #520082;
     background-color: #fff;
+  }
+  @media (max-width:960px) {
+    font-size: 18px;
   }
 `;

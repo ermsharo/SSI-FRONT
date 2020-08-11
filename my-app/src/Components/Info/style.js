@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const GenericSize= styled.div`
-  width:100vw; 
+  width:100%; 
   min-height:100vh; 
   color:white;
   display: flex;
@@ -11,8 +11,9 @@ export const GenericSize= styled.div`
 `;
 
 export const Titulo=styled.h1`
+  text-align: center;
   margin: 40px 0;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
   font-size: 50px;
   font-family: var(--fontTitulo);
 `;

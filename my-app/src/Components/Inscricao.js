@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 
 const GenericSize= styled.div`
-    width:100vw; 
+    width:100%; 
     height:100vh; 
     color:white;
 /*     background-color:lightpink;  */

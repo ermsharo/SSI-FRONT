@@ -226,7 +226,8 @@ function Site() {
   
   return (
     <div>
-     <Fundo />
+      <Fundo />
+      
       <RegularHeader>
         <HeaderBox>
           <LogoBox onClick={handleClickBanner}>
@@ -238,6 +239,7 @@ function Site() {
           </LogoBox>
 
           <HeaderUlBox>
+            <li onClick={handleClickBanner}>Início</li>
             <li onClick={handleClickInfo}>Informações</li>
             <li onClick={handleClickPatrocinadores}>Patrocínio</li>
             <li onClick={handleClickApoio}>Apoio</li>
@@ -270,6 +272,7 @@ function Site() {
           </LogoBox>
         </HeaderBoxMobile>
         <HeaderUlBoxMobile>
+          <li onClick={handleClickBanner}>Início</li>
           <li onClick={handleClickInfo}>Informações</li>
           <li onClick={handleClickPatrocinadores}>Patrocínio</li>
           <li onClick={handleClickApoio}>Apoio</li>
@@ -284,9 +287,8 @@ function Site() {
           <SliderItem ref={ref1}>
             {" "}
             <HeaderSpace></HeaderSpace>
-            <Banner />
+            <Banner handleClickInfo={handleClickInfo} handleClickInscricao={handleClickInscricao} />
           </SliderItem>
-          
           <SliderItem ref={ref2}>
             {" "}
             <HeaderSpace></HeaderSpace>
@@ -314,8 +316,7 @@ function Site() {
           </SliderItem >
           <Footer />
         </SliderBox>
- 
-    </div>
+      </div>
     </div>
   );
 }

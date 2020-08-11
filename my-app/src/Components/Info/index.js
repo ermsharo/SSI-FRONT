@@ -13,7 +13,7 @@ function Info(props) {
               </ItemIcon>
               <ItemTitle>O que é?</ItemTitle>
               <ItemText>
-                  A Semana de Sistemas de Informação (SSI) é um evento anual organizado pelas alunas e alunos do curso de Sistemas de Informação da Escola de Artes, Ciências e Humanidades (EACH-USP).
+                  A Semana de Sistemas de Informação (SSI) é um evento anual organizado pelas alunas e pelos alunos do curso de Sistemas de Informação da Escola de Artes, Ciências e Humanidades (EACH-USP).
               </ItemText>
               <ItemText>
                   Nessa semana são apresentadas diversas palestras, workshops e outras atividades focadas no mundo de TI, com assuntos como tecnologia, mercado de trabalho, empreendedorismo, e entre outros.
@@ -25,7 +25,7 @@ function Info(props) {
               </ItemIcon>
               <ItemTitle>Onde e quando?</ItemTitle>
               <ItemText>
-                  Esse ano teríamos a X SSI. Contudo, devido ao contexto de pandemia em que nossa sociedade se encontra, apresentamos a vocês a primeira Semana de Sistemas de Informação Online!
+                  Esse ano teríamos a X SSI. Contudo, devido ao contexto de pandemia em que nos encontramos, apresentamos a vocês a primeira Semana de Sistemas de Informação Online!
               </ItemText>
               <ItemText>
                   As transmissões ocorrerão entre o dia 21 e 25 de setembro, no canal da Twitch. Então, já deixe nosso canal anotado no caderninho!
