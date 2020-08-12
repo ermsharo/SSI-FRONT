@@ -1,9 +1,12 @@
 import React from 'react';
-import { GenericSize, Titulo, ArrowBaseLeft, ArrowBaseRight, Dots } from './style';
+import { GenericSize, Titulo, ArrowBaseLeft, ArrowBaseRight, Dots ,Spike} from './style';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Cronograma from './Cronograma/index';
+
+
+
 
 function ArrowRight(props) {
   const { className, style, onClick } = props;
@@ -47,6 +50,8 @@ function Programacao() {
   };
   
   return (
+    <>
+    <Spike></Spike>
     <GenericSize>
       <Titulo>
         Programação
@@ -311,6 +316,7 @@ function Programacao() {
         />
       </Slider>
     </GenericSize>
+    </>
   );
 }
 

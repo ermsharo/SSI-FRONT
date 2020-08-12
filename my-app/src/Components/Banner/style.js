@@ -9,6 +9,7 @@ export const GenericSize= styled.div`
   justify-content: center;
   align-items: center;
   margin-top:6vw;
+  margin-bottom:6vw; 
   /* background: linear-gradient(90deg, rgba(255, 255, 255, 0) 10%, rgba(58, 0, 110, 0.5) 50%, rgba(255, 255, 255, 0) 90%); */
 `;
 
@@ -42,6 +43,8 @@ export const LogoStyleSSI= styled.img`
   transform: translatey(-10px);
   animation: ${float} 5s ease-in-out infinite;
   margin-bottom: 20px;
+  display: inline;
+  z-index:0;
   @media (max-width:960px) {
     width: 230px;
   }

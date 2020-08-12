@@ -18,6 +18,11 @@ const FundoBox = styled.div`
     width:100%;
     position: fixed;
     top:0px;
+    -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  -o-filter: blur(4px);
+  -ms-filter: blur(4px);
+  filter: blur(4px);
 `;
 
 
