@@ -26,16 +26,42 @@ z-index:0;
 } 
 `;
 
+export const SpikeReverse = styled.div`
+   position: relative;
+  background:white;
+  height: 0vh;
+
+z-index:0;
+
+   :before {
+  content: '';
+  position: absolute;
+  right: 0;
+  left: -0%;
+  top: 100%;
+  z-index: 0;
+  display: block;
+  height: 150px;
+
+  background-size: 50px 100%;
+  background-image: linear-gradient(135deg, white 25%, transparent 25%), linear-gradient(225deg, white 25%, transparent 25%);
+  background-position: 0 0;
+
+  
+} 
+`;
+
+
 export const GenericSize = styled.div`
   width:100%; 
- 
+  height:120vw;
   color:white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 20px;
-  margin-bottom: 100px;
+
   margin-top:0vw;
   background-color:white; 
   color:black; 

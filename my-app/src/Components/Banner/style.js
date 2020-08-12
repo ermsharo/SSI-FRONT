@@ -2,14 +2,14 @@ import styled, { keyframes } from 'styled-components';
 
 export const GenericSize= styled.div`
   width:100%; 
-  height: 100vh; 
+  height: 110vh; 
   color:white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top:6vw;
-  margin-bottom:6vw; 
+  margin-bottom:20vw; 
   /* background: linear-gradient(90deg, rgba(255, 255, 255, 0) 10%, rgba(58, 0, 110, 0.5) 50%, rgba(255, 255, 255, 0) 90%); */
 `;
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { GenericSize, Titulo, ArrowBaseLeft, ArrowBaseRight, Dots ,Spike} from './style';
+import { GenericSize, Titulo, ArrowBaseLeft, ArrowBaseRight, Dots ,Spike, SpikeReverse} from './style';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -316,6 +316,7 @@ function Programacao() {
         />
       </Slider>
     </GenericSize>
+    <SpikeReverse></SpikeReverse>
     </>
   );
 }
