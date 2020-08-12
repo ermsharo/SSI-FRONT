@@ -10,7 +10,7 @@ import Apoio from "./Apoio/index";
 import Inscricoes from "./Inscricao";
 import Footer from "./Footer";
 import styled, { css } from "styled-components";
-import Fundo from "./Fundo";
+import Fundo from "./Fundo/Fundo";
 import Programacao from "./Programacao/index";
 import CloseButton from "./CloseButton";
 

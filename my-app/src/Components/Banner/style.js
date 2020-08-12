@@ -8,6 +8,7 @@ export const GenericSize= styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top:6vw;
   /* background: linear-gradient(90deg, rgba(255, 255, 255, 0) 10%, rgba(58, 0, 110, 0.5) 50%, rgba(255, 255, 255, 0) 90%); */
 `;
 
