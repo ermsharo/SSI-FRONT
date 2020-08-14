@@ -1,5 +1,8 @@
 import styled from 'styled-components'
 
+
+
+
 export const GenericSize= styled.div`
   width:100%; 
   min-height:100vh; 
@@ -32,10 +35,10 @@ export const ItemSpace=styled.div`
 export const Item=styled.div`
   flex: 1;
   min-width: 400px;
-  background-color: #520082;
+  
   border-style: solid;
-  border-radius: 10px;
-  border-width: 6px;
+
+  border-width: 2px;
   border-color: #fff;
   padding: 0;
   margin: 0 20px;
@@ -55,6 +58,7 @@ export const ItemTitle=styled.h2`
   font-size: 2.2em;
   margin: 20px 0;
   text-align: center;
+  font-family: var(--fontTitulo);
 `;
 
 export const ItemText=styled.p`
@@ -65,10 +69,13 @@ export const ItemText=styled.p`
   padding-top: 0px;
   margin: 0;
   font-weight: 550;
+
+  font-family: var(--fontCorpo);
 `;
 
 export const Link=styled.a`
   text-decoration: none;
   color: #fffc33;
   cursor: pointer;
+  
 `;
