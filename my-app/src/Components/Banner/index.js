@@ -33,6 +33,7 @@ function Banner(props) {
             <ButtonBanner onClick={props.handleClickInfo}>
                 Informações
             </ButtonBanner>
+            <div></div>
             <ButtonBanner onClick={props.handleClickInscricao}>
                 Inscrição
             </ButtonBanner>

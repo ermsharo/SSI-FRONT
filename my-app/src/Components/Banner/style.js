@@ -8,7 +8,9 @@ export const GenericSize= styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top:6vw;
+  margin-top: 20px; 
+
+  
   margin-bottom:20vw; 
   /* background: linear-gradient(90deg, rgba(255, 255, 255, 0) 10%, rgba(58, 0, 110, 0.5) 50%, rgba(255, 255, 255, 0) 90%); */
 `;
@@ -38,21 +40,21 @@ export const float = keyframes`
 `;
 
 export const LogoStyleSSI= styled.img`
-  width: 280px;
-  max-width: 80%;
+  width: 100%;
+  max-width:16vw;
   transform: translatey(-10px);
   animation: ${float} 5s ease-in-out infinite;
   margin-bottom: 20px;
   display: inline;
-  z-index:0;
+  z-index:-1;
   @media (max-width:960px) {
-    width: 230px;
+    width: 100%;
   }
 `;
 
 export const TituloStyleSSI= styled.img`
-  width: 350px;
-  max-width: 90%;
+  width: 14vw;
+
   margin-bottom: 20px;
   @media (max-width:960px) {
     width: 300px;
@@ -103,10 +105,12 @@ export const ButtonBanner= styled.a`
   font-weight: 600;
   padding: 10px 20px;
   border-style: solid;
-  border-radius: 5px;
-  border-width: 4px;
+  border-radius: 0px;
+  border-width: 2px;
   border-color: #fff;
+  letter-spacing:1px;
   margin: 10px;
+  background:rgba(0,0,0,0.2);
   transition: all 0.2s ease-in-out;
   &:hover{
     color: #520082;
