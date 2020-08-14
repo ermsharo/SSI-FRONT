@@ -25,7 +25,9 @@ const HeaderBox = styled.div`
   position: fixed;
   top: 0;
   width: 100%;
-
+  -webkit-box-shadow: 0px 3px 8px 1px rgba(0,0,0,0.28);
+-moz-box-shadow: 0px 3px 8px 1px rgba(0,0,0,0.28);
+box-shadow: 0px 3px 8px 1px rgba(0,0,0,0.28);
   @media (max-width: 992px) {
   }
 `;
@@ -41,6 +43,9 @@ const HeaderBoxMobile = styled.div`
   top: 0;
   width: 100%;
 
+  -webkit-box-shadow: 0px 3px 8px 1px rgba(0,0,0,0.28);
+-moz-box-shadow: 0px 3px 8px 1px rgba(0,0,0,0.28);
+box-shadow: 0px 3px 8px 1px rgba(0,0,0,0.28);
   @media (max-width: 992px) {
   }
 `;
@@ -108,15 +113,17 @@ const MobileHeader = styled.div`
   @media (max-width: 992px) {
     display: block;
   }
+
 `;
 
 const RegularHeader = styled.div`
   display: block;
-  border: 2px solid blue;
+
 
   @media (max-width: 992px) {
     display: none;
   }
+
 `;
 
 const HamburguerMenu = styled.div`

@@ -6,7 +6,7 @@ export const Spike = styled.div`
   background:white;
   height: 0vh;
 transform:rotate(180deg);
-z-index:0;
+z-index:-1;
 
    :before {
   content: '';
@@ -61,7 +61,7 @@ export const GenericSize = styled.div`
   justify-content: center;
   align-items: center;
   font-size: 20px;
-
+border:2px solid red; 
   margin-top:0vw;
   background-color:white; 
   color:black; 
