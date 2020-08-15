@@ -61,7 +61,7 @@ export const GenericSize = styled.div`
   justify-content: center;
   align-items: center;
   font-size: 20px;
-border:2px solid red; 
+
   margin-top:0vw;
   background-color:white; 
   color:black; 
@@ -74,7 +74,7 @@ export const Titulo=styled.h1`
   margin-bottom: 80px;
   font-size: 50px;
   font-family: var(--fontTitulo);
-  border:2px solid blue; 
+
 `;
 
 export const ArrowBaseLeft=styled.div`

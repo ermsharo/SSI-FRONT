@@ -47,6 +47,7 @@ export const Item=styled.div`
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  background: rgba(0,0,0,0.2);
 `;
 
 export const ItemIcon=styled.span`
