@@ -17,7 +17,7 @@ fundo mudas as props depois  */
 :root {
    
   /* fontes  */
-   --fontTitulo: Nunito;
+   --fontTitulo:  'Bebas Neue', cursive;
    --fontCorpo: Roboto; 
    --fontCorpo2: green;  
 

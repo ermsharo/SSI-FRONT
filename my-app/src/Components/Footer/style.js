@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
 export const FooterBox = styled.div`
+padding-top:10px;
   width: 100%;
   background-color:white;
   color: black; 
   display:grid; 
   grid-template-columns: 33.3% 33.3% auto;
-  font-family:  var(--fontCorpo); 
+  font-family:  var(--fontTitulo); 
   padding-top: 15px; 
   font-size:14px; 
   text-align:center; 
@@ -56,9 +57,10 @@ export const Sobre= styled.div`
   text-align:center; 
   text-transform:uppercase;
   background-color:white;
-  padding-top:10px;
+  padding-top:15px;
+  padding-bottom:5px;
   font-family:var(--fontTitulo);
   font-weight:bold;
   padding-bottom:10px; 
-  font-size:12px; 
+  font-size:16px; 
 `;

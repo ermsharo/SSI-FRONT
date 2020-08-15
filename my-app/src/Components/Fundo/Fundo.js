@@ -36,16 +36,16 @@ function Fundo( ) {
   <h7><Oval size = {5} color = "#EE82EE"/></h7>
 
  
-  <h7><Oval size = {5} color = "#fff0f5"/></h7>
-  <h7><Pontos color1 = "#fff0f5" color2= "#b19cd9" color3 = "#8e4785"/></h7>
+  <h7><Oval size = {5} color = "#b5acb4"/></h7>
+  <h7><Pontos color1 = "#b5acb4" color2= "#b19cd9" color3 = "#8e4785"/></h7>
   <h7><Oval size = {5} color = "#b19cd9"/></h7>
   <h7><Oval size = {5} color = "#8e4785"/></h7>
   <h7><Hexa color1= "#b19cd9" color2 ="#8e4785"/></h7>
-  <h7><Piramide color1 = "#fff0f5" color2= "#b19cd9" color3 = "#8e4785"/></h7>
+  <h7><Piramide color1 = "#b5acb4" color2= "#b19cd9" color3 = "#8e4785"/></h7>
   <h7><Hexa color1= "#b19cd9" color2 ="#8e4785"/></h7>
-  <h7><Pontos color1 = "#fff0f5" color2= "#b19cd9" color3 = "#8e4785"/></h7>
-  <h7><Piramide color1 = "#fff0f5" color2= "#b19cd9" color3 = "#8e4785"/></h7>
-  <h7><Oval size = {5} color = "#fff0f5"/></h7>
+  <h7><Pontos color1 = "#b5acb4" color2= "#b19cd9" color3 = "#8e4785"/></h7>
+  <h7><Piramide color1 = "#b5acb4" color2= "#b19cd9" color3 = "#8e4785"/></h7>
+  <h7><Oval size = {5} color = "#b5acb4"/></h7>
   <h7><Hexa color1= "#b19cd9" color2 ="#8e4785"/></h7>
 
   <h7><Oval size = {5} color = "#b19cd9"/></h7>

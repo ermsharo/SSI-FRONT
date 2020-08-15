@@ -6,7 +6,7 @@ export const Spike = styled.div`
   background:white;
   height: 0vh;
 transform:rotate(180deg);
-z-index:0;
+z-index:-1;
 
    :before {
   content: '';
@@ -31,7 +31,7 @@ export const SpikeReverse = styled.div`
   background:white;
   height: 0vh;
 
-z-index:0;
+z-index:-1;
 
    :before {
   content: '';
@@ -54,7 +54,7 @@ z-index:0;
 
 export const GenericSize = styled.div`
   width:100%; 
-  height:120vw;
+  height:auto;
   color:white;
   display: flex;
   flex-direction: column;
@@ -65,6 +65,7 @@ export const GenericSize = styled.div`
   margin-top:0vw;
   background-color:white; 
   color:black; 
+   padding:0px; 
 `;
 
 export const Titulo=styled.h1`
@@ -73,6 +74,7 @@ export const Titulo=styled.h1`
   margin-bottom: 80px;
   font-size: 50px;
   font-family: var(--fontTitulo);
+
 `;
 
 export const ArrowBaseLeft=styled.div`
