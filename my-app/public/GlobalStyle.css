@@ -44,6 +44,14 @@ ul.slick-dots {
     }
 }
 
+.display-block {
+    display: block;
+}
+
+.display-none {
+    display: none;
+}
+
 body {
     background-color: #1C043C;
 }
