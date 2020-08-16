@@ -56,7 +56,7 @@ function Programacao() {
       <Titulo>
         Programação
       </Titulo>
-      <Slider {...settings} style={{maxWidth:"80%", width:'100%'}}>
+      <Slider {...settings} style={{maxWidth:"80%", width:'100%', marginBottom: '100px'}}>
         <Cronograma
             eventos={[
                       // Eventos Manhã

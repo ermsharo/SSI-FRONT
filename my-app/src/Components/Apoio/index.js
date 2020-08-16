@@ -25,6 +25,8 @@ function Apoio() {
                     <LogoStyle src={LogoUSP} class="logo" alt="Logo 1"/>
                 </a>
             </Item>
+        </ItemSpace>
+        <ItemSpace style={{width: "800px", maxWidth: "90%"}}>
             <Item>
                 <a href="https://dasiusp.com/" style={{display:"block", margin:"auto"}} target="_blank" rel="noopener noreferrer">
                     <LogoStyle src={LogoDASI} class="logo" alt="Logo 1"/>

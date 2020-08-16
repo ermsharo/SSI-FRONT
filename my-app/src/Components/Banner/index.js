@@ -1,22 +1,22 @@
 import React, { Component } from 'react';
 import LogoSSI from '../../assets/img/logoSSISemFundoComCinza.svg';
 import TituloSSI from '../../assets/img/SSITituloSemFundo.svg';
-import { GenericSize, LogoStyleSSI, TituloStyleSSI, SocialAreaBanner, SocialButton, ButtonBanner, ButtonAreaBanner } from './style';
+import { GenericSize, LogoStyleSSI, TituloStyleSSI, SocialAreaBanner, SocialButton, ButtonBanner, ButtonAreaBanner, FundoModal, ModalBase, ButtonModal } from './style';
 
 let LinkFacebook = "https://www.facebook.com/ssiusp"; 
 let LinkTwitch = "https://www.twitch.tv/each_ssi";
 let LinkInstagram = "https://www.instagram.com/semanadesi/"; 
 
-const Modal = ({ handleClose, show, children }) => {
-  const showHideClassName = show ? "modal display-block" : "modal display-none";
+const Modal = ({ handleClose, show }) => {
+  const showHideClassName = show ? "display-block" : "display-none";
 
   return (
-    <div className={showHideClassName}>
-      <section className="modal-main">
-        {children}
-        <button onClick={handleClose}>close</button>
-      </section>
-    </div>
+    <FundoModal className={showHideClassName} onClick={handleClose}>
+      <ModalBase>
+        As inscrições começam apenas no dia XX/XX!
+        <ButtonModal onClick={handleClose}>Beleza!</ButtonModal>
+      </ModalBase>
+    </FundoModal>
   );
 };
 
@@ -35,12 +35,7 @@ class Banner extends Component {
   render(){
     return (
       <GenericSize>
-          <Modal show={this.state.show} handleClose={this.hideModal}>
-            A
-          </Modal>
-          <button type="button" onClick={this.showModal}>
-            open
-          </button>
+          <Modal show={this.state.show} handleClose={this.hideModal} />
           <LogoStyleSSI src={LogoSSI} alt="Logo SSI" id="logoBanner" />
           <TituloStyleSSI src={TituloSSI} alt="Titulo SSI" id="logoBanner" />
           <SocialAreaBanner>
