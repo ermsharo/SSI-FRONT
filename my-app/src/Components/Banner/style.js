@@ -8,7 +8,7 @@ export const GenericSize= styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 20px; 
+  margin-top: calc(55px + 2vh); 
 
   
   margin-bottom:20vw; 
@@ -21,7 +21,7 @@ export const float = keyframes`
     transform: translatey(0px);
   }
   50% {
-    transform: translatey(-30px);
+    transform: translatey(-2vh);
   }
   100% {
     transform: translatey(0px);
@@ -30,7 +30,7 @@ export const float = keyframes`
 
 export const LogoStyleSSI= styled.img`
   width: 300px;
-  transform: translatey(-10px);
+  transform: translatey(-0.1vh);
   animation: ${float} 5s ease-in-out infinite;
   margin-bottom: 20px;
   display: inline;

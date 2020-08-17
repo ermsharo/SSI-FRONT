@@ -28,6 +28,7 @@ const HeaderBox = styled.div`
   -webkit-box-shadow: 0px 3px 8px 1px rgba(0,0,0,0.28);
 -moz-box-shadow: 0px 3px 8px 1px rgba(0,0,0,0.28);
 box-shadow: 0px 3px 8px 1px rgba(0,0,0,0.28);
+
   @media (max-width: 992px) {
   }
 `;
