@@ -16,14 +16,15 @@ export const Titulo=styled.h1`
   margin-bottom: 80px;
   font-size: 50px;
   font-family: var(--fontTitulo);
+  @media (max-width: 500px){
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
 `;
 
 export const LogoStyle=styled.img`
   height: 100px;
   max-width: 100%;
-  @media (max-width: 1499px) {
-    max-width: 450px;
-  }
 `;
 
 export const ItemSpace=styled.div`
@@ -45,4 +46,7 @@ export const Item=styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+  @media (max-width: 540px){
+    min-width: 100%;
+  }
 `;

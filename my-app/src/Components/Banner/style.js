@@ -2,7 +2,7 @@ import styled, { keyframes } from 'styled-components';
 
 export const GenericSize= styled.div`
   width:100%; 
-  height: 100vh; 
+  min-height: 100vh; 
   color:white;
   display: flex;
   flex-direction: column;
@@ -13,17 +13,6 @@ export const GenericSize= styled.div`
   
   margin-bottom:20vw; 
   /* background: linear-gradient(90deg, rgba(255, 255, 255, 0) 10%, rgba(58, 0, 110, 0.5) 50%, rgba(255, 255, 255, 0) 90%); */
-`;
-
-export const FundoBanner= styled.div`
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  overflow: hidden;
-  display: none;
 `;
 
 export const float = keyframes`
@@ -56,12 +45,13 @@ export const TituloStyleSSI= styled.img`
 
   margin-bottom: 20px;
   @media (max-width:530px) {
-    width: 70%;
+    width: 80%;
   }
 `;
 
 export const SocialAreaBanner= styled.div`
   width: 350px;
+  max-width: 100%;
   margin-bottom: 20px;
   display: flex;
   justify-content: space-evenly;
@@ -84,6 +74,7 @@ export const SocialButton=styled.a`
 
 export const ButtonAreaBanner=styled.div`
   width: 400px;
+  max-width: 100%;
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;

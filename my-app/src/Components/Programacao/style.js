@@ -61,11 +61,9 @@ export const GenericSize = styled.div`
   justify-content: center;
   align-items: center;
   font-size: 20px;
-
-  margin-top:0vw;
-  background-color:white; 
+  background-color:blue; 
   color:black; 
-   padding:0px; 
+  padding:0px; 
 `;
 
 export const Titulo=styled.h1`
@@ -74,7 +72,10 @@ export const Titulo=styled.h1`
   margin-bottom: 80px;
   font-size: 50px;
   font-family: var(--fontTitulo);
-
+  @media (max-width: 500px){
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
 `;
 
 export const ArrowBaseLeft=styled.div`
@@ -87,6 +88,12 @@ export const ArrowBaseLeft=styled.div`
     border-right: 0.3em solid #ccc;
     border-top: 0.3em solid #ccc;
     transform: rotate(225deg);
+    @media (max-width: 380px){
+      border-right: 0.2em solid #ccc;
+      border-top: 0.2em solid #ccc;
+      width: 0.8em;
+      height: 0.8em;
+    }
   }
 `;
 
@@ -100,6 +107,12 @@ export const ArrowBaseRight=styled.div`
     border-right: 0.3em solid #ccc;
     border-top: 0.3em solid #ccc;
     transform: rotate(45deg);
+    @media (max-width: 380px){
+      border-right: 0.2em solid #ccc;
+      border-top: 0.2em solid #ccc;
+      width: 0.8em;
+      height: 0.8em;
+    }
   }
 `;
 

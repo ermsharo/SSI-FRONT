@@ -19,6 +19,10 @@ export const Titulo=styled.h1`
   margin-bottom: 80px;
   font-size: 50px;
   font-family: var(--fontTitulo);
+  @media (max-width: 500px){
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
 `;
 
 export const ItemSpace=styled.div`
@@ -48,6 +52,9 @@ export const Item=styled.div`
   flex-direction: column;
   justify-content: center;
   background: rgba(0,0,0,0.2);
+  @media (max-width: 540px){
+    min-width: 100%;
+  }
 `;
 
 export const ItemIcon=styled.span`

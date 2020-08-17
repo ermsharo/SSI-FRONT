@@ -23,6 +23,32 @@
     font-style: bold;
 }
 
+.slick-slider {
+    margin-bottom: 60px;
+}
+
+ul.slick-dots {
+    top: -42px;
+}
+
+@media (max-width: 541px) {
+    .slick-slider {
+        margin-top: 40px;
+    }
+    ul.slick-dots {
+        top: -68px;
+    }
+}
+
+@media (max-width: 323px) {
+    .slick-slider {
+        margin-top: 70px;
+    }
+    ul.slick-dots {
+        top: -95px;
+    }
+}
+
 ul.slick-dots li {
     width: auto;
     font-weight: 600;
@@ -32,16 +58,6 @@ ul.slick-dots li {
 ul.slick-dots li a:hover,
 ul.slick-dots li.slick-active a {
     color: white;
-}
-
-ul.slick-dots {
-    bottom: -45px;
-}
-
-@media (max-width: 541px) {
-    ul.slick-dots {
-        bottom: -75px;
-    }
 }
 
 .display-block {

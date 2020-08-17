@@ -68,6 +68,7 @@ const HeaderUlBox = styled.ul`
   display: inline;
 
   li {
+    font-size: 22px;
     list-style: none;
     display: inline;
     padding-left: 25px;
@@ -88,6 +89,7 @@ const HeaderUlBoxMobile = styled.ul`
   padding-bottom: 15px;
 
   li {
+    font-size: 22px;
     margin: auto;
     display: inline-block;
     list-style: none;
@@ -96,6 +98,7 @@ const HeaderUlBoxMobile = styled.ul`
     /*     border:2px solid blue;  */
     padding: 0px;
     margin: 0px;
+    margin-top: 20px;
     font-family: var(--fontTitulo);
     font-weight: 0.4px;
     text-transform: uppercase;
@@ -266,7 +269,7 @@ function Site() {
   };
 
   return (
-    <div>
+    <>
       <Fundo />
       <RegularHeader>
         <HeaderBox>
@@ -283,7 +286,7 @@ function Site() {
             <li onClick={handleClickInfo}>Informações</li>
             <li onClick={handleClickPatrocinadores}>Patrocínio</li>
             <li onClick={handleClickApoio}>Apoio</li>
-            <li onClick={handleClickInscricao}>Inscrição</li>
+            {/*<li onClick={handleClickInscricao}>Inscrição</li>*/}
           </HeaderUlBox>
         </HeaderBox>
       </RegularHeader>
@@ -307,7 +310,7 @@ function Site() {
           <li onClick={handleClickInfo}>Informações</li>
           <li onClick={handleClickPatrocinadores}>Patrocínio</li>
           <li onClick={handleClickApoio}>Apoio</li>
-          <li onClick={handleClickInscricao}>Inscrição</li>
+          {/*<li onClick={handleClickInscricao}>Inscrição</li>*/}
         </HeaderUlBoxMobile>
         </MenuMobileDisplay>
       </MobileHeader>
@@ -321,11 +324,13 @@ function Site() {
             <HeaderSpace></HeaderSpace>
             <Banner handleClickInfo={handleClickInfo} handleClickInscricao={handleClickInscricao} />
           </SliderItem>
+          {/*
           <SliderItem ref={ref2}>
             {" "}
             <HeaderSpace></HeaderSpace>
             <Programacao />
           </SliderItem>
+          */}
           <SliderItem ref={ref2}>
             {" "}
             <HeaderSpace></HeaderSpace>
@@ -341,15 +346,17 @@ function Site() {
             <HeaderSpace></HeaderSpace>
             <Apoio />{" "}
           </SliderItem>
+          {/*
           <SliderItem ref={ref5}>
             {" "}
             <HeaderSpace></HeaderSpace>
             <Inscricoes />{" "}
           </SliderItem>
+          */}
           <Footer />
         </SliderBox>
       </div>
-    </div>
+    </>
   );
 }
 

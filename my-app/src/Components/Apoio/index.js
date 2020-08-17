@@ -4,6 +4,7 @@ import LogoEACH from '../../assets/img/logoEACHBranco.svg';
 import LogoSI from '../../assets/img/logoSiteSIBranco.svg';
 import LogoUSP from '../../assets/img/logoUSPBranco.svg';
 import LogoDASI from '../../assets/img/Brasao-DASI-Branco.svg'
+import LogoSintese from '../../assets/img/sintese2.svg'
 
 function Apoio() {
   return (
@@ -34,7 +35,7 @@ function Apoio() {
             </Item>
             <Item>
                 <a href="http://www.sintesejr.com.br/" style={{display:"block", margin:"auto"}} target="_blank" rel="noopener noreferrer">
-                    <LogoStyle src={LogoEACH} class="logo" alt="Logo 1"/>
+                    <LogoStyle src={LogoSintese} class="logo" alt="Logo 1"/>
                 </a>
             </Item>
         </ItemSpace>
