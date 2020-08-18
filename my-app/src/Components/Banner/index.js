@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import LogoSSI from '../../assets/img/logoSSISemFundoComCinza.svg';
 import TituloSSI from '../../assets/img/SSITituloSemFundo.svg';
-import { GenericSize, LogoStyleSSI, TituloStyleSSI, SocialAreaBanner, SocialButton, ButtonBanner, ButtonAreaBanner, FundoModal, ModalBase, ButtonModal } from './style';
+import { GenericSize, LogoStyleSSI, TituloStyleSSI, SubtituloStyleSSI, SocialAreaBanner, SocialButton, ButtonBanner, ButtonAreaBanner, FundoModal, ModalBase, ButtonModal } from './style';
 
 let LinkFacebook = "https://www.facebook.com/ssiusp"; 
 let LinkTwitch = "https://www.twitch.tv/each_ssi";
@@ -14,7 +14,8 @@ const Modal = ({ handleClose, show }) => {
     <FundoModal className={showHideClassName} onClick={handleClose}>
       <ModalBase>
         {/* As inscrições começam apenas no dia XX/XX! */}
-        As inscriçõesainda não começaram         <ButtonModal onClick={handleClose}>Beleza!</ButtonModal>
+        As inscrições ainda não começaram!
+        <ButtonModal onClick={handleClose}>Beleza!</ButtonModal>
       </ModalBase>
     </FundoModal>
   );
@@ -38,6 +39,9 @@ class Banner extends Component {
           <Modal show={this.state.show} handleClose={this.hideModal} />
           <LogoStyleSSI src={LogoSSI} alt="Logo SSI" id="logoBanner" />
           <TituloStyleSSI src={TituloSSI} alt="Titulo SSI" id="logoBanner" />
+          <SubtituloStyleSSI>
+            21/09 - 25/09
+          </SubtituloStyleSSI>
           <SocialAreaBanner>
               <span>
                   <SocialButton href={LinkFacebook} target="_blank" rel="noopener noreferrer">

@@ -10,19 +10,18 @@ import Hexa from "./Svgs/Hexa";
 
 
 const FundoBox = styled.div`
-
-
-    z-index:-10; 
-    display:inline-block; 
-    height:100%;
-    width:100%;
-    position: fixed;
-    top:0px;
-    -webkit-filter: blur(4px);
+  z-index:-10; 
+  display:inline-block; 
+  height:100%;
+  width:100%;
+  position: fixed;
+  top:0px;
+  -webkit-filter: blur(4px);
   -moz-filter: blur(4px);
   -o-filter: blur(4px);
   -ms-filter: blur(4px);
   filter: blur(4px);
+  background-color: rgba(0,0,0, 1);
 `;
 
 

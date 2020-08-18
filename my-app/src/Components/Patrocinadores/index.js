@@ -11,7 +11,7 @@ import LogoStone from '../../assets/img/patrocinio/stoneBranco.svg';
 function Patrocinadores() {
   return (
     <GenericSize>
-      <Titulo>Patrocinio</Titulo>
+      <Titulo>Patrocínio</Titulo>
       <ItemSpace>
           <Item>
             <a href="https://www.ciadeestagios.com.br/" style={{display:"block", margin:"auto"}} target="_blank" rel="noopener noreferrer">
