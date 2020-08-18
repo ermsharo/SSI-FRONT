@@ -11,7 +11,7 @@ import Hexa from "./Svgs/Hexa";
 
 const FundoBox = styled.div`
 
-   background-color:green;  
+
     z-index:-10; 
     display:inline-block; 
     height:100%;
