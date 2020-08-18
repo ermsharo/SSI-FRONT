@@ -13,6 +13,8 @@ import styled, { css } from "styled-components";
 import Fundo from "./Fundo/Fundo";
 import Programacao from "./Programacao/index";
 import CloseButton from "./CloseButton";
+import  "./MenuStyle.scss";
+
 
 const HeaderBox = styled.div`
   width: 100%;
@@ -80,33 +82,6 @@ const HeaderUlBox = styled.ul`
   }
 `;
 
-const HeaderUlBoxMobile = styled.ul`
-  list-style: none;
-  /*   border:2px solid red;  */
-  background-color: white;
-  position: fixed;
-  top: 55px;
-  padding: 0px;
-  padding-bottom: 15px;
-
-  li {
-    font-size: 22px;
-    margin: auto;
-    display: inline-block;
-    list-style: none;
-    width: 100vw;
-    text-align: center;
-    /*     border:2px solid blue;  */
-    padding: 0px;
-    margin: 0px;
-    margin-top: 20px;
-    font-family: var(--fontTitulo);
-    font-weight: 0.4px;
-    text-transform: uppercase;
-    cursor: pointer; /*   alert("fechou"); */
-  }
-`;
-
 const SliderBox = styled.div``;
 
 const MenuHamburguer = styled.div``;
@@ -131,7 +106,7 @@ const RegularHeader = styled.div`
 `;
 
 const HamburguerMenu = styled.div`
-  display: block;
+
 /*   border: 2px solid blue;
   background-color: red; */
   position:relative;
@@ -141,6 +116,7 @@ const HamburguerMenu = styled.div`
   margin-top:12.5px;
   left:10px;
   cursor: pointer;
+  height:0px;
 `;
 
 const HeaderSpace = styled.div`
@@ -148,28 +124,51 @@ const HeaderSpace = styled.div`
   height: 60px;
 `;
 
-const MenuMobileDisplay = styled.div`
-display:block;
-transition: grow;
 
-@keyframes grow {
-  0% {
-    display: none;
-    opacity: 0;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-    transform: scale(0);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
+
+
+
+
+const HeaderUlBoxMobile = styled.ul`
+list-style: none;
+/*   border:2px solid red;  */
+background-color: white;
+position: fixed;
+top: 55px;
+padding: 0px;
+padding-bottom: 15px;
+height:var( --ScrollMenu);
+overflow: hidden;
+  text-overflow: ellipsis;
+
+transition: height 10s;
+
+
+li {
+  font-size: 22px;
+  margin: auto;
+  display: inline-block;
+  list-style: none;
+  width: 100vw;
+  text-align: center;
+  /*     border:2px solid blue;  */
+  padding: 0px;
+  margin: 0px;
+  margin-top: 20px;
+  font-family: var(--fontTitulo);
+  font-weight: 0.4px;
+  text-transform: uppercase;
+  cursor: pointer; 
+  
 }
+`;
+
+
+
+
 /* Add your own prefixes */
 
-`;
+
 
 
 
@@ -219,10 +218,23 @@ const handleClickInscricao = () =>
     block: "start",
   });
 
+
+  const MenuMobileDisplay = styled.div`
+display:block;
+
+
+`;
+
+
+
 function Site() {
   const [count, setCount] = useState(1);
   const [Abre, setAbre] = useState(false);
   const [DisplayMobile, setDisplayMobile] = useState({display:"none"});
+  const [AnimationMenu, setAnimationMenu] = useState({height :"0px"});
+
+
+
 
 
 
@@ -255,15 +267,21 @@ function Site() {
   };
 
   let Open = false;
-
+  let root = document.documentElement;
   let OpenFunction = () => {
     if (count === 1) {
       setCount(2);
       setDisplayMobile({display:"block"});
+      root.style.setProperty('--ScrollMenuBefore', "0px");
+      root.style.setProperty('--ScrollMenuAfter', "200px");
 
     } else {
       setCount(1);
-      setDisplayMobile({display:"none"});
+/*       setDisplayMobile({display:"none"}); */
+      setAnimationMenu("0px");
+      setDisplayMobile({display:"block"});
+      root.style.setProperty('--ScrollMenuBefore', "200px");
+      root.style.setProperty('--ScrollMenuAfter', "0px");
     }
     console.log("VAlor", count == 1);
     setAbre(count == 1);
@@ -305,14 +323,14 @@ function Site() {
             ></img>
           </LogoBox>
         </HeaderBoxMobile>
-        <MenuMobileDisplay style = {DisplayMobile}>
-        <HeaderUlBoxMobile >
+        <MenuMobileDisplay>
+        <div className = "HeaderUlBoxMobile" >
           <li onClick={handleClickBanner}>Início</li>
           <li onClick={handleClickInfo}>Informações</li>
           <li onClick={handleClickPatrocinadores}>Patrocínio</li>
           <li onClick={handleClickApoio}>Apoio</li>
           {/*<li onClick={handleClickInscricao}>Inscrição</li>*/}
-        </HeaderUlBoxMobile>
+        </div>
         </MenuMobileDisplay>
       </MobileHeader>
 

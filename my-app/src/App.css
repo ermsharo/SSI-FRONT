@@ -20,6 +20,8 @@ fundo mudas as props depois  */
    --fontTitulo:  'Bebas Neue', cursive;
    --fontCorpo: Roboto; 
    --fontCorpo2: green;  
+   --ScrollMenuBefore: 0px; 
+   --ScrollMenuAfter:0px;
 
    /* Cores  */
 
@@ -37,6 +39,7 @@ fundo mudas as props depois  */
 
 
  }
+
 
 
  body{

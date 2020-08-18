@@ -1,0 +1,42 @@
+
+
+.HeaderUlBoxMobile{
+    margin-top:10px;
+    list-style: none;
+/*   border:2px solid red;  */
+background-color: white;
+height: 0;
+position: fixed;
+top: 55px;
+padding: 0px;
+padding-bottom: 15px;
+overflow: hidden;
+  text-overflow: ellipsis;
+/*   animation: right-animate 4s ease ; */
+transition: height 3s;
+  height: var(--ScrollMenuAfter); 
+  
+/*   @keyframes right-animate {
+    0% { height: var(--ScrollMenuBefore); }
+    100% { height: var(--ScrollMenuAfter); }
+}
+ */
+
+li {
+    font-size: 22px;
+    margin: auto;
+    display: inline-block;
+    list-style: none;
+    width: 100vw;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 20px;
+    font-family: var(--fontTitulo);
+    font-weight: 0.4px;
+    text-transform: uppercase;
+    cursor: pointer; 
+    
+  }
+
+}
