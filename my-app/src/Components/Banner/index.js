@@ -13,8 +13,8 @@ const Modal = ({ handleClose, show }) => {
   return (
     <FundoModal className={showHideClassName} onClick={handleClose}>
       <ModalBase>
-        As inscrições começam apenas no dia XX/XX!
-        <ButtonModal onClick={handleClose}>Beleza!</ButtonModal>
+        {/* As inscrições começam apenas no dia XX/XX! */}
+        As inscriçõesainda não começaram         <ButtonModal onClick={handleClose}>Beleza!</ButtonModal>
       </ModalBase>
     </FundoModal>
   );

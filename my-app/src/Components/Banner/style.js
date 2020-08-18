@@ -136,7 +136,7 @@ export const ModalBase=styled.section`
   border-style: solid;
   border-width: 2px;
   border-color: #fff;
-  background: #520082;
+  background: #340034;
   font-size: 1.5em;
   font-family: var(--fontCorpo);
   text-align: center;
