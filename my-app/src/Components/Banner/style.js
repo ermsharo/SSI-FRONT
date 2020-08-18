@@ -36,8 +36,9 @@ export const LogoStyleSSI= styled.img`
   display: inline;
   z-index:-1;
   @media (max-width:530px) {
-    width: 60%;
+    width: 50vw !important;
   }
+  
 `;
 
 export const TituloStyleSSI= styled.img`

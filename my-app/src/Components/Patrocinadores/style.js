@@ -25,6 +25,11 @@ export const Titulo=styled.h1`
 export const LogoStyle=styled.img`
   width: 300px;
   max-width: 100%;
+
+
+  @media(max-width:500px){
+    width:80vw;
+  }
 `;
 
 export const ItemSpace=styled.div`
@@ -46,7 +51,10 @@ export const Item=styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+
   @media (max-width: 540px){
     min-width: 100%;
+    max-width:70vw; 
+    margin:2ps solid red; 
   }
 `;

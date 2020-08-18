@@ -53,7 +53,10 @@ export const Item=styled.div`
   justify-content: center;
   background: rgba(0,0,0,0.2);
   @media (max-width: 540px){
-    min-width: 100%;
+    min-width: 60vw;
+
+    margin-left:0px;
+    margin-right:0px; 
   }
 `;
 
