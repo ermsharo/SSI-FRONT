@@ -63,7 +63,9 @@ class Banner extends Component {
               <ButtonBanner onClick={this.props.handleClickInfo}>
                   Informações
               </ButtonBanner>
-              <ButtonBanner onClick={this.showModal}>
+              <ButtonBanner onClick={() => {
+                window.open('http://www.each.usp.br/petsi/saphira/', '_blank');
+              }}>
                   Inscrição
               </ButtonBanner>
           </ButtonAreaBanner>

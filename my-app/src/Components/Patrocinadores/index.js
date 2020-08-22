@@ -6,12 +6,12 @@ import LogoIntelie from '../../assets/img/patrocinio/intelie.svg';
 import LogoKinghost from '../../assets/img/patrocinio/kinghostBranco.svg';
 import LogoMicrostrategy from '../../assets/img/patrocinio/microstrategyBranco2.svg';
 import LogoNelogica from '../../assets/img/patrocinio/nelogica.svg';
-import LogoStone from '../../assets/img/patrocinio/stoneBranco.svg';
+//import LogoStone from '../../assets/img/patrocinio/stoneBranco.svg';
 
 function Patrocinadores() {
   return (
     <GenericSize>
-      <Titulo>Patrocínio</Titulo>
+      <Titulo>Parceiros</Titulo>
       <ItemSpace>
           <Item>
             <a href="https://www.ciadeestagios.com.br/" style={{display:"block", margin:"auto"}} target="_blank" rel="noopener noreferrer">
@@ -43,11 +43,13 @@ function Patrocinadores() {
                 <LogoStyle src={LogoNelogica} class="logo" alt="Logo 1"/>
             </a>
           </Item>
+          {/*
           <Item>
             <a href="https://www.stone.com.br/" style={{display:"block", margin:"auto"}} target="_blank" rel="noopener noreferrer">
                 <LogoStyle src={LogoStone} class="logo" alt="Logo 1"/>
             </a>
           </Item>
+          */}
       </ItemSpace>
     </GenericSize>
   );

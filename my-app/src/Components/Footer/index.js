@@ -4,7 +4,7 @@ import { FooterBox, FooterRedesSociais, SocialMediaIcon, SocialMediaBox, Sobre} 
 let LinkFacebook = "https://www.facebook.com/ssiusp"; 
 let LinkTwitch = "https://www.twitch.tv/each_ssi";
 let LinkInstagram = "https://www.instagram.com/semanadesi/"; 
-let LinkMail = "#mail";
+let LinkMail = "mailto:vice.academico@dasiusp.com";
 
 function Footer() {
   return (

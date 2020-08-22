@@ -16,7 +16,7 @@ function Info(props) {
                   A Semana de Sistemas de Informação (SSI) é um evento anual organizado pelas alunas e pelos alunos do curso de Sistemas de Informação da Escola de Artes, Ciências e Humanidades (EACH-USP).
               </ItemText>
               <ItemText>
-                  Nessa semana são apresentadas diversas palestras, workshops e outras atividades focadas no mundo de TI, com assuntos como tecnologia, mercado de trabalho, empreendedorismo, e entre outros.
+                  Nesta semana são apresentadas diversas palestras, workshops e outras atividades focadas no mundo de TI, com assuntos como tecnologia, mercado de trabalho, empreendedorismo, entre outros.
               </ItemText>
           </Item>
           <Item>
@@ -45,9 +45,10 @@ function Info(props) {
 
               <ItemText>
                   {/* As inscrições começam dia X/X e vão até o dia X/X. */}
-                  As inscrições ainda não abriram, mas fique de olho em nossas redes sociais que às anunciaremos em breve!
+                  As incrições começam dia 05 de setembro, às 10 da manhã.
               </ItemText>
               <ItemText>
+                  Fiquem ligados em nossas redes sociais!
                  {/*  Para realizar a sua inscrição, <Link onClick={props.handleClickInscricao}> clique aqui! </Link> */}
               </ItemText>
           </Item>

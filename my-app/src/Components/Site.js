@@ -303,7 +303,7 @@ function Site() {
           <HeaderUlBox>
             <li onClick={handleClickBanner}>Início</li>
             <li onClick={handleClickInfo}>Informações Gerais</li>
-            <li onClick={handleClickPatrocinadores}>Patrocínio</li>
+            <li onClick={handleClickPatrocinadores}>Parceiros</li>
             <li onClick={handleClickApoio}>Apoio</li>
             {/*<li onClick={handleClickInscricao}>Inscrição</li>*/}
           </HeaderUlBox>
@@ -327,7 +327,7 @@ function Site() {
         <div className = "HeaderUlBoxMobile" >
           <li onClick={handleClickBanner}>Início</li>
           <li onClick={handleClickInfo}>Informações Gerais</li>
-          <li onClick={handleClickPatrocinadores}>Patrocínio</li>
+          <li onClick={handleClickPatrocinadores}>Parceiros</li>
           <li onClick={handleClickApoio}>Apoio</li>
           {/*<li onClick={handleClickInscricao}>Inscrição</li>*/}
         </div>
