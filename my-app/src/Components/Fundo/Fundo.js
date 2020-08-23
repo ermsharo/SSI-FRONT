@@ -21,16 +21,24 @@ const FundoBox = styled.div`
   -o-filter: blur(4px);
   -ms-filter: blur(4px);
   filter: blur(4px);
-  background-color: rgba(0,0,0, 1);
 `;
 
-
+const FundoEscuro = styled.div`
+  z-index:-9;
+  display:inline-block;
+  height:100%;
+  width:100%;
+  position: fixed;
+  top:0px;
+  background-color: rgba(0,0,0, 0.2);
+`;
 
 
 function Fundo( ) {
 
   return(
     <div>
+      <FundoEscuro />
       <FundoBox>
         <div className="background">
           <h7><Oval size = {5} color = "#EE82EE"/></h7>

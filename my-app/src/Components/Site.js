@@ -181,6 +181,7 @@ const ref2 = React.createRef();
 const ref3 = React.createRef();
 const ref4 = React.createRef();
 const ref5 = React.createRef();
+const refHamburguer = React.createRef();
 
 const handleClickBanner = () =>
   ref1.current.scrollIntoView({
@@ -217,6 +218,57 @@ const handleClickInscricao = () =>
     behavior: "smooth",
     block: "start",
   });
+
+
+// Funções Menu Mobile
+
+const handleClickBannerMobile = () => {
+  ref1.current.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  })
+  refHamburguer.current.click()
+};
+
+const handleClickProgramacaoMobile = () => {
+  ref2.current.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  })
+  refHamburguer.current.click()
+};
+
+const handleClickInfoMobile = () => {
+  ref2.current.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  })
+  refHamburguer.current.click()
+};
+
+const handleClickPatrocinadoresMobile = () => {
+  ref3.current.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  })
+  refHamburguer.current.click()
+};
+
+const handleClickApoioMobile = () => {
+  ref4.current.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  })
+  refHamburguer.current.click()
+};
+
+const handleClickInscricaoMobile = () => {
+  ref5.current.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  })
+  refHamburguer.current.click()
+};
 
 
   const MenuMobileDisplay = styled.div`
@@ -312,7 +364,7 @@ function Site() {
 
       <MobileHeader>
         <HeaderBoxMobile>
-          <HamburguerMenu onClick={OpenFunction}>
+          <HamburguerMenu onClick={OpenFunction} ref={refHamburguer}>
             <CloseButton CloseButton={Abre} />
           </HamburguerMenu>
           <LogoBox onClick={handleClickBanner}>
@@ -325,11 +377,11 @@ function Site() {
         </HeaderBoxMobile>
         <MenuMobileDisplay>
         <div className = "HeaderUlBoxMobile" >
-          <li onClick={handleClickBanner}>Início</li>
-          <li onClick={handleClickInfo}>Informações Gerais</li>
-          <li onClick={handleClickPatrocinadores}>Parceiros</li>
-          <li onClick={handleClickApoio}>Apoio</li>
-          {/*<li onClick={handleClickInscricao}>Inscrição</li>*/}
+          <li onClick={handleClickBannerMobile}>Início</li>
+          <li onClick={handleClickInfoMobile}>Informações Gerais</li>
+          <li onClick={handleClickPatrocinadoresMobile}>Parceiros</li>
+          <li onClick={handleClickApoioMobile}>Apoio</li>
+          {/*<li onClick={handleClickInscricaoMobile}>Inscrição</li>*/}
         </div>
         </MenuMobileDisplay>
       </MobileHeader>

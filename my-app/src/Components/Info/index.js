@@ -28,7 +28,7 @@ function Info(props) {
                   Esse ano teríamos a X SSI. Contudo, devido ao contexto de pandemia em que nos encontramos, apresentamos a vocês a primeira Semana de Sistemas de Informação Online!
               </ItemText>
               <ItemText>
-                  As transmissões ocorrerão entre o dia 21 e 25 de setembro, no canal da Twitch. Então, já deixe nosso canal anotado no caderninho!
+                  As transmissões ocorrerão entre os dias 21 e 25 de setembro, no canal da Twitch. Então, já deixe nosso canal anotado no caderninho!
               </ItemText>
               <ItemText>
                   <a href='https:\\twitch.tv/each_ssi' style={{textDecoration:"none", color:"#fffc33", }} target="_blank" rel="noopener noreferrer"> twitch.tv/each_ssi </a>
@@ -45,7 +45,7 @@ function Info(props) {
 
               <ItemText>
                   {/* As inscrições começam dia X/X e vão até o dia X/X. */}
-                  As incrições começam dia 05 de setembro, às 10 da manhã.
+                  As incrições começam dia 05 de setembro, às 10 horas da manhã.
               </ItemText>
               <ItemText>
                   Fiquem ligados em nossas redes sociais!
