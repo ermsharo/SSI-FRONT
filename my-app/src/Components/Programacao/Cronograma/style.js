@@ -22,13 +22,31 @@ export const Evento = styled.div`
   div {
     display: flex;
     justify-content: space-between;
+    @media (max-width: 600px){
+      a:nth-child(1):before{
+        font-weight: 550;
+        content: 'Início: ';
+      }
+      a:nth-child(2):before{
+        font-weight: 550;
+        content: 'Fim: ';
+      }
+      font-size: 16px;
+      flex-direction: column;
+    }
   }
   h4 {
     margin: 0;
-    margin-top: 10px;
+    margin-bottom: 10px;
+    @media (max-width: 600px){
+      font-size: 16px;
+    }
   }
   p {
     margin: 0;
     margin-top: 10px;
+    @media (max-width: 600px){
+      font-size: 16px;
+    }
   }
 `;

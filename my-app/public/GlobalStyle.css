@@ -31,9 +31,9 @@ ul.slick-dots {
     top: -42px;
 }
 
-@media (max-width: 541px) {
+@media (max-width: 551px) {
     .slick-slider {
-        margin-top: 40px;
+        margin-top: 30px;
     }
     ul.slick-dots {
         top: -68px;
@@ -42,7 +42,7 @@ ul.slick-dots {
 
 @media (max-width: 323px) {
     .slick-slider {
-        margin-top: 70px;
+        margin-top: 57px;
     }
     ul.slick-dots {
         top: -95px;
@@ -58,6 +58,10 @@ ul.slick-dots li {
 ul.slick-dots li a:hover,
 ul.slick-dots li.slick-active a {
     color: white;
+}
+
+ul.slick-dots li.slick-active a {
+    font-size: 22px;
 }
 
 .display-block {

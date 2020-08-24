@@ -395,13 +395,11 @@ function Site() {
             <HeaderSpace></HeaderSpace>
             <Banner handleClickInfo={handleClickInfo} handleClickInscricao={handleClickInscricao} />
           </SliderItem>
-          {/*
           <SliderItem ref={ref2}>
             {" "}
             <HeaderSpace></HeaderSpace>
             <Programacao />
           </SliderItem>
-          */}
           <SliderItem ref={ref2}>
             {" "}
             <HeaderSpace></HeaderSpace>

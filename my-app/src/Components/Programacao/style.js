@@ -63,10 +63,11 @@ export const GenericSize = styled.div`
   font-size: 20px;
   background-color:blue; 
   color:black; 
-  padding:0px; 
+  padding:0px;
 `;
 
 export const Titulo=styled.h1`
+  color: white;
   text-align: center;
   margin: 40px 0;
   margin-bottom: 80px;

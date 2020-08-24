@@ -25,11 +25,11 @@ function Cronograma(props) {
 
       items.push(
         <Evento style={{backgroundColor: cor}}>
+          <h4>{props.eventos[t][i]['titulo']}</h4>
           <div>
             <a>{props.eventos[t][i]['horaInicio']}</a>
             <a>{props.eventos[t][i]['horaFim']}</a>
           </div>
-          <h4>{props.eventos[t][i]['titulo']}</h4>
           <p>
             {props.eventos[t][i]['descricao']}
           </p>
