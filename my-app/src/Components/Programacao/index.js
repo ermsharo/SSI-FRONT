@@ -48,6 +48,27 @@ function Programacao() {
       </Dots>
     )
   };
+
+
+  //Realizando upload do json do sheets 
+
+  let url = "https://spreadsheets.google.com/feeds/cells/1rCPzAPRs3YC3YYq_vmQBZzO6vAX8QRdce8fsIazJrh4/1/public/full?alt=json"; 
+
+
+
+  // Replace ./data.json with your JSON feed
+fetch(url)
+.then((response) => {
+  return response.json()
+})
+.then((data) => {
+  // Work with JSON data here
+  console.log(data)
+})
+.catch((err) => {
+  // Do something for an error here
+})
+
   
   return (
     <>

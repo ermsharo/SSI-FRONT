@@ -304,6 +304,9 @@ function Site() {
     }
   };
  */
+  let sheetsInfo = ""; 
+
+
   let Slide = 0;
 
   let handleClick = () => {
@@ -393,12 +396,12 @@ function Site() {
           <SliderItem ref={ref1}>
             {" "}
             <HeaderSpace></HeaderSpace>
-            <Banner handleClickInfo={handleClickInfo} handleClickInscricao={handleClickInscricao} />
+            <Banner handleClickInfo={handleClickInfo} handleClickInscricao={handleClickInscricao}  />
           </SliderItem>
           <SliderItem ref={ref2}>
             {" "}
             <HeaderSpace></HeaderSpace>
-            <Programacao />
+            <Programacao  sheetsInfo = {sheetsInfo} />
           </SliderItem>
           <SliderItem ref={ref2}>
             {" "}
