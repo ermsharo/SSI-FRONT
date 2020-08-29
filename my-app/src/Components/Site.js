@@ -140,6 +140,7 @@ padding-bottom: 15px;
 height:var( --ScrollMenu);
 overflow: hidden;
   text-overflow: ellipsis;
+z-index:20; 
 
 transition: height 10s;
 
@@ -279,14 +280,14 @@ display:block;
 
 
 
-function Site() {
+function Site({JsonData}) {
   const [count, setCount] = useState(1);
   const [Abre, setAbre] = useState(false);
   const [DisplayMobile, setDisplayMobile] = useState({display:"none"});
   const [AnimationMenu, setAnimationMenu] = useState({height :"0px"});
 
 
-
+console.log("Json data aqui",JsonData);
 
 
 
@@ -304,6 +305,9 @@ function Site() {
     }
   };
  */
+  let sheetsInfo = ""; 
+
+
   let Slide = 0;
 
   let handleClick = () => {
@@ -393,13 +397,13 @@ function Site() {
           <SliderItem ref={ref1}>
             {" "}
             <HeaderSpace></HeaderSpace>
-            <Banner handleClickInfo={handleClickInfo} handleClickInscricao={handleClickInscricao} />
+            <Banner handleClickInfo={handleClickInfo} handleClickInscricao={handleClickInscricao}  />
           </SliderItem>
           {/*
           <SliderItem ref={ref2}>
             {" "}
             <HeaderSpace></HeaderSpace>
-            <Programacao />
+            <Programacao  sheetsInfo = {sheetsInfo}  JsonProgramacaoData ={JsonData}/>
           </SliderItem>
           */}
           <SliderItem ref={ref2}>

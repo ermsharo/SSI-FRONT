@@ -9,10 +9,12 @@ export const CronogramaBase = styled.div`
 
 export const Linha = styled.div`
   width: 100%;
-  display: flex;
+ strat    display: flex;
   flex-direction: row;
   justify-content: left;
-  align-items: center;
+  align-items: center; 
+
+
 `;
 
 export const Evento = styled.div`

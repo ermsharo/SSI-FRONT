@@ -1,6 +1,14 @@
 import styled from 'styled-components'
 
 
+export const ElevateSlider= styled.div`
+  position:relative; 
+  z-index:100;
+
+`;
+
+
+
 export const Spike = styled.div`
    position: relative;
   background:white;
@@ -25,6 +33,23 @@ z-index:-1;
   
 } 
 `;
+
+
+export const LoadingDiv = styled.div`
+border:2px solid red; 
+position:relative; 
+top:0vw;
+z-index:1;
+img{
+
+ 
+  width:20vw;
+  height:20vw; 
+
+}
+
+`;
+
 
 export const SpikeReverse = styled.div`
    position: relative;
@@ -61,7 +86,7 @@ export const GenericSize = styled.div`
   justify-content: center;
   align-items: center;
   font-size: 20px;
-  background-color:blue; 
+ background-color:white;
   color:black; 
   padding:0px;
 `;
