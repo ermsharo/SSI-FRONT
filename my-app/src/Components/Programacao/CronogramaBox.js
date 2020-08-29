@@ -38,7 +38,8 @@ function ArrowRight(props) {
 
 
 
-export default function CronogramaBox(){
+export default function CronogramaBox({TituloArray, DiaArray , HorarioInicioArray, HorarioFimArray ,
+  PalestranteArray ,  DescricaoArray,     MiniBioArray ,  FotoArray }){
 
     var settings = {
         dots: true,
@@ -84,7 +85,9 @@ export default function CronogramaBox(){
     }
     
     
-    
+    if(TituloArray === null){
+      return (<div>Carregando</div>)
+    }
     
     
       return (
@@ -103,7 +106,7 @@ export default function CronogramaBox(){
                           // Eventos Manhã
                           [
                             {
-                              titulo :"123213",
+                              titulo : TituloArray[0],
                               horaInicio:'00:00',
                               horaFim:'00:00',
                               descricao:'Descrição'

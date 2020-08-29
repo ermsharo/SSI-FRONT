@@ -74,7 +74,7 @@ function Programacao() {
   const [ArrayTitulo, setArrayTitulo] = useState(null);
   const [ArrayDia, setArrayDia] = useState(null);
   const [ArrayHorarioInicio, setArrayHorarioInicio] = useState(null);
-  const [ArrayHorarioFim, setArrayHoarioFim] = useState(null);
+  const [ArrayHorarioFim, setArrayHorarioFim] = useState(null);
   const [ArrayPalestrante, setArrayPalestrante] = useState(null);
   const [ArrayDescricao, setArrayDescricao] = useState(null);
   const [ArrayMiniBio, setArrayMiniBio] = useState(null);
@@ -121,6 +121,9 @@ let OrganizandoProgramacao = () =>{
   titulo.push(JsonData.feed.entry[40].content.$t);
   titulo.push(JsonData.feed.entry[48].content.$t);
 
+
+  setArrayTitulo(titulo);
+
   console.log("Titulos",titulo);
 
 
@@ -131,10 +134,12 @@ let OrganizandoProgramacao = () =>{
   dia.push(JsonData.feed.entry[41].content.$t);
   dia.push(JsonData.feed.entry[49].content.$t);
 
+  setArrayDia(dia);
 
   console.log("Dias",dia);   
 
 
+  
   horarioInicio.push(JsonData.feed.entry[10].content.$t);
   horarioInicio.push(JsonData.feed.entry[18].content.$t);
   horarioInicio.push(JsonData.feed.entry[26].content.$t);
@@ -142,7 +147,7 @@ let OrganizandoProgramacao = () =>{
   horarioInicio.push(JsonData.feed.entry[41].content.$t);
   horarioInicio.push(JsonData.feed.entry[50].content.$t);
 
-
+  setArrayHorarioInicio(horarioInicio);
   console.log("Horario inicio",horarioInicio);  
 
   horarioFim.push(JsonData.feed.entry[11].content.$t);
@@ -152,19 +157,19 @@ let OrganizandoProgramacao = () =>{
   horarioFim.push(JsonData.feed.entry[42].content.$t);
   horarioFim.push(JsonData.feed.entry[51].content.$t);
 
-
+  setArrayHorarioFim(horarioFim);
   console.log("Horario fim",horarioFim);  
 
 
-  horarioFim.push(JsonData.feed.entry[11].content.$t);
+/*   horarioFim.push(JsonData.feed.entry[11].content.$t);
   horarioFim.push(JsonData.feed.entry[19].content.$t);
   horarioFim.push(JsonData.feed.entry[27].content.$t);
   horarioFim.push(JsonData.feed.entry[35].content.$t);
   horarioFim.push(JsonData.feed.entry[42].content.$t);
-  horarioFim.push(JsonData.feed.entry[51].content.$t);
+  horarioFim.push(JsonData.feed.entry[51].content.$t); */
 
 
-  console.log("Horario fim",horarioFim);  
+/*   console.log("Horario fim",horarioFim);   */
 
 
   Palestrante.push(JsonData.feed.entry[12].content.$t);
@@ -174,6 +179,8 @@ let OrganizandoProgramacao = () =>{
   Palestrante.push(JsonData.feed.entry[44].content.$t);
   Palestrante.push(JsonData.feed.entry[52].content.$t);
 
+
+  setArrayPalestrante(Palestrante); 
 
   console.log("Palestrante",Palestrante);  
 
@@ -186,7 +193,7 @@ let OrganizandoProgramacao = () =>{
   Descricao.push(JsonData.feed.entry[53].content.$t);
 
 
-
+  setArrayDescricao(Descricao);
   console.log("Descrição",Descricao);  
 
 
@@ -198,7 +205,7 @@ let OrganizandoProgramacao = () =>{
   MiniBio.push(JsonData.feed.entry[54].content.$t);
 
 
-
+  setArrayMiniBio(MiniBio);
   console.log("MiniBio",MiniBio);  
 
 
@@ -209,6 +216,8 @@ let OrganizandoProgramacao = () =>{
   Foto.push(JsonData.feed.entry[47].content.$t);
   Foto.push(JsonData.feed.entry[55].content.$t);
 
+
+  setArrayFoto(Foto);
   console.log("Foto",Foto);  
 
 /*   while(i<JsonData.lenght){
@@ -258,7 +267,7 @@ let OrganizandoProgramacao = () =>{
                           horaFim:'00:00',
                           descricao:'Descrição'
                         },
-                        {
+       ko                 {
                           titulo:"asdasd",
                           horaInicio:'00:00',
                           horaFim:'00:00',
