@@ -140,6 +140,7 @@ padding-bottom: 15px;
 height:var( --ScrollMenu);
 overflow: hidden;
   text-overflow: ellipsis;
+z-index:20; 
 
 transition: height 10s;
 

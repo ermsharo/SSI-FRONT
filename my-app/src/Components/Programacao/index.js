@@ -1,10 +1,11 @@
-import React from 'react';
-import { GenericSize, Titulo, ArrowBaseLeft, ArrowBaseRight, Dots ,Spike, SpikeReverse} from './style';
+import React, { useState } from 'react';
+import { LoadingDiv, GenericSize, Titulo, ArrowBaseLeft, ArrowBaseRight, Dots ,Spike, SpikeReverse} from './style';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Cronograma from './Cronograma/index';
-
+import useForceUpdate from 'use-force-update';
+import CronogramaBox from "../Programacao/CronogramaBox";
 
 
 
@@ -49,6 +50,8 @@ function Programacao() {
     )
   };
 
+  const [loadData, setLoadData] = useState(false);
+
 
   //Realizando upload do json do sheets 
 
@@ -68,6 +71,18 @@ function Programacao() {
   let Foto = []; 
 
 
+  const [ArrayTitulo, setArrayTitulo] = useState(null);
+  const [ArrayDia, setArrayDia] = useState(null);
+  const [ArrayHorarioInicio, setArrayHorarioInicio] = useState(null);
+  const [ArrayHorarioFim, setArrayHoarioFim] = useState(null);
+  const [ArrayPalestrante, setArrayPalestrante] = useState(null);
+  const [ArrayDescricao, setArrayDescricao] = useState(null);
+  const [ArrayMiniBio, setArrayMiniBio] = useState(null);
+  const [ArrayFoto, setArrayFoto] = useState(null);
+
+
+  const forceUpdate = useForceUpdate();
+
 //Pegando o conteudo da planilha
 fetch(url)
 .then((response) => {
@@ -77,9 +92,12 @@ fetch(url)
   // Work with JSON data here
   console.log(data)
   JsonData = data; 
+  setLoadData(true);
 /*   OrganizandoProgramacao();  */
   console.log("all");
-  OrganizandoProgramacao();
+  OrganizandoProgramacao(); 
+
+
 })
 .catch((err) => {
   // Do something for an error here
@@ -191,17 +209,7 @@ let OrganizandoProgramacao = () =>{
   Foto.push(JsonData.feed.entry[47].content.$t);
   Foto.push(JsonData.feed.entry[55].content.$t);
 
-
-
   console.log("Foto",Foto);  
-
-
-
-
-
-
-
-
 
 /*   while(i<JsonData.lenght){
     console.log(JsonData[i]);
@@ -222,25 +230,29 @@ let OrganizandoProgramacao = () =>{
       <Titulo>
         Programação
       </Titulo>
-      <Slider {...settings} style={{maxWidth:"80%", width:'100%'}}>
+
+ <CronogramaBox TituloArray = "" Data = ""/>
+  
+   {/*    <Slider {...settings} style={{maxWidth:"80%", width:'100%'}}>
+
         <Cronograma
             eventos={[
                       // Eventos Manhã
                       [
                         {
-                          titulo:'Titulo1',
+                          titulo :"123213",
                           horaInicio:'00:00',
                           horaFim:'00:00',
                           descricao:'Descrição'
                         },
                         {
-                          titulo:'Titulo2',
+                          titulo:"asdasd",
                           horaInicio:'00:00',
                           horaFim:'00:00',
                           descricao:'Descrição'
                         },
                         {
-                          titulo:'Titulo3',
+                          titulo:"asdasd",
                           horaInicio:'00:00',
                           horaFim:'00:00',
                           descricao:'Descrição'
@@ -249,13 +261,13 @@ let OrganizandoProgramacao = () =>{
                       // Eventos Tarde                      
                       [
                         {
-                          titulo:'Titulo',
+                          titulo:Titulo[3],
                           horaInicio:'00:00',
                           horaFim:'00:00',
                           descricao:'Descrição'
                         },
                         {
-                          titulo:'Titulo',
+                          titulo:Titulo[4],
                           horaInicio:'00:00',
                           horaFim:'00:00',
                           descricao:'Descrição'
@@ -351,7 +363,7 @@ let OrganizandoProgramacao = () =>{
                         }
                       ],
                       // Eventos Tarde                      
-                      [
+                 [
                         {
                           titulo:'Titulo',
                           horaInicio:'00:00',
@@ -480,7 +492,7 @@ let OrganizandoProgramacao = () =>{
                       ]
             ]}
         />
-      </Slider>
+      </Slider> */}
     </GenericSize>
     <SpikeReverse></SpikeReverse>
     </>
