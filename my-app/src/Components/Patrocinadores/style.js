@@ -26,8 +26,9 @@ export const LogoStyle=styled.img`
   width: 300px;
   max-width: 100%;
 
-
   @media(max-width:500px){
+    height: auto !important;
+    max-height: 280px;
     width:80vw;
   }
 `;

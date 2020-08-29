@@ -64,7 +64,7 @@ class Banner extends Component {
                   Informações
               </ButtonBanner>
               <ButtonBanner onClick={() => {
-                window.open('http://www.each.usp.br/petsi/saphira/', '_blank');
+                window.open('http://www.each.usp.br/petsi/saphira/loginParticipante.php', '_blank');
               }}>
                   Inscrição
               </ButtonBanner>

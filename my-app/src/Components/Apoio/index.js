@@ -30,12 +30,12 @@ function Apoio() {
         <ItemSpace style={{width: "800px", maxWidth: "90%"}}>
             <Item>
                 <a href="https://dasiusp.com/" style={{display:"block", margin:"auto"}} target="_blank" rel="noopener noreferrer">
-                    <LogoStyle src={LogoDASI} class="logo" alt="Logo 1"/>
+                    <LogoStyle src={LogoDASI} style={{height:"120px"}} class="logo" alt="Logo 1"/>
                 </a>
             </Item>
             <Item>
                 <a href="http://www.sintesejr.com.br/" style={{display:"block", margin:"auto"}} target="_blank" rel="noopener noreferrer">
-                    <LogoStyle src={LogoSintese} class="logo" alt="Logo 1"/>
+                    <LogoStyle src={LogoSintese} style={{height:"120px"}} class="logo" alt="Logo 1"/>
                 </a>
             </Item>
         </ItemSpace>
