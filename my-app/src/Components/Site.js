@@ -280,14 +280,14 @@ display:block;
 
 
 
-function Site() {
+function Site({JsonData}) {
   const [count, setCount] = useState(1);
   const [Abre, setAbre] = useState(false);
   const [DisplayMobile, setDisplayMobile] = useState({display:"none"});
   const [AnimationMenu, setAnimationMenu] = useState({height :"0px"});
 
 
-
+console.log("Json data aqui",JsonData);
 
 
 
@@ -402,7 +402,7 @@ function Site() {
           <SliderItem ref={ref2}>
             {" "}
             <HeaderSpace></HeaderSpace>
-            <Programacao  sheetsInfo = {sheetsInfo} />
+            <Programacao  sheetsInfo = {sheetsInfo}  JsonProgramacaoData ={JsonData}/>
           </SliderItem>
           <SliderItem ref={ref2}>
             {" "}

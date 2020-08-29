@@ -33,7 +33,12 @@ function ArrowLeft(props) {
 
 let dias = ['Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta']
 
-function Programacao() {
+function Programacao({JsonProgramacaoData}) {
+
+
+  console.log("JsonDataSheets", JsonProgramacaoData)
+  const JsonSheetsData = JsonProgramacaoData;
+
   var settings = {
     dots: true,
     fade: false,
@@ -84,42 +89,42 @@ function Programacao() {
   const forceUpdate = useForceUpdate();
 
 //Pegando o conteudo da planilha
-fetch(url)
+/* fetch(url)
 .then((response) => {
   return response.json()
 })
-.then((data) => {
+.then((data) => { */
   // Work with JSON data here
-  console.log(data)
+/*   console.log(data)
   JsonData = data; 
-  setLoadData(true);
+  setLoadData(true); */
 /*   OrganizandoProgramacao();  */
-  console.log("all");
+/*   console.log("all");
   OrganizandoProgramacao(); 
 
 
-})
-.catch((err) => {
+}) */
+/* .catch((err) => { */
   // Do something for an error here
-})
+/* }) */
   
 let OrganizandoProgramacao = () =>{
 
    let i = 0;
 
-/*   console.log("aqui",JsonData.feed.entry[7].content.$t); 
-  console.log("aqui",JsonData.feed.entry[14].content.$t); 
-  console.log("aqui",JsonData.feed.entry[21].content.$t); 
-  console.log("aqui",JsonData.feed.entry[28].content.$t); 
-  console.log("aqui",JsonData.feed.entry[35].content.$t); 
-  console.log("aqui",JsonData.feed.entry[42].content.$t);  */
+/*   console.log("aqui",JsonSheetsData[7].content.$t); 
+  console.log("aqui",JsonSheetsData[14].content.$t); 
+  console.log("aqui",JsonSheetsData[21].content.$t); 
+  console.log("aqui",JsonSheetsData[28].content.$t); 
+  console.log("aqui",JsonSheetsData[35].content.$t); 
+  console.log("aqui",JsonSheetsData[42].content.$t);  */
 
-  titulo.push(JsonData.feed.entry[8].content.$t);
-  titulo.push(JsonData.feed.entry[16].content.$t);
-  titulo.push(JsonData.feed.entry[24].content.$t);
-  titulo.push(JsonData.feed.entry[32].content.$t);
-  titulo.push(JsonData.feed.entry[40].content.$t);
-  titulo.push(JsonData.feed.entry[48].content.$t);
+  titulo.push(JsonSheetsData[8].content.$t);
+  titulo.push(JsonSheetsData[16].content.$t);
+  titulo.push(JsonSheetsData[24].content.$t);
+  titulo.push(JsonSheetsData[32].content.$t);
+  titulo.push(JsonSheetsData[40].content.$t);
+  titulo.push(JsonSheetsData[48].content.$t);
 
 
   setArrayTitulo(titulo);
@@ -127,12 +132,12 @@ let OrganizandoProgramacao = () =>{
   console.log("Titulos",titulo);
 
 
-  dia.push(JsonData.feed.entry[9].content.$t);
-  dia.push(JsonData.feed.entry[17].content.$t);
-  dia.push(JsonData.feed.entry[25].content.$t);
-  dia.push(JsonData.feed.entry[33].content.$t);
-  dia.push(JsonData.feed.entry[41].content.$t);
-  dia.push(JsonData.feed.entry[49].content.$t);
+  dia.push(JsonSheetsData[9].content.$t);
+  dia.push(JsonSheetsData[17].content.$t);
+  dia.push(JsonSheetsData[25].content.$t);
+  dia.push(JsonSheetsData[33].content.$t);
+  dia.push(JsonSheetsData[41].content.$t);
+  dia.push(JsonSheetsData[49].content.$t);
 
   setArrayDia(dia);
 
@@ -140,44 +145,44 @@ let OrganizandoProgramacao = () =>{
 
 
   
-  horarioInicio.push(JsonData.feed.entry[10].content.$t);
-  horarioInicio.push(JsonData.feed.entry[18].content.$t);
-  horarioInicio.push(JsonData.feed.entry[26].content.$t);
-  horarioInicio.push(JsonData.feed.entry[34].content.$t);
-  horarioInicio.push(JsonData.feed.entry[41].content.$t);
-  horarioInicio.push(JsonData.feed.entry[50].content.$t);
+  horarioInicio.push(JsonSheetsData[10].content.$t);
+  horarioInicio.push(JsonSheetsData[18].content.$t);
+  horarioInicio.push(JsonSheetsData[26].content.$t);
+  horarioInicio.push(JsonSheetsData[34].content.$t);
+  horarioInicio.push(JsonSheetsData[41].content.$t);
+  horarioInicio.push(JsonSheetsData[50].content.$t);
 
   setArrayHorarioInicio(horarioInicio);
   console.log("Horario inicio",horarioInicio);  
 
-  horarioFim.push(JsonData.feed.entry[11].content.$t);
-  horarioFim.push(JsonData.feed.entry[19].content.$t);
-  horarioFim.push(JsonData.feed.entry[27].content.$t);
-  horarioFim.push(JsonData.feed.entry[35].content.$t);
-  horarioFim.push(JsonData.feed.entry[42].content.$t);
-  horarioFim.push(JsonData.feed.entry[51].content.$t);
+  horarioFim.push(JsonSheetsData[11].content.$t);
+  horarioFim.push(JsonSheetsData[19].content.$t);
+  horarioFim.push(JsonSheetsData[27].content.$t);
+  horarioFim.push(JsonSheetsData[35].content.$t);
+  horarioFim.push(JsonSheetsData[42].content.$t);
+  horarioFim.push(JsonSheetsData[51].content.$t);
 
   setArrayHorarioFim(horarioFim);
   console.log("Horario fim",horarioFim);  
 
 
-/*   horarioFim.push(JsonData.feed.entry[11].content.$t);
-  horarioFim.push(JsonData.feed.entry[19].content.$t);
-  horarioFim.push(JsonData.feed.entry[27].content.$t);
-  horarioFim.push(JsonData.feed.entry[35].content.$t);
-  horarioFim.push(JsonData.feed.entry[42].content.$t);
-  horarioFim.push(JsonData.feed.entry[51].content.$t); */
+/*   horarioFim.push(JsonSheetsData[11].content.$t);
+  horarioFim.push(JsonSheetsData[19].content.$t);
+  horarioFim.push(JsonSheetsData[27].content.$t);
+  horarioFim.push(JsonSheetsData[35].content.$t);
+  horarioFim.push(JsonSheetsData[42].content.$t);
+  horarioFim.push(JsonSheetsData[51].content.$t); */
 
 
 /*   console.log("Horario fim",horarioFim);   */
 
 
-  Palestrante.push(JsonData.feed.entry[12].content.$t);
-  Palestrante.push(JsonData.feed.entry[20].content.$t);
-  Palestrante.push(JsonData.feed.entry[28].content.$t);
-  Palestrante.push(JsonData.feed.entry[36].content.$t);
-  Palestrante.push(JsonData.feed.entry[44].content.$t);
-  Palestrante.push(JsonData.feed.entry[52].content.$t);
+  Palestrante.push(JsonSheetsData[12].content.$t);
+  Palestrante.push(JsonSheetsData[20].content.$t);
+  Palestrante.push(JsonSheetsData[28].content.$t);
+  Palestrante.push(JsonSheetsData[36].content.$t);
+  Palestrante.push(JsonSheetsData[44].content.$t);
+  Palestrante.push(JsonSheetsData[52].content.$t);
 
 
   setArrayPalestrante(Palestrante); 
@@ -185,36 +190,36 @@ let OrganizandoProgramacao = () =>{
   console.log("Palestrante",Palestrante);  
 
 
-  Descricao.push(JsonData.feed.entry[13].content.$t);
-  Descricao.push(JsonData.feed.entry[21].content.$t);
-  Descricao.push(JsonData.feed.entry[29].content.$t);
-  Descricao.push(JsonData.feed.entry[37].content.$t);
-  Descricao.push(JsonData.feed.entry[45].content.$t);
-  Descricao.push(JsonData.feed.entry[53].content.$t);
+  Descricao.push(JsonSheetsData[13].content.$t);
+  Descricao.push(JsonSheetsData[21].content.$t);
+  Descricao.push(JsonSheetsData[29].content.$t);
+  Descricao.push(JsonSheetsData[37].content.$t);
+  Descricao.push(JsonSheetsData[45].content.$t);
+  Descricao.push(JsonSheetsData[53].content.$t);
 
 
   setArrayDescricao(Descricao);
   console.log("Descrição",Descricao);  
 
 
-  MiniBio.push(JsonData.feed.entry[14].content.$t);
-  MiniBio.push(JsonData.feed.entry[22].content.$t);
-  MiniBio.push(JsonData.feed.entry[30].content.$t);
-  MiniBio.push(JsonData.feed.entry[38].content.$t);
-  MiniBio.push(JsonData.feed.entry[46].content.$t);
-  MiniBio.push(JsonData.feed.entry[54].content.$t);
+  MiniBio.push(JsonSheetsData[14].content.$t);
+  MiniBio.push(JsonSheetsData[22].content.$t);
+  MiniBio.push(JsonSheetsData[30].content.$t);
+  MiniBio.push(JsonSheetsData[38].content.$t);
+  MiniBio.push(JsonSheetsData[46].content.$t);
+  MiniBio.push(JsonSheetsData[54].content.$t);
 
 
   setArrayMiniBio(MiniBio);
   console.log("MiniBio",MiniBio);  
 
 
-  Foto.push(JsonData.feed.entry[15].content.$t);
-  Foto.push(JsonData.feed.entry[23].content.$t);
-  Foto.push(JsonData.feed.entry[31].content.$t);
-  Foto.push(JsonData.feed.entry[39].content.$t);
-  Foto.push(JsonData.feed.entry[47].content.$t);
-  Foto.push(JsonData.feed.entry[55].content.$t);
+  Foto.push(JsonSheetsData[15].content.$t);
+  Foto.push(JsonSheetsData[23].content.$t);
+  Foto.push(JsonSheetsData[31].content.$t);
+  Foto.push(JsonSheetsData[39].content.$t);
+  Foto.push(JsonSheetsData[47].content.$t);
+  Foto.push(JsonSheetsData[55].content.$t);
 
 
   setArrayFoto(Foto);

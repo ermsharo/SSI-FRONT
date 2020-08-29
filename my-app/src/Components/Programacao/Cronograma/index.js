@@ -47,9 +47,7 @@ function Cronograma(props) {
       <Linha>
         {periodos[1]}
       </Linha>
-      <Linha>
-        {periodos[2]}
-      </Linha>
+     
     </CronogramaBase>
   );
 }
