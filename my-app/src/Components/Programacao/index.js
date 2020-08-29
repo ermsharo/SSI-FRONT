@@ -231,7 +231,14 @@ let OrganizandoProgramacao = () =>{
         Programação
       </Titulo>
 
- <CronogramaBox TituloArray = "" Data = ""/>
+ <CronogramaBox TituloArray = {ArrayTitulo}  
+ DiaArray = {ArrayDia} 
+ HorarioInicioArray = {ArrayHorarioInicio} 
+ HorarioFimArray = {ArrayHorarioFim} 
+ PalestranteArray = {ArrayPalestrante} 
+ DescricaoArray = {ArrayDescricao}
+ MiniBioArray = {ArrayMiniBio} 
+ FotoArray = {ArrayFoto} />
   
    {/*    <Slider {...settings} style={{maxWidth:"80%", width:'100%'}}>
 
