@@ -84,7 +84,7 @@ export default function CronogramaBox({TituloArray, DiaArray , HorarioInicioArra
        let i = 0;
     }
     
-    
+    console.log("Titulo aray aqui",TituloArray);
     if(TituloArray === null){
       return (<div>Carregando</div>)
     }
