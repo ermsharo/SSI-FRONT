@@ -60,13 +60,13 @@ class Banner extends Component {
               </span>
           </SocialAreaBanner>
           <ButtonAreaBanner>
-              <ButtonBanner onClick={this.props.handleClickInfo}>
-                  Informações
-              </ButtonBanner>
-              <ButtonBanner onClick={() => {
+              <ButtonBanner style={{fontSize:'26px', borderWidth: '3px'}} onClick={() => {
                 window.open('http://www.each.usp.br/petsi/saphira/loginParticipante.php', '_blank');
               }}>
                   Inscrição
+              </ButtonBanner>
+              <ButtonBanner onClick={this.props.handleClickInfo}>
+                  Informações
               </ButtonBanner>
           </ButtonAreaBanner>
       </GenericSize>
