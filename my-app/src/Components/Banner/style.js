@@ -17,7 +17,20 @@ export const float = keyframes`
     transform: translatey(0px);
   }
   50% {
-    transform: translatey(-2vh);
+    transform: translatey(-40px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+`;
+
+export const float_mobile = keyframes`
+  0% {
+   /*    transform: translatey(-10px); */
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-15px);
   }
   100% {
     transform: translatey(0px);
@@ -26,23 +39,24 @@ export const float = keyframes`
 
 export const LogoStyleSSI= styled.img`
   width: 260px;
-  transform: translatey(-0.1vh);
   animation: ${float} 5s ease-in-out infinite;
   margin-bottom: 20px;
   display: inline;
   z-index:-1;
   @media (max-width:530px) {
-    width: 55% !important;
+    width: 180px;
+    animation: ${float_mobile} 4s ease-in-out infinite;
+    margin-bottom: 15px;
   }
   
 `;
 
 export const TituloStyleSSI= styled.img`
   width: 300px;
-
   margin-bottom: 20px;
   @media (max-width:530px) {
     width: 65%;
+    margin-bottom: 15px;
   }
 `;
 
@@ -50,12 +64,13 @@ export const SubtituloStyleSSI = styled.p`
   font-family: var(--fontTitulo);
   font-size: 32px;
   margin: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   @media (max-width:530px) {
     font-size: 25px;
   }
   @media (max-width:330px) {
     font-size: 20px;
+    margin-bottom: 5px;
   }
 `;
 
@@ -65,6 +80,9 @@ export const SocialAreaBanner= styled.div`
   margin-bottom: 20px;
   display: flex;
   justify-content: space-evenly;
+  @media (max-width: 530px){
+    margin-bottom: 15px;
+  }
 `;
 
 export const SocialButton=styled.a`
@@ -79,6 +97,7 @@ export const SocialButton=styled.a`
   }
   @media (max-width:530px) {
     font-size: 40px;
+    color: #ffffff;
   }
 `;
 
@@ -89,12 +108,15 @@ export const ButtonAreaBanner=styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (max-width: 530px){
+    margin-bottom: 15px;
+  }
 `;
 
 export const ButtonBanner= styled.a`
   font-family: var(--fontTitulo);
   text-transform: uppercase; 
-  font-size: 24px;
+  font-size: 22px;
   cursor: pointer;
   user-select: none;
   -moz-user-select: none;
@@ -109,15 +131,21 @@ export const ButtonBanner= styled.a`
   border-width: 2px;
   border-color: #fff;
   letter-spacing:1px;
-  margin: 10px;
+  margin: 0;
+  margin-bottom: 20px;
   background:rgba(0,0,0,0.2);
   transition: all 0.2s ease-in-out;
   &:hover{
     color: #520082;
     background-color: #fff;
   }
+  &:active{
+    color: #520082;
+    background-color: #fff;
+  }
   @media (max-width:530px) {
     font-size: 18px;
+    margin-bottom: 15px;
   }
 `;
 

@@ -60,9 +60,10 @@ const LogoBox = styled.div`
 
   @media (max-width: 992px) {
     /*   alert("fechou"); */
-
     margin: auto;
     width:55px;
+    position: relative;
+    right: 10px;
   }
 `;
 

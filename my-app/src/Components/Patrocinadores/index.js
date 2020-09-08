@@ -1,9 +1,9 @@
 import React from 'react';
 import { GenericSize, Titulo, ItemSpace, Item, LogoStyle } from './style';
-import LogoAlura from '../../assets/img/patrocinio/ciaDeEstagios.svg';
+import LogoAlura from '../../assets/img/patrocinio/alura.png';
 import LogoCia from '../../assets/img/patrocinio/ciadeestagios.png';
 import LogoClear from '../../assets/img/patrocinio/clearsaleBranco2.svg';
-import LogoCWI from '../../assets/img/patrocinio/clearsaleBranco2.svg';
+import LogoCWI from '../../assets/img/patrocinio/cwi.png';
 import LogoDataBootCamp from '../../assets/img/patrocinio/databootcamp_white.png';
 import LogoIntelie from '../../assets/img/patrocinio/intelie.svg';
 import LogoKinghost from '../../assets/img/patrocinio/kinghostBranco.svg';
@@ -16,13 +16,11 @@ function Patrocinadores() {
     <GenericSize>
       <Titulo>Parceiros</Titulo>
       <ItemSpace>
-          {/*
           <Item>
             <a href="https://www.alura.com.br/planos-cursos-online?gclid=EAIaIQobChMI9rrNlqPB6wIVhQ6RCh1lJAAnEAAYASAAEgLvUvD_BwE" style={{display:"block", margin:"auto"}} target="_blank" rel="noopener noreferrer">
-                <LogoStyle src={LogoAlura} class="logo" alt="Logo Alura"/>
+                <LogoStyle src={LogoAlura} style={{maxHeight:'120px', width: 'auto'}} class="logo" alt="Logo Alura"/>
             </a>
           </Item>
-          */}
           <Item>
             <a href="https://br.clear.sale/" style={{display:"block", margin:"auto"}} target="_blank" rel="noopener noreferrer">
                 <LogoStyle src={LogoClear} class="logo" alt="Logo Clear Sale"/>
@@ -33,13 +31,11 @@ function Patrocinadores() {
                 <LogoStyle src={LogoCia} class="logo" alt="Logo Companhia de Estagios"/>
             </a>
           </Item>
-          {/*
           <Item>
             <a href="https://cwi.com.br/" style={{display:"block", margin:"auto"}} target="_blank" rel="noopener noreferrer">
                 <LogoStyle src={LogoCWI} class="logo" alt="Logo CWI"/>
             </a>
           </Item>
-          */}
           <Item>
             <a href="https://databootcamp.com.br/" style={{display:"block", margin:"auto"}} target="_blank" rel="noopener noreferrer">
                 <LogoStyle src={LogoDataBootCamp} style={{height:"250px", width: "auto"}} class="logo" alt="Logo DataBootCamp"/>

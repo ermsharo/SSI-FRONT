@@ -45,10 +45,11 @@ function Info(props) {
 
               <ItemText>
                   {/* As inscrições começam dia X/X e vão até o dia X/X. */}
-                  As incrições começam dia 05 de setembro, às 10 horas da manhã.
+                  Para realizar a inscrição, insira seu número USP ou CPF 
+                  <a href='http://www.each.usp.br/petsi/saphira/loginParticipante.php' style={{textDecoration:"none", color:"#fffc33", }} target="_blank" rel="noopener noreferrer"> clicando aqui! </a>
               </ItemText>
               <ItemText>
-                  Fiquem ligados em nossas redes sociais!
+                  Fiquem ligados em nossas redes sociais para novas atualizações!
                  {/*  Para realizar a sua inscrição, <Link onClick={props.handleClickInscricao}> clique aqui! </Link> */}
               </ItemText>
           </Item>
