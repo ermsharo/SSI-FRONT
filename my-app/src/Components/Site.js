@@ -11,7 +11,7 @@ import Inscricoes from "./Inscricao";
 import Footer from "./Footer";
 import styled, { css } from "styled-components";
 import Fundo from "./Fundo/Fundo";
-import Programacao from "./Programacao/index";
+import Programacao from "./Programacao/programacaoBox";
 import CloseButton from "./CloseButton";
 import  "./MenuStyle.scss";
 
@@ -399,13 +399,13 @@ console.log("Json data aqui",JsonData);
             <HeaderSpace></HeaderSpace>
             <Banner handleClickInfo={handleClickInfo} handleClickInscricao={handleClickInscricao}  />
           </SliderItem>
-          {/*
+     
           <SliderItem ref={ref2}>
             {" "}
             <HeaderSpace></HeaderSpace>
-            <Programacao  sheetsInfo = {sheetsInfo}  JsonProgramacaoData ={JsonData}/>
+            <Programacao  JsonProgramacaoData ={JsonData}/>
           </SliderItem>
-          */}
+        
           <SliderItem ref={ref2}>
             {" "}
             <HeaderSpace></HeaderSpace>

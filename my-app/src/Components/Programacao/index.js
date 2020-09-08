@@ -86,7 +86,6 @@ function Programacao({JsonProgramacaoData}) {
   const [ArrayFoto, setArrayFoto] = useState(null);
 
 
-  const forceUpdate = useForceUpdate();
 
 //Pegando o conteudo da planilha
 /* fetch(url)
@@ -323,6 +322,8 @@ let OrganizandoProgramacao = () =>{
                       [
                         {
                           titulo:'Titulo',
+
+
                           horaInicio:'00:00',
                           horaFim:'00:00',
                           descricao:'Descrição'
