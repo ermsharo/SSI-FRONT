@@ -9,7 +9,7 @@ import Apoio from "./Apoio/index";
 import Footer from "./Footer";
 import styled from "styled-components";
 import Fundo from "./Fundo/Fundo";
-import Programacao from "./Programacao/index";
+import Programacao from "./Programacao/programacaoBox";
 import CloseButton from "./CloseButton";
 import  "./MenuStyle.scss";
 
