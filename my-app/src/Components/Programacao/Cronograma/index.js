@@ -1,5 +1,5 @@
 import React from 'react';
-import { CronogramaBase, Linha, Evento, Intervalo } from './style';
+import { NichoLink ,CronogramaBase, Linha, Evento, Intervalo } from './style';
 
 function Cronograma(props) {
   
@@ -19,10 +19,16 @@ function Cronograma(props) {
       
       let fonte = cores_fonte[(t+i)%2]
 
+      let ModalOpen = () =>{
+        console.log("foi")
+      };
+
       items.push(
-        <Evento style={{backgroundColor: cor, color: fonte}}>
-          <h4>{props.eventos[t][i]['titulo']}</h4>
-          <h5>{props.eventos[t][i]['palestrante']}</h5>
+
+        <Evento style={{backgroundColor: cor, color: fonte}} onClick = {ModalOpen}>
+               
+          <h4 onClick = {ModalOpen}>{props.eventos[t][i]['titulo']}</h4>
+          <h5 onClick={()=>console.log("aqui esta")}>{props.eventos[t][i]['palestrante']}</h5>
           <div>
             <a>{props.eventos[t][i]['horaInicio']}</a>
             <a>{props.eventos[t][i]['horaFim']}</a>
@@ -30,19 +36,24 @@ function Cronograma(props) {
           <p>
             {props.eventos[t][i]['descricao']}
           </p>
+        
         </Evento>
+        
       )
     }
     periodos.push(items)
   }
 
+  let  teste = ()=>{
+    console.log("aqui")
+  }
   return (
     <CronogramaBase>
       <Linha>
         {periodos[0]}
       </Linha>
       <Intervalo style={{backgroundColor: '#1C043C'}}>
-        <b>Intervalo para Janta</b>
+        <b onClick = {teste}>Intervalo para Janta</b>
         <center>
           <div>
             <a>18:00</a>

@@ -263,36 +263,6 @@ function Site(/*{JsonData}*/) {
   const [, setAnimationMenu] = useState({height :"0px"});
   
 
-/*   const MenuStatus = () => {
-    if (count === 1) {
-      setCount(2);
-
-      console.log("Abrindo");
-    } else {
-      setCount(1);
-      setDisplayMobile({display:"block"});
-      console.log("Fechando");
-    }
-  };
-
-  let sheetsInfo = ""; 
-
-  let Slide = 0;
-
-  let handleClick = () => {
-    this.setState({
-      open: !this.state.open,
-    });
-  };
-
-  let i = 0;
-
-  let DisplayModal = {
-    display: "block",
-  };
-
-  let Open = false;
-  */
   
   let root = document.documentElement;
   let OpenFunction = () => {

@@ -18,11 +18,23 @@ export const Linha = styled.div`
   }
 `;
 
+
+
+export const NichoLink = styled.div`
+
+
+`;
+
+
+
+
+
 export const Evento = styled.div`
   font-size: 0.9em;
   width: 90%;
   height: 200px;
   padding: 1em;
+  cursor:pointer;
   div {
     display: flex;
     justify-content: space-between;

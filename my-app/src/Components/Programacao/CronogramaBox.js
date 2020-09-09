@@ -51,7 +51,7 @@ export default function CronogramaBox(/*{ TituloArray, DiaArray , HorarioInicioA
         
     return (
       <>
-        <Slider {...settings} style={{maxWidth:"80%", width:'100%'}}>
+        <Slider {...settings} style={{margin:'auto',maxWidth:"80%", width:'100%'}}>
           <Cronograma
             eventos={[
               // Eventos Tarde                      
