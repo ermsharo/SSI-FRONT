@@ -45,17 +45,17 @@ class Banner extends Component {
           <SocialAreaBanner>
               <span>
                   <SocialButton href={LinkFacebook} target="_blank" rel="noopener noreferrer">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i className="fa fa-facebook" aria-hidden="true"></i>
                   </SocialButton>
               </span>
               <span>
                   <SocialButton href={LinkTwitch} target="_blank" rel="noopener noreferrer">
-                    <i class="fa fa-twitch" aria-hidden="true"></i>
+                    <i className="fa fa-twitch" aria-hidden="true"></i>
                   </SocialButton>
               </span>
               <span>
                   <SocialButton href={LinkInstagram} target="_blank" rel="noopener noreferrer">
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i className="fa fa-instagram" aria-hidden="true"></i>
                   </SocialButton>
               </span>
           </SocialAreaBanner>

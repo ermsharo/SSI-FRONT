@@ -4,55 +4,44 @@ import styled from 'styled-components'
 export const ElevateSlider= styled.div`
   position:relative; 
   z-index:100;
-
 `;
-
-
 
 export const Spike = styled.div`
-   position: relative;
+  position: relative;
   background:white;
   height: 0vh;
-transform:rotate(180deg);
-z-index:-1;
+  transform:rotate(180deg);
+  z-index:-1;
+  :before {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: -0%;
+    top: 100%;
+    z-index: 0;
+    display: block;
+    height: 150px;
 
-   :before {
-  content: '';
-  position: absolute;
-  right: 0;
-  left: -0%;
-  top: 100%;
-  z-index: 0;
-  display: block;
-  height: 150px;
-
-  background-size: 50px 100%;
-  background-image: linear-gradient(135deg, white 25%, transparent 25%), linear-gradient(225deg, white 25%, transparent 25%);
-  background-position: 0 0;
-
-  
-} 
+    background-size: 50px 100%;
+    background-image: linear-gradient(135deg, white 25%, transparent 25%), linear-gradient(225deg, white 25%, transparent 25%);
+    background-position: 0 0;
+    
+  }
 `;
-
 
 export const LoadingDiv = styled.div`
-border:2px solid red; 
-position:relative; 
-top:0vw;
-z-index:1;
-img{
-
- 
-  width:20vw;
-  height:20vw; 
-
-}
-
+  border:2px solid red; 
+  position:relative; 
+  top:0vw;
+  z-index:1;
+  img{
+    width:20vw;
+    height:20vw;
+  }
 `;
 
-
 export const SpikeReverse = styled.div`
-   position: relative;
+  position: relative;
   background:white;
   height: 0vh;
 
@@ -86,7 +75,6 @@ export const GenericSize = styled.div`
   justify-content: center;
   align-items: center;
   font-size: 20px;
- background-color:white;
   color:black; 
   padding:0px;
 `;
@@ -94,7 +82,7 @@ export const GenericSize = styled.div`
 export const Titulo=styled.h1`
   color: white;
   text-align: center;
-  margin: 40px 0;
+  margin: 50px 0;
   margin-bottom: 80px;
   font-size: 50px;
   font-family: var(--fontTitulo);

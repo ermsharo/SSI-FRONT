@@ -1,10 +1,5 @@
 import React from 'react';
 import HamburguerMenuAnimation from "react-hamburger-menu";
-import styled from 'styled-components'
-
-
-
-
 
 function CloseButton({CloseButton}) {
   return (
@@ -18,6 +13,7 @@ function CloseButton({CloseButton}) {
               color="black"
               borderRadius={0}
               animationDuration={0.5}
+              menuClicked= {() => {}}
             />
      </div>   
 

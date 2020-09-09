@@ -1,6 +1,6 @@
-import React , {useState} from 'react';
-import styled, { css } from "styled-components";
-import style from "./../../Style/Fundo.scss";
+import React  from 'react';
+import styled from "styled-components";
+import "../../Style/Fundo.scss";
 /* formas aqui em baixo */ 
 import Oval  from "./Svgs/Oval";
 import Diamond from "./Svgs/Diamond";
@@ -41,24 +41,24 @@ function Fundo( ) {
       <FundoEscuro />
       <FundoBox>
         <div className="background">
-          <h7><Oval size = {5} color = "#EE82EE"/></h7>
+          <h6><Oval size = {5} color = "#EE82EE"/></h6>
 
         
-          <h7><Oval size = {5} color = "#b5acb4"/></h7>
-          <h7><Pontos color1 = "#b5acb4" color2= "#b19cd9" color3 = "#8e4785"/></h7>
-          <h7><Oval size = {5} color = "#b19cd9"/></h7>
-          <h7><Oval size = {5} color = "#8e4785"/></h7>
-          <h7><Hexa color1= "#b19cd9" color2 ="#8e4785"/></h7>
-          <h7><Piramide color1 = "#b5acb4" color2= "#b19cd9" color3 = "#8e4785"/></h7>
-          <h7><Hexa color1= "#b19cd9" color2 ="#8e4785"/></h7>
-          <h7><Pontos color1 = "#b5acb4" color2= "#b19cd9" color3 = "#8e4785"/></h7>
-          <h7><Piramide color1 = "#b5acb4" color2= "#b19cd9" color3 = "#8e4785"/></h7>
-          <h7><Oval size = {5} color = "#b5acb4"/></h7>
-          <h7><Hexa color1= "#b19cd9" color2 ="#8e4785"/></h7>
+          <h6><Oval size = {5} color = "#b5acb4"/></h6>
+          <h6><Pontos color1 = "#b5acb4" color2= "#b19cd9" color3 = "#8e4785"/></h6>
+          <h6><Oval size = {5} color = "#b19cd9"/></h6>
+          <h6><Oval size = {5} color = "#8e4785"/></h6>
+          <h6><Hexa color1= "#b19cd9" color2 ="#8e4785"/></h6>
+          <h6><Piramide color1 = "#b5acb4" color2= "#b19cd9" color3 = "#8e4785"/></h6>
+          <h6><Hexa color1= "#b19cd9" color2 ="#8e4785"/></h6>
+          <h6><Pontos color1 = "#b5acb4" color2= "#b19cd9" color3 = "#8e4785"/></h6>
+          <h6><Piramide color1 = "#b5acb4" color2= "#b19cd9" color3 = "#8e4785"/></h6>
+          <h6><Oval size = {5} color = "#b5acb4"/></h6>
+          <h6><Hexa color1= "#b19cd9" color2 ="#8e4785"/></h6>
 
-          <h7><Oval size = {5} color = "#b19cd9"/></h7>
-          <h7><Oval size = {5} color = "#8e4785"/></h7>
-          <h7><Diamond/></h7>
+          <h6><Oval size = {5} color = "#b19cd9"/></h6>
+          <h6><Oval size = {5} color = "#8e4785"/></h6>
+          <h6><Diamond/></h6>
 
         
         </div>

@@ -1,12 +1,11 @@
-
-import React, { useState, useEffect } from "react";
+import React /*, { useState, useEffect }*/ from "react";
 import Site from "./Components/Site";
 import "./App.css";
 /* import "./Style/globalStyle.css"; */
 
 function App() {
- 
-  const [hasError, setErrors] = useState(false);
+  /*
+  const [, setErrors] = useState(false);
   const [dataPlanilha, setDataPlanilha] = useState(null);
   const [firstTime, setFirstTime] = useState(false);
 
@@ -22,9 +21,9 @@ function App() {
           let Requisicao = res; 
          
           if(firstTime == false){
-          setDataPlanilha(Requisicao);
-          setFirstTime(true);
-          console.log("aqui esta",dataPlanilha);
+            setDataPlanilha(Requisicao);
+            setFirstTime(true);
+            console.log("aqui esta", dataPlanilha);
           }
       })
       .catch(err => setErrors(err));
@@ -32,14 +31,13 @@ function App() {
 
   useEffect(() => {
     fetchData();
-    
   });
 
-
+  */
   
   return (
     <div className="App">
-      <Site JsonData = {dataPlanilha} />
+      <Site /*JsonData = {dataPlanilha}*/ />
     </div>
   );
 }

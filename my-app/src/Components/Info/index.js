@@ -1,5 +1,5 @@
 import React from 'react';
-import { GenericSize, Titulo, ItemSpace, Item, ItemIcon, ItemTitle, ItemText, Link } from './style';
+import { GenericSize, Titulo, ItemSpace, Item, ItemIcon, ItemTitle, ItemText } from './style';
 
 
 function Info(props) {
@@ -9,7 +9,7 @@ function Info(props) {
       <ItemSpace>
           <Item>
               <ItemIcon>
-                  <i class="fa fa-laptop" aria-hidden="true"></i>
+                  <i className="fa fa-laptop" aria-hidden="true"></i>
               </ItemIcon>
               <ItemTitle>O que é?</ItemTitle>
               <ItemText>
@@ -21,7 +21,7 @@ function Info(props) {
           </Item>
           <Item>
               <ItemIcon>
-                  <i class="fa fa-calendar" aria-hidden="true"></i>
+                  <i className="fa fa-calendar" aria-hidden="true"></i>
               </ItemIcon>
               <ItemTitle>Onde e quando?</ItemTitle>
               <ItemText>
@@ -36,7 +36,7 @@ function Info(props) {
           </Item>
           <Item>
               <ItemIcon>
-                  <i class="fa fa-twitch" aria-hidden="true"></i>
+                  <i className="fa fa-twitch" aria-hidden="true"></i>
               </ItemIcon>
               <ItemTitle>Como participo?</ItemTitle>
               <ItemText>

@@ -1,15 +1,13 @@
 /* import Slider from "./Slider"; */
 /* import styled from "styled-components"; */
-import React, { useState, useEffect } from "react";
-import HamburguerMenuAnimation from "react-hamburger-menu";
+import React, { useState } from "react";
 import LogoSSI from "../assets/img/logoSSISemFundoComCinzaRoxo.svg";
 import Banner from "./Banner/index";
 import Info from "./Info/index";
 import Patrocinadores from "./Patrocinadores/index";
 import Apoio from "./Apoio/index";
-import Inscricoes from "./Inscricao";
 import Footer from "./Footer";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import Fundo from "./Fundo/Fundo";
 import Programacao from "./Programacao/index";
 import CloseButton from "./CloseButton";
@@ -85,8 +83,6 @@ const HeaderUlBox = styled.ul`
 
 const SliderBox = styled.div``;
 
-const MenuHamburguer = styled.div``;
-
 const MobileHeader = styled.div`
   display: none;
   /*   border: 2px solid blue; */
@@ -125,45 +121,42 @@ const HeaderSpace = styled.div`
   height: 60px;
 `;
 
-
-
-
-
-
+/*
 const HeaderUlBoxMobile = styled.ul`
-list-style: none;
-/*   border:2px solid red;  */
-background-color: white;
-position: fixed;
-top: 55px;
-padding: 0px;
-padding-bottom: 15px;
-height:var( --ScrollMenu);
-overflow: hidden;
-  text-overflow: ellipsis;
-z-index:20; 
-
-transition: height 10s;
-
-
-li {
-  font-size: 22px;
-  margin: auto;
-  display: inline-block;
   list-style: none;
-  width: 100vw;
-  text-align: center;
-  /*     border:2px solid blue;  */
+  //border:2px solid red;
+  background-color: white;
+  position: fixed;
+  top: 55px;
   padding: 0px;
-  margin: 0px;
-  margin-top: 20px;
-  font-family: var(--fontTitulo);
-  font-weight: 0.4px;
-  text-transform: uppercase;
-  cursor: pointer; 
-  
-}
+  padding-bottom: 15px;
+  height:var( --ScrollMenu);
+  overflow: hidden;
+    text-overflow: ellipsis;
+  z-index:20; 
+
+  transition: height 10s;
+
+
+  li {
+    font-size: 22px;
+    margin: auto;
+    display: inline-block;
+    list-style: none;
+    width: 100vw;
+    text-align: center;
+    //border:2px solid blue;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 20px;
+    font-family: var(--fontTitulo);
+    font-weight: 0.4px;
+    text-transform: uppercase;
+    cursor: pointer; 
+    
+  }
 `;
+*/
 
 
 
@@ -174,7 +167,7 @@ li {
 
 
 
-let Open = false;
+//let Open = false;
 
 const SliderItem = styled.div``;
 
@@ -198,29 +191,22 @@ const handleClickProgramacao = () =>
   });
 
 const handleClickInfo = () =>
-  ref2.current.scrollIntoView({
-    behavior: "smooth",
-    block: "start",
-  });
-
-const handleClickPatrocinadores = () =>
   ref3.current.scrollIntoView({
     behavior: "smooth",
     block: "start",
   });
 
-const handleClickApoio = () =>
+const handleClickPatrocinadores = () =>
   ref4.current.scrollIntoView({
     behavior: "smooth",
     block: "start",
   });
 
-const handleClickInscricao = () =>
+const handleClickApoio = () =>
   ref5.current.scrollIntoView({
     behavior: "smooth",
     block: "start",
   });
-
 
 // Funções Menu Mobile
 
@@ -241,14 +227,6 @@ const handleClickProgramacaoMobile = () => {
 };
 
 const handleClickInfoMobile = () => {
-  ref2.current.scrollIntoView({
-    behavior: "smooth",
-    block: "start",
-  })
-  refHamburguer.current.click()
-};
-
-const handleClickPatrocinadoresMobile = () => {
   ref3.current.scrollIntoView({
     behavior: "smooth",
     block: "start",
@@ -256,7 +234,7 @@ const handleClickPatrocinadoresMobile = () => {
   refHamburguer.current.click()
 };
 
-const handleClickApoioMobile = () => {
+const handleClickPatrocinadoresMobile = () => {
   ref4.current.scrollIntoView({
     behavior: "smooth",
     block: "start",
@@ -264,7 +242,7 @@ const handleClickApoioMobile = () => {
   refHamburguer.current.click()
 };
 
-const handleClickInscricaoMobile = () => {
+const handleClickApoioMobile = () => {
   ref5.current.scrollIntoView({
     behavior: "smooth",
     block: "start",
@@ -273,26 +251,17 @@ const handleClickInscricaoMobile = () => {
 };
 
 
-  const MenuMobileDisplay = styled.div`
-display:block;
-
-
+const MenuMobileDisplay = styled.div`
+  display:block;
 `;
 
 
-
-function Site({JsonData}) {
+function Site(/*{JsonData}*/) {
   const [count, setCount] = useState(1);
   const [Abre, setAbre] = useState(false);
-  const [DisplayMobile, setDisplayMobile] = useState({display:"none"});
-  const [AnimationMenu, setAnimationMenu] = useState({height :"0px"});
-
-
-console.log("Json data aqui",JsonData);
-
-
-
-
+  const [, setDisplayMobile] = useState({display:"none"});
+  const [, setAnimationMenu] = useState({height :"0px"});
+  
 
 /*   const MenuStatus = () => {
     if (count === 1) {
@@ -305,9 +274,8 @@ console.log("Json data aqui",JsonData);
       console.log("Fechando");
     }
   };
- */
-  let sheetsInfo = ""; 
 
+  let sheetsInfo = ""; 
 
   let Slide = 0;
 
@@ -324,24 +292,25 @@ console.log("Json data aqui",JsonData);
   };
 
   let Open = false;
+  */
+  
   let root = document.documentElement;
   let OpenFunction = () => {
     if (count === 1) {
       setCount(2);
       setDisplayMobile({display:"block"});
       root.style.setProperty('--ScrollMenuBefore', "0px");
-      root.style.setProperty('--ScrollMenuAfter', "200px");
+      root.style.setProperty('--ScrollMenuAfter', "250px");
 
     } else {
       setCount(1);
 /*       setDisplayMobile({display:"none"}); */
       setAnimationMenu("0px");
       setDisplayMobile({display:"block"});
-      root.style.setProperty('--ScrollMenuBefore', "200px");
+      root.style.setProperty('--ScrollMenuBefore', "250px");
       root.style.setProperty('--ScrollMenuAfter', "0px");
     }
-    console.log("VAlor", count == 1);
-    setAbre(count == 1);
+    setAbre(count === 1);
   };
 
   return (
@@ -359,6 +328,7 @@ console.log("Json data aqui",JsonData);
 
           <HeaderUlBox>
             <li onClick={handleClickBanner}>Início</li>
+            <li onClick={handleClickProgramacao}>Programação</li>
             <li onClick={handleClickInfo}>Informações Gerais</li>
             <li onClick={handleClickPatrocinadores}>Parceiros</li>
             <li onClick={handleClickApoio}>Apoio</li>
@@ -383,10 +353,10 @@ console.log("Json data aqui",JsonData);
         <MenuMobileDisplay>
         <div className = "HeaderUlBoxMobile" >
           <li onClick={handleClickBannerMobile}>Início</li>
+          <li onClick={handleClickProgramacaoMobile}>Programação</li>
           <li onClick={handleClickInfoMobile}>Informações Gerais</li>
           <li onClick={handleClickPatrocinadoresMobile}>Parceiros</li>
           <li onClick={handleClickApoioMobile}>Apoio</li>
-          {/*<li onClick={handleClickInscricaoMobile}>Inscrição</li>*/}
         </div>
         </MenuMobileDisplay>
       </MobileHeader>
@@ -398,37 +368,28 @@ console.log("Json data aqui",JsonData);
           <SliderItem ref={ref1}>
             {" "}
             <HeaderSpace></HeaderSpace>
-            <Banner handleClickInfo={handleClickInfo} handleClickInscricao={handleClickInscricao}  />
+            <Banner handleClickInfo={handleClickInfo}  />
           </SliderItem>
-          {/*
           <SliderItem ref={ref2}>
             {" "}
             <HeaderSpace></HeaderSpace>
-            <Programacao  sheetsInfo = {sheetsInfo}  JsonProgramacaoData ={JsonData}/>
-          </SliderItem>
-          */}
-          <SliderItem ref={ref2}>
-            {" "}
-            <HeaderSpace></HeaderSpace>
-            <Info />
+            <Programacao  /*sheetsInfo = {sheetsInfo}  JsonProgramacaoData ={JsonData}*//>
           </SliderItem>
           <SliderItem ref={ref3}>
             {" "}
             <HeaderSpace></HeaderSpace>
-            <Patrocinadores />{" "}
+            <Info />
           </SliderItem>
           <SliderItem ref={ref4}>
             {" "}
             <HeaderSpace></HeaderSpace>
-            <Apoio />{" "}
+            <Patrocinadores />{" "}
           </SliderItem>
-          {/*
           <SliderItem ref={ref5}>
             {" "}
             <HeaderSpace></HeaderSpace>
-            <Inscricoes />{" "}
+            <Apoio />{" "}
           </SliderItem>
-          */}
           <Footer />
         </SliderBox>
       </div>

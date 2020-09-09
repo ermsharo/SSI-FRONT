@@ -34,13 +34,11 @@ export const FooterRedesSociais = styled.div`
   }
 `;
 
-export const SocialMediaIcon = styled.div`
-  i{
-      font-size:44px; 
-      padding-bottom:30px; 
-    :hover{
-      color:darkgray;
-    }
+export const SocialMediaIcon = styled.i`
+  font-size:44px; 
+  padding-bottom:30px; 
+  &:hover{
+    color:darkgray;
   }
 `;
 

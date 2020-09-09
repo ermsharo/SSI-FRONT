@@ -1,7 +1,5 @@
 import * as React from "react"
 
-import styled, { css } from "styled-components";
-
 function SvgComponent({color1, color2, color3}) {
   return (
     <svg viewBox="0 0 431.543 431.543" >

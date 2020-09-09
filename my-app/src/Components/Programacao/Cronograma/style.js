@@ -9,19 +9,75 @@ export const CronogramaBase = styled.div`
 
 export const Linha = styled.div`
   width: 100%;
- strat    display: flex;
+  display: flex;
   flex-direction: row;
   justify-content: left;
-  align-items: center; 
-
-
+  align-items: center;
+  @media (max-width: 650px){
+    flex-direction: column;
+  }
 `;
 
 export const Evento = styled.div`
-  width: 100%;
+  font-size: 0.9em;
+  width: 90%;
   height: 200px;
   padding: 1em;
   div {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 300px){
+      a:nth-child(1):before{
+        font-weight: 550;
+        content: 'Início: ';
+      }
+      a:nth-child(2):before{
+        font-weight: 550;
+        content: 'Fim: ';
+      }
+    }
+    @media (max-width: 650px){
+      font-size: 0.8em;
+      flex-direction: column;
+    }
+  }
+  h4 {
+    text-align: center;
+    font-size: 1.1em;
+    margin: 0;
+    margin-bottom: 10px;
+    @media (max-width: 600px){
+      font-size: 1em;
+    }
+  }
+  h5 {
+    font-size: 0.9em;
+    margin: 0;
+    margin-bottom: 10px;
+    @media (max-width: 600px){
+      font-size: 0.8em;
+    }
+  }
+  p {
+    font-size: 0.9em;
+    margin: 0;
+    margin-top: 10px;
+    @media (max-width: 600px){
+      font-size: 0.8em;
+    }
+  }
+`;
+
+export const Intervalo = styled.div`
+  padding: 1em;
+  font-size: 0.9em;
+  width: 100%;
+  color: white;
+  text-align: center;
+  div {
+    margin-top: 0.5em;
+    width: 150px;
+    max-width: 80%;
     display: flex;
     justify-content: space-between;
     @media (max-width: 600px){
@@ -37,18 +93,7 @@ export const Evento = styled.div`
       flex-direction: column;
     }
   }
-  h4 {
-    margin: 0;
-    margin-bottom: 10px;
-    @media (max-width: 600px){
-      font-size: 16px;
-    }
-  }
-  p {
-    margin: 0;
-    margin-top: 10px;
-    @media (max-width: 600px){
-      font-size: 16px;
-    }
+  @media (max-width: 600px){
+    padding: 0.5em;
   }
 `;

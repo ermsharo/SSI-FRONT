@@ -13,37 +13,35 @@ function Footer() {
       <FooterBox>
         <FooterRedesSociais> 
           <h1>Siga nosso canal na Twitch!</h1>
-          <SocialMediaIcon>
+          <>
             <a href={LinkTwitch} target="_blank" rel="noopener noreferrer">
-              <i class="fa fa-twitch" aria-hidden="true"></i>
+              <SocialMediaIcon className="fa fa-twitch" aria-hidden="true"></SocialMediaIcon>
             </a>
-          </SocialMediaIcon>
+          </>
         </FooterRedesSociais>
         <FooterRedesSociais>
           <h1>Acompanhe nossas redes sociais!</h1>
-          <p>
-            <SocialMediaBox>
-              <SocialMediaIcon>
-                <a href={LinkFacebook} target="_blank" rel="noopener noreferrer">
-                  <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-              </SocialMediaIcon>
-              <SocialMediaIcon>
-                <a href={LinkInstagram} target="_blank" rel="noopener noreferrer">
-                  <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-              </SocialMediaIcon>
-            </SocialMediaBox>
-          </p>
+          <SocialMediaBox>
+            <>
+              <a href={LinkFacebook} target="_blank" rel="noopener noreferrer">
+                <SocialMediaIcon className="fa fa-facebook" aria-hidden="true"></SocialMediaIcon>
+              </a>
+            </>
+            <>
+              <a href={LinkInstagram} target="_blank" rel="noopener noreferrer">
+                <SocialMediaIcon className="fa fa-instagram" aria-hidden="true"></SocialMediaIcon>
+              </a>
+            </>
+          </SocialMediaBox>
         </FooterRedesSociais>
         <FooterRedesSociais>
           <h1>Para mais informações, entre em contato!</h1>
           <p>
-            <SocialMediaIcon>
+            <>
               <a href={LinkMail} target="_blank" rel="noopener noreferrer">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <SocialMediaIcon className="fa fa-envelope" aria-hidden="true"></SocialMediaIcon>
               </a>
-            </SocialMediaIcon>
+            </>
           </p>
         </FooterRedesSociais>
       </FooterBox>

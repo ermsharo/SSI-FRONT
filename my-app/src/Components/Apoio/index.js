@@ -13,29 +13,29 @@ function Apoio() {
         <ItemSpace>
             <Item>
                 <a href="http://www.each.usp.br/si/" style={{display:"block", margin:"auto"}} target="_blank" rel="noopener noreferrer">
-                    <LogoStyle src={LogoSI} class="logo" alt="Logo 1"/>
+                    <LogoStyle src={LogoSI} className="logo" alt="Logo 1"/>
                 </a>
             </Item>
             <Item>
                 <a href="http://www5.each.usp.br/" style={{display:"block", margin:"auto"}} target="_blank" rel="noopener noreferrer">
-                    <LogoStyle src={LogoEACH} class="logo" alt="Logo 1"/>
+                    <LogoStyle src={LogoEACH} className="logo" alt="Logo 1"/>
                 </a>
             </Item>
             <Item>
                 <a href="https://www5.usp.br/" style={{display:"block", margin:"auto"}} target="_blank" rel="noopener noreferrer">
-                    <LogoStyle src={LogoUSP} class="logo" alt="Logo 1"/>
+                    <LogoStyle src={LogoUSP} className="logo" alt="Logo 1"/>
                 </a>
             </Item>
         </ItemSpace>
         <ItemSpace style={{width: "800px", maxWidth: "90%"}}>
             <Item>
                 <a href="https://dasiusp.com/" style={{display:"block", margin:"auto"}} target="_blank" rel="noopener noreferrer">
-                    <LogoStyle src={LogoDASI} style={{height:"120px"}} class="logo" alt="Logo 1"/>
+                    <LogoStyle src={LogoDASI} style={{height:"120px"}} className="logo" alt="Logo 1"/>
                 </a>
             </Item>
             <Item>
                 <a href="http://www.sintesejr.com.br/" style={{display:"block", margin:"auto"}} target="_blank" rel="noopener noreferrer">
-                    <LogoStyle src={LogoSintese} style={{height:"120px"}} class="logo" alt="Logo 1"/>
+                    <LogoStyle src={LogoSintese} style={{height:"120px"}} className="logo" alt="Logo 1"/>
                 </a>
             </Item>
         </ItemSpace>

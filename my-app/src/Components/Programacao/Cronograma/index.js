@@ -1,31 +1,28 @@
 import React from 'react';
-import { CronogramaBase, Linha, Evento } from './style';
+import { CronogramaBase, Linha, Evento, Intervalo } from './style';
 
 function Cronograma(props) {
   
-  let periodos = [];
+  let cores_fundo = ['#520082', '#3a006e'];
 
-  for(let t = 0; t < 3; t++){
+  let cores_fonte = ['white', 'white'];
+
+  let periodos = [];
+  for(let t = 0; t < 2; t++){
     let items=[]
-    for (let i = 0; i < 4; i++){
+    for (let i = 0; i < 3; i++){
       if (props.eventos[t].length === i){
         break;
       }
 
-      let cor;
-      if (t === 0){
-        (i%2 === 0) ? cor='orange' : cor='yellow';
-      }
-      else if (t === 1){
-        (i%2 === 0) ? cor='darkorange' : cor='red';
-      }
-      else{
-        (i%2 === 0) ? cor='blue' : cor='darkblue';
-      }
+      let cor = cores_fundo[(t+i)%2]
+      
+      let fonte = cores_fonte[(t+i)%2]
 
       items.push(
-        <Evento style={{backgroundColor: cor}}>
+        <Evento style={{backgroundColor: cor, color: fonte}}>
           <h4>{props.eventos[t][i]['titulo']}</h4>
+          <h5>{props.eventos[t][i]['palestrante']}</h5>
           <div>
             <a>{props.eventos[t][i]['horaInicio']}</a>
             <a>{props.eventos[t][i]['horaFim']}</a>
@@ -44,6 +41,15 @@ function Cronograma(props) {
       <Linha>
         {periodos[0]}
       </Linha>
+      <Intervalo style={{backgroundColor: '#1C043C'}}>
+        <b>Intervalo para Janta</b>
+        <center>
+          <div>
+            <a>18:00</a>
+            <a>19:00</a>
+          </div>
+        </center>
+      </Intervalo>
       <Linha>
         {periodos[1]}
       </Linha>
