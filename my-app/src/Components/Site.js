@@ -23,6 +23,7 @@ const HeaderBox = styled.div`
   justify-content: space-around;
   max-height: 60px;
   position: fixed;
+  z-index:100;
   top: 0;
   width: 100%;
   -webkit-box-shadow: 0px 3px 8px 1px rgba(0,0,0,0.28);
@@ -36,6 +37,7 @@ const HeaderBoxMobile = styled.div`
   width: 100%;
   padding: 10px;
   background-color: white;
+  z-index:100;
 
   display: grid;
   grid-template-columns: 10% auto 10%;
@@ -68,6 +70,7 @@ const LogoBox = styled.div`
 const HeaderUlBox = styled.ul`
   list-style: none;
   display: inline;
+  z-index:100;
 
   li {
     font-size: 22px;
@@ -85,6 +88,7 @@ const SliderBox = styled.div``;
 
 const MobileHeader = styled.div`
   display: none;
+  z-index:100;
   /*   border: 2px solid blue; */
   @media (max-width: 992px) {
     display: block;
@@ -94,6 +98,7 @@ const MobileHeader = styled.div`
 
 const RegularHeader = styled.div`
   display: block;
+  z-index:100;
 
 
   @media (max-width: 992px) {
@@ -120,6 +125,17 @@ const HeaderSpace = styled.div`
   width: 100px;
   height: 60px;
 `;
+
+
+const ProgramacaoBoxHome= styled.div`
+
+/*   border: 2px solid blue;
+  background-color: red; */
+position:relative; 
+z-index:10 !important; 
+
+`;
+
 
 /*
 const HeaderUlBoxMobile = styled.ul`
@@ -343,7 +359,9 @@ function Site(/*{JsonData}*/) {
           <SliderItem ref={ref2}>
             {" "}
             <HeaderSpace></HeaderSpace>
+            <ProgramacaoBoxHome>
             <Programacao  /*sheetsInfo = {sheetsInfo}  JsonProgramacaoData ={JsonData}*//>
+            </ProgramacaoBoxHome>
           </SliderItem>
           <SliderItem ref={ref3}>
             {" "}

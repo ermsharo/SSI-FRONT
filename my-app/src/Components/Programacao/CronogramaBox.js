@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { LoadingDiv, GenericSize, Titulo, ArrowBaseLeft, ArrowBaseRight, Dots ,Spike, SpikeReverse} from './style';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -51,8 +51,9 @@ export default function CronogramaBox(/*{ TituloArray, DiaArray , HorarioInicioA
         
     return (
       <>
-        <Slider {...settings} style={{margin:'auto',maxWidth:"80%", width:'100%'}}>
+        <Slider onClick = {()=>console.log("aqui")} {...settings} style={{margin:'auto',maxWidth:"80%", width:'100%'}}>
           <Cronograma
+
             eventos={[
               // Eventos Tarde                      
               [
@@ -145,7 +146,14 @@ export default function CronogramaBox(/*{ TituloArray, DiaArray , HorarioInicioA
               // Eventos Noite
               [
                 {
-                  titulo:'Titulo',
+                  titulo:'Titulo', 
+     /*              DiaArray={ArrayDia}
+                  HorarioInicioArray={ArrayHorarioInicio}
+                  HorarioFimArray={ArrayHorarioFim}
+                  PalestranteArray={ArrayPalestrante}
+                  DescricaoArray={ArrayDescricao}
+                  MiniBioArray={ArrayMiniBio}
+                  FotoArray={ArrayFoto} */
                   foto:'https://www.tjpi.jus.br/sysejud/dist/img/avatar.png',
                   palestrante:'Palestrante',
                   horaInicio:'00:00',
