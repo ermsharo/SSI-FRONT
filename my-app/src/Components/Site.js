@@ -11,7 +11,7 @@ import Inscricoes from "./Inscricao";
 import Footer from "./Footer";
 import styled, { css } from "styled-components";
 import Fundo from "./Fundo/Fundo";
-import Programacao from "./Programacao/index";
+import Programacao from "./Programacao/programacaoBox";
 import CloseButton from "./CloseButton";
 import  "./MenuStyle.scss";
 
@@ -291,21 +291,6 @@ function Site({JsonData}) {
 console.log("Json data aqui",JsonData);
 
 
-
-
-
-/*   const MenuStatus = () => {
-    if (count === 1) {
-      setCount(2);
-
-      console.log("Abrindo");
-    } else {
-      setCount(1);
-      setDisplayMobile({display:"block"});
-      console.log("Fechando");
-    }
-  };
- */
   let sheetsInfo = ""; 
 
 
@@ -400,13 +385,13 @@ console.log("Json data aqui",JsonData);
             <HeaderSpace></HeaderSpace>
             <Banner handleClickInfo={handleClickInfo} handleClickInscricao={handleClickInscricao}  />
           </SliderItem>
-          {/*
+     
           <SliderItem ref={ref2}>
             {" "}
             <HeaderSpace></HeaderSpace>
-            <Programacao  sheetsInfo = {sheetsInfo}  JsonProgramacaoData ={JsonData}/>
+            <Programacao  JsonProgramacaoData ={JsonData}/>
           </SliderItem>
-          */}
+        
           <SliderItem ref={ref2}>
             {" "}
             <HeaderSpace></HeaderSpace>

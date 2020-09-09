@@ -5,6 +5,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Cronograma from './Cronograma/index';
 import useForceUpdate from 'use-force-update';
+import * as S from "./CronogramaBoxStyle";
+
 
 
 
@@ -85,10 +87,10 @@ export default function CronogramaBox({TituloArray, DiaArray , HorarioInicioArra
     }
     
     console.log("Titulo aray aqui",TituloArray);
-    if(TituloArray === null){
+/*     if(TituloArray === null){
       return (<div>Carregando</div>)
     }
-    
+     */
     
       return (
         <>
@@ -97,7 +99,7 @@ export default function CronogramaBox({TituloArray, DiaArray , HorarioInicioArra
             Programação
           </Titulo>
     
-    
+    <S.CronogramaContainer>
       
           <Slider {...settings} style={{maxWidth:"80%", width:'100%'}}>
     
@@ -106,7 +108,7 @@ export default function CronogramaBox({TituloArray, DiaArray , HorarioInicioArra
                           // Eventos Manhã
                           [
                             {
-                              titulo : TituloArray[0],
+                              titulo : "Titulo 1" ,
                               horaInicio:'00:00',
                               horaFim:'00:00',
                               descricao:'Descrição'
@@ -127,13 +129,13 @@ export default function CronogramaBox({TituloArray, DiaArray , HorarioInicioArra
                           // Eventos Tarde                      
                           [
                             {
-                              titulo:Titulo[3],
+                              titulo:"asdasdasd",
                               horaInicio:'00:00',
                               horaFim:'00:00',
                               descricao:'Descrição'
                             },
                             {
-                              titulo:Titulo[4],
+                              titulo:"asdasdasd",
                               horaInicio:'00:00',
                               horaFim:'00:00',
                               descricao:'Descrição'
@@ -162,7 +164,7 @@ export default function CronogramaBox({TituloArray, DiaArray , HorarioInicioArra
                           ]
                 ]}
             />
-            <Cronograma
+          {/*   <Cronograma
                 eventos={[
                           // Eventos Manhã
                           [
@@ -357,8 +359,9 @@ export default function CronogramaBox({TituloArray, DiaArray , HorarioInicioArra
                             }
                           ]
                 ]}
-            />
+            /> */}
           </Slider>
+          </S.CronogramaContainer>
  
         </>
       );
