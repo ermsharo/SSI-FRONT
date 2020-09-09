@@ -22,7 +22,7 @@ function App() {
           let Requisicao = res; 
          
           if(firstTime == false){
-          setDataPlanilha(Requisicao);
+          setDataPlanilha("deixa isso aqui por enquanto");
           setFirstTime(true);
           console.log("aqui esta",dataPlanilha);
           }

@@ -291,21 +291,6 @@ function Site({JsonData}) {
 console.log("Json data aqui",JsonData);
 
 
-
-
-
-/*   const MenuStatus = () => {
-    if (count === 1) {
-      setCount(2);
-
-      console.log("Abrindo");
-    } else {
-      setCount(1);
-      setDisplayMobile({display:"block"});
-      console.log("Fechando");
-    }
-  };
- */
   let sheetsInfo = ""; 
 
 

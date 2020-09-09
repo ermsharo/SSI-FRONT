@@ -129,7 +129,7 @@ function Programacao({ JsonProgramacaoData }) {
     <>
       <Titulo>Programação</Titulo>
 
-      {/*      <CronogramaBox
+         <CronogramaBox
         TituloArray={ArrayTitulo}
         DiaArray={ArrayDia}
         HorarioInicioArray={ArrayHorarioInicio}
@@ -138,7 +138,7 @@ function Programacao({ JsonProgramacaoData }) {
         DescricaoArray={ArrayDescricao}
         MiniBioArray={ArrayMiniBio}
         FotoArray={ArrayFoto}
-      /> */}
+      />
     </>
   );
 }
