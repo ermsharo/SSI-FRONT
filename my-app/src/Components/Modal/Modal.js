@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import * as S from "./ModalStyles";
-
-export default function Modal({ display }) {
+import CloseButtonIcon from "./CloseButton";
+export default function Modal({ display ,image, title, Palestrante, data, horario ,resumo }) {
 
     const [closeModalStatus, setCloseModalStatus] = useState(false);
     const [finalDisplayStatus, setfinalDisplayStatus] = useState(true);
@@ -51,9 +51,25 @@ export default function Modal({ display }) {
     }
 
     if(finalDisplayStatus === true){  
-    return (   
+    return (  
     <S.ModalStyleBackground>
-      <S.ModalStyleBox><S.CloseButton onClick={CloseModal}>X</S.CloseButton></S.ModalStyleBox>
+      <S.ModalStyleBox>
+          
+          <S.CloseButtonLine><S.CloseButton onClick={CloseModal}><CloseButtonIcon /> <closeButtonIcon/></S.CloseButton></S.CloseButtonLine>
+     
+     <S.PalestraInfo>
+     <div>    
+     <S.PalestranteImage><img src = {image}/></S.PalestranteImage>
+    
+     </div>
+     <div> 
+    <S.NomePalestra>{title}</S.NomePalestra>    
+    <S.Palestrante> {Palestrante}</S.Palestrante>  
+    <S.Horario><div>{data}</div><div>{horario}</div></S.Horario>
+     </div>
+      </S.PalestraInfo>  
+    <S.Resumo>{resumo}</S.Resumo>    
+      </S.ModalStyleBox>
     </S.ModalStyleBackground>
   );
 }

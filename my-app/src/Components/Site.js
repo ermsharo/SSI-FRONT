@@ -12,7 +12,7 @@ import Fundo from "./Fundo/Fundo";
 import Programacao from "./Programacao/programacaoBox";
 import CloseButton from "./CloseButton";
 import  "./MenuStyle.scss";
-
+import Modal from "./Modal/Modal";
 
 const HeaderBox = styled.div`
   width: 100%;
@@ -160,10 +160,7 @@ const HeaderUlBoxMobile = styled.ul`
     display: inline-block;
     list-style: none;
     width: 100vw;
-    text-align: center;
-    //border:2px solid blue;
-    padding: 0px;
-    margin: 0px;
+    text-align: center;https://cryptoid.com.br/wp-content/uploads/2016/04/Tim-Berners-Lee.jpg
     margin-top: 20px;
     font-family: var(--fontTitulo);
     font-weight: 0.4px;
@@ -302,6 +299,10 @@ function Site(/*{JsonData}*/) {
   return (
     <>
       <Fundo />
+      <Modal display = "false" image= "https://cryptoid.com.br/wp-content/uploads/2016/04/Tim-Berners-Lee.jpg"
+      title = "Como usar a internet" Palestrante = "Tim Berners Lee" data = "25/12" horario = "13:00 - 14:00" 
+      resumo = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque libero at lacus faucibus posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac nunc mauris. Vivamus euismod tortor eget nisi vestibulum, in rhoncus velit egestas. Aliquam erat volutpat. Ut ac luctus orci. Cras molestie convallis"
+      />
       <RegularHeader>
         <HeaderBox>
           <LogoBox onClick={handleClickBanner}>

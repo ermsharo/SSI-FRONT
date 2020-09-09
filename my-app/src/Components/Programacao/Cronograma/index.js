@@ -1,6 +1,7 @@
 import React from 'react';
 import { NichoLink ,CronogramaBase, Linha, Evento, Intervalo } from './style';
 import CronogramaCard from "./CronogramaCard";
+import Modal from "./../../Modal/Modal";
 function Cronograma(props) {
   
   let cores_fundo = ['#520082', '#3a006e'];
@@ -50,7 +51,7 @@ function Cronograma(props) {
     console.log("aqui")
   }
   return (
-    <CronogramaBase>
+    <CronogramaBase >
       <Linha>
         {periodos[0]}
       </Linha>
@@ -71,6 +72,7 @@ function Cronograma(props) {
       
      
     </CronogramaBase>
+     
   );
 }
 
