@@ -50,8 +50,8 @@ export default function CronogramaBox(/*{ TituloArray, DiaArray , HorarioInicioA
       };
         
     return (
-      <>
-        <Slider onClick = {()=>console.log("aqui")} {...settings} style={{margin:'auto',maxWidth:"80%", width:'100%'}}>
+      <div >
+        <Slider  {...settings} style={{margin:'auto',maxWidth:"80vw", width:'100%'}}>
           <Cronograma
 
             eventos={[
@@ -182,6 +182,6 @@ export default function CronogramaBox(/*{ TituloArray, DiaArray , HorarioInicioA
           />
         </Slider>
 
-      </>
+      </div>
     );
 }

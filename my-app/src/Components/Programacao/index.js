@@ -155,7 +155,7 @@ let OrganizandoProgramacao = () =>{
     <>
 
     <GenericSize>
-   
+     
       <CronogramaBox
         //TituloArray = {ArrayTitulo}  
         //DiaArray = {ArrayDia} 

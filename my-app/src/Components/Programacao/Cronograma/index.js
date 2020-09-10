@@ -24,6 +24,13 @@ function Cronograma(props) {
         console.log("foi")
       };
 
+
+      let Print = () =>{
+        console.log("Testando isso aqui logo");
+      }
+
+ 
+
       items.push(
 
       /*   <Evento style={{backgroundColor: cor, color: fonte}} onClick = {ModalOpen}>
@@ -39,22 +46,34 @@ function Cronograma(props) {
           </p>
         
       </Evento> */
+   
+      <CronogramaCard cor = {cor} fonte = {fonte} data = {props.eventos[t][i]} onClick={Print}/>
 
-      <CronogramaCard cor = {cor} fonte = {fonte} data = {props.eventos[t][i]}/>
-        
       )
     }
     periodos.push(items)
+
   }
 
   let  teste = ()=>{
     console.log("aqui")
   }
+
+  let a = [1,2,3,4,5,6]; 
+
+  let  Imprimir = (x) =>{
+    console.log(x)
+    console.log("asdasd")
+  } 
+
   return (
     <>
     <CronogramaBase >
       <Linha>
         {periodos[0]}
+
+
+
       </Linha>
       <Intervalo style={{backgroundColor: '#1C043C'}}>
         <b onClick = {teste}>Intervalo para Janta</b>
@@ -68,6 +87,7 @@ function Cronograma(props) {
       <Linha>
         {periodos[1]}
       </Linha>
+     
 
 
       <Modal display = "false" image= "https://cryptoid.com.br/wp-content/uploads/2016/04/Tim-Berners-Lee.jpg"

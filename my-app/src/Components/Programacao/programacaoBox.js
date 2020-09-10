@@ -132,11 +132,11 @@ function Programacao({ JsonProgramacaoData }) {
   return (
     <>
       <TituloProgramacao >Programação</TituloProgramacao>
-   <S.CronogramaBoxIndex   >
+{/*    <S.CronogramaBoxIndex   > */}
          <CronogramaBox
  
       />
-    </S.CronogramaBoxIndex>  
+{/*     </S.CronogramaBoxIndex>   */}
     </>
   );
 }
