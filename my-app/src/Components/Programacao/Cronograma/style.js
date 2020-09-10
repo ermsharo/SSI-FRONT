@@ -10,8 +10,7 @@ export const Linha = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: left;
-  align-items: center;
-  @media (max-width: 650px){
+  @media (max-width: 1000px){
     flex-direction: column;
   }
 `;
@@ -28,15 +27,26 @@ export const NichoLink = styled.div`
 
 
 export const Evento = styled.div`
-  font-size: 0.9em;
-  width: 90%;
-  height: 200px;
-  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   cursor:pointer;
+  font-size: 0.9em;
+  width: 100%;
+  height: 300px;
+  &:hover{
+    transform: scale(1.005);
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(255,255,255,0.5), -4px -4px 8px 0px rgba(255,255,255,0.5);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(255,255,255,0.5), -4px -4px 8px 0px rgba(255,255,255,0.5);
+    box-shadow: 4px 4px 8px 0px rgba(255,255,255,0.5), -4px -4px 8px 0px rgba(255,255,255,0.5);
+    border-radius: 8px;
+  }
   div {
+    padding: 0.2em 1em;
+    width: auto;
     display: flex;
     justify-content: space-between;
-    @media (max-width: 300px){
+    /*@media (max-width: 300px){
       a:nth-child(1):before{
         font-weight: 550;
         content: 'Início: ';
@@ -46,33 +56,50 @@ export const Evento = styled.div`
         content: 'Fim: ';
       }
     }
-    @media (max-width: 650px){
-      font-size: 0.8em;
+    @media (max-width: 400px){
       flex-direction: column;
+    }
+    */
+    @media (max-width: 1200px) and (min-width:1000px){
+      font-size: 0.85em;
     }
   }
   h4 {
+    padding: 0.5em 1em;
+    padding-top: 0;
+    width: auto;
     text-align: center;
     font-size: 1.1em;
     margin: 0;
     margin-bottom: 10px;
-    @media (max-width: 600px){
+    @media (max-width: 1400px) and (min-width:1000px){
       font-size: 1em;
+      padding: 0.5em 0.9em;
+      padding-top: 1em;
     }
   }
   h5 {
+    padding: 0.2em 1em;
+    width: auto;
     font-size: 0.9em;
     margin: 0;
     margin-bottom: 10px;
-    @media (max-width: 600px){
-      font-size: 0.8em;
+    @media (max-width: 1200px) and (min-width:1000px){
+      font-size: 0.7em;
     }
   }
   p {
+    text-align: justify;
+    padding: 0.2em 1em;
+    width: auto;
     font-size: 0.9em;
     margin: 0;
     margin-top: 10px;
-    @media (max-width: 600px){
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    @media (max-width: 1200px) and (min-width:1000px){
       font-size: 0.8em;
     }
   }
@@ -85,12 +112,17 @@ export const Intervalo = styled.div`
   color: white;
   text-align: center;
   
+  b{
+    margin: 0;
+  }
+
   div {
-    margin-top: 2em;
+    margin-top: 1em;
     width: 150px;
     max-width: 80%;
     display: flex;
     justify-content: space-between;
+    /*
     @media (max-width: 600px){
       a:nth-child(1):before{
         font-weight: 550;
@@ -104,6 +136,7 @@ export const Intervalo = styled.div`
       flex-direction: column;
     }
   }
+  */
   @media (max-width: 600px){
     padding: 0.5em;
   }

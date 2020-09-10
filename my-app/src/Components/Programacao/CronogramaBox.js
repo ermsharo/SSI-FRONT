@@ -13,7 +13,7 @@ import LogoDataBootcamp from '../../assets/img/patrocinio/databootcamp_white.png
 import LogoNelogica from '../../assets/img/patrocinio/nelogica.svg';
 import LogoStone from '../../assets/img/patrocinio/stoneBranco.svg';
 import LogoCWI from '../../assets/img/patrocinio/cwi.png';
-import LogoDataLab from '../../assets/img/patrocinio/';
+import LogoDataLab from '../../assets/img/patrocinio/kinghostBranco.svg';
 
 function ArrowRight(props) {
   const { className, style, onClick } = props;
@@ -74,7 +74,7 @@ export default function CronogramaBox(/*{ TituloArray, DiaArray , HorarioInicioA
                   palestrante:'Palestrante: D.Sc. Augusto Borella Hougaz',
                   horaInicio:'13:30',
                   horaFim:'14:30',
-                  descricao:"Gosta de Big Data, análise de dados, e IoT? Então você tem que conhecer a Intelie, que oferece soluções inteligentes para diversos tipo de problemas no mercado, em várias áreas, incluindo Varejo, Gestao de Frota e Bancos e Seguradoras. Ficou curioso que quer saber mais? Visite o site: <a href='http://www.intelie.com.br/' target='_blank'>http://www.intelie.com.br/</a>"
+                  descricao:"Gosta de Big Data, análise de dados, e IoT? Então você tem que conhecer a Intelie, que oferece soluções inteligentes para diversos tipo de problemas no mercado, em várias áreas, incluindo Varejo, Gestao de Frota e Bancos e Seguradoras. Ficou curioso que quer saber mais? Visite o site: www.intelie.com.br/"
                 },
                 {
                   titulo:'',
@@ -250,12 +250,12 @@ export default function CronogramaBox(/*{ TituloArray, DiaArray , HorarioInicioA
               // Eventos Tarde                      
               [
                 {
-                  titulo:'Introdução aos Investimentos e as oportunidades na área de tecnologia - Uma visão geral do reflexo da taxa de juros brasileira na Bolsa e as oportunidades criadas na área de tecnologia',
+                  titulo:'Introdução aos Investimentos e as oportunidades na área de tecnologia',
                   foto:LogoNelogica,
                   palestrante:'Palestrante: Gabriel Fioravante',
                   horaInicio:'13:30',
                   horaFim:'14:30',
-                  descricao:"A Nelogica atua no fornecimento de informações e no desenvolvimento de aplicações avançadas para o mercado financeiro. Através da criação de softwares inovadores, proporciona aos investidores um processo de tomada de decisão muito mais seguro, estruturado e preciso. A empresa possui como maior característica o diferencial tecnológico, concentrando esforços em sistemas de análise, acompanhamento e negociação de ativos. Quer conhecer mais sobre a empresas? Acesse <a href='https://www.nelogica.com.br/' target='_blank'>https://www.nelogica.com.br/</a>"
+                  descricao:"A Nelogica atua no fornecimento de informações e no desenvolvimento de aplicações avançadas para o mercado financeiro. Através da criação de softwares inovadores, proporciona aos investidores um processo de tomada de decisão muito mais seguro, estruturado e preciso. A empresa possui como maior característica o diferencial tecnológico, concentrando esforços em sistemas de análise, acompanhamento e negociação de ativos. Quer conhecer mais sobre a empresas? Acesse www.nelogica.com.br"
                 },
                 {
                   titulo:'',

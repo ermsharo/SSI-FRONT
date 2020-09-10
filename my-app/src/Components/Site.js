@@ -9,7 +9,7 @@ import Apoio from "./Apoio/index";
 import Footer from "./Footer";
 import styled from "styled-components";
 import Fundo from "./Fundo/Fundo";
-import Programacao from "./Programacao/programacaoBox";
+import Programacao from "./Programacao/index";
 import CloseButton from "./CloseButton";
 import  "./MenuStyle.scss";
 import Modal from "./Modal/Modal";
@@ -149,8 +149,7 @@ const ProgramacaoBoxHome= styled.div`
 /*   border: 2px solid blue;
   background-color: red; */
 position:relative; 
-z-index:10 !important; 
-
+z-index:10 !important;
 `;
 
 
@@ -374,9 +373,7 @@ function Site(/*{JsonData}*/) {
             {" "}
             <HeaderSpace></HeaderSpace>
 
-            <ProgramacaoBoxHome>
-            <Programacao  /*sheetsInfo = {sheetsInfo}  JsonProgramacaoData ={JsonData}*//>
-            </ProgramacaoBoxHome>
+            <Programacao  /*sheetsInfo = {sheetsInfo}  JsonProgramacaoData ={JsonData}*/ />
           </SliderItem>
           <SliderItem ref={ref3}>
             {" "}
