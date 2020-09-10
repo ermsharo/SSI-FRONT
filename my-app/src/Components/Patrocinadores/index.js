@@ -61,8 +61,8 @@ function Patrocinadores() {
                 <LogoStyle src={LogoNelogica} className="logo" alt="Logo Nelogica"/>
             </a>
           </Item>
-          {/*
-          <Item>
+'          {/*
+'          <Item>
             <a href="https://www.stone.com.br/" style={{display:"block", margin:"auto"}} target="_blank" rel="noopener noreferrer">
                 <LogoStyle src={LogoStone} class="logo" alt="Logo Stone"/>
             </a>
