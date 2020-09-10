@@ -6,6 +6,7 @@ import {
   ArrowBaseLeft,
   ArrowBaseRight,
   Dots,
+  TituloProgramacao,
   Spike,
   SpikeReverse,
 } from "./style";
@@ -15,6 +16,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Cronograma from "./Cronograma/index";
 import useForceUpdate from "use-force-update";
 import CronogramaBox from "../Programacao/CronogramaBox";
+import * as S from "./programacaoBoxStyle";
 
 function ArrowRight(props) {
   const { className, style, onClick } = props;
@@ -88,7 +90,7 @@ function Programacao({ JsonProgramacaoData }) {
   const [ArrayPalestra, setArrayPalestra] = useState(null);
 
   let OrdenaPalestrante = () => {
-    let ArrayCru = JsonProgramacaoData?.feed?.entry;
+/*     let ArrayCru = JsonProgramacaoData?.feed?.entry;
     let arrayPalestrantes = [];
     let arrayPalestranteIndividual = [];
     console.log("O ordenador foi invocado", JsonProgramacaoData?.feed?.entry);
@@ -96,10 +98,10 @@ function Programacao({ JsonProgramacaoData }) {
     let Indicador = true;
 
     let numeroDeCampos = 6;
-
+ */
     //Inicializando os palestrantes
 
-    if (ArrayCru != undefined) {
+/*     if (ArrayCru != undefined) {
       let NumeroDePalestrantes = ArrayCru.length / numeroDeCampos;
       let linhaGenerica = [];
 
@@ -120,25 +122,21 @@ function Programacao({ JsonProgramacaoData }) {
       }
 
       console.log(arrayPalestrantes);
-    }
+    } */
   };
 
   OrdenaPalestrante();
 
+
+
   return (
     <>
-      <Titulo>Programação</Titulo>
-
+      <TituloProgramacao >Programação</TituloProgramacao>
+{/*    <S.CronogramaBoxIndex   > */}
          <CronogramaBox
-        TituloArray={ArrayTitulo}
-        DiaArray={ArrayDia}
-        HorarioInicioArray={ArrayHorarioInicio}
-        HorarioFimArray={ArrayHorarioFim}
-        PalestranteArray={ArrayPalestrante}
-        DescricaoArray={ArrayDescricao}
-        MiniBioArray={ArrayMiniBio}
-        FotoArray={ArrayFoto}
+ 
       />
+{/*     </S.CronogramaBoxIndex>   */}
     </>
   );
 }

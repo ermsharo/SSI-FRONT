@@ -12,7 +12,7 @@ import Fundo from "./Fundo/Fundo";
 import Programacao from "./Programacao/programacaoBox";
 import CloseButton from "./CloseButton";
 import  "./MenuStyle.scss";
-
+import Modal from "./Modal/Modal";
 
 const HeaderBox = styled.div`
   width: 100%;
@@ -23,6 +23,7 @@ const HeaderBox = styled.div`
   justify-content: space-around;
   max-height: 60px;
   position: fixed;
+  z-index:100;
   top: 0;
   width: 100%;
   -webkit-box-shadow: 0px 3px 8px 1px rgba(0,0,0,0.28);
@@ -32,10 +33,28 @@ box-shadow: 0px 3px 8px 1px rgba(0,0,0,0.28);
   @media (max-width: 992px) {
   }
 `;
+
+
+
+ const Titulo=styled.h1`
+  color: white;
+  text-align: center;
+
+  margin-bottom: 80px;
+  font-size: 50px;
+  font-family: var(--fontTitulo);
+  @media (max-width: 500px){
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+`;
+
+
 const HeaderBoxMobile = styled.div`
   width: 100%;
   padding: 10px;
   background-color: white;
+  z-index:100;
 
   display: grid;
   grid-template-columns: 10% auto 10%;
@@ -68,6 +87,7 @@ const LogoBox = styled.div`
 const HeaderUlBox = styled.ul`
   list-style: none;
   display: inline;
+  z-index:100;
 
   li {
     font-size: 22px;
@@ -85,6 +105,7 @@ const SliderBox = styled.div``;
 
 const MobileHeader = styled.div`
   display: none;
+  z-index:100;
   /*   border: 2px solid blue; */
   @media (max-width: 992px) {
     display: block;
@@ -94,6 +115,7 @@ const MobileHeader = styled.div`
 
 const RegularHeader = styled.div`
   display: block;
+  z-index:100;
 
 
   @media (max-width: 992px) {
@@ -121,6 +143,17 @@ const HeaderSpace = styled.div`
   height: 60px;
 `;
 
+
+const ProgramacaoBoxHome= styled.div`
+
+/*   border: 2px solid blue;
+  background-color: red; */
+position:relative; 
+z-index:10 !important; 
+
+`;
+
+
 /*
 const HeaderUlBoxMobile = styled.ul`
   list-style: none;
@@ -144,10 +177,7 @@ const HeaderUlBoxMobile = styled.ul`
     display: inline-block;
     list-style: none;
     width: 100vw;
-    text-align: center;
-    //border:2px solid blue;
-    padding: 0px;
-    margin: 0px;
+    text-align: center;https://cryptoid.com.br/wp-content/uploads/2016/04/Tim-Berners-Lee.jpg
     margin-top: 20px;
     font-family: var(--fontTitulo);
     font-weight: 0.4px;
@@ -256,43 +286,13 @@ const MenuMobileDisplay = styled.div`
 `;
 
 
+
 function Site(/*{JsonData}*/) {
   const [count, setCount] = useState(1);
   const [Abre, setAbre] = useState(false);
   const [, setDisplayMobile] = useState({display:"none"});
   const [, setAnimationMenu] = useState({height :"0px"});
-  
 
-/*   const MenuStatus = () => {
-    if (count === 1) {
-      setCount(2);
-
-      console.log("Abrindo");
-    } else {
-      setCount(1);
-      setDisplayMobile({display:"block"});
-      console.log("Fechando");
-    }
-  };
-
-  let sheetsInfo = ""; 
-
-  let Slide = 0;
-
-  let handleClick = () => {
-    this.setState({
-      open: !this.state.open,
-    });
-  };
-
-  let i = 0;
-
-  let DisplayModal = {
-    display: "block",
-  };
-
-  let Open = false;
-  */
   
   let root = document.documentElement;
   let OpenFunction = () => {
@@ -373,7 +373,10 @@ function Site(/*{JsonData}*/) {
           <SliderItem ref={ref2}>
             {" "}
             <HeaderSpace></HeaderSpace>
+
+            <ProgramacaoBoxHome>
             <Programacao  /*sheetsInfo = {sheetsInfo}  JsonProgramacaoData ={JsonData}*//>
+            </ProgramacaoBoxHome>
           </SliderItem>
           <SliderItem ref={ref3}>
             {" "}

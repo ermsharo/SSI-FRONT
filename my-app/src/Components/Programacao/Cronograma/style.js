@@ -1,10 +1,8 @@
 import styled from 'styled-components'
 
 export const CronogramaBase = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  align-items: center;
+display:block; 
+
 `;
 
 export const Linha = styled.div`
@@ -18,11 +16,23 @@ export const Linha = styled.div`
   }
 `;
 
+
+
+export const NichoLink = styled.div`
+
+
+`;
+
+
+
+
+
 export const Evento = styled.div`
   font-size: 0.9em;
   width: 90%;
   height: 200px;
   padding: 1em;
+  cursor:pointer;
   div {
     display: flex;
     justify-content: space-between;
@@ -74,8 +84,9 @@ export const Intervalo = styled.div`
   width: 100%;
   color: white;
   text-align: center;
+  
   div {
-    margin-top: 0.5em;
+    margin-top: 2em;
     width: 150px;
     max-width: 80%;
     display: flex;

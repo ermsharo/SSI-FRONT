@@ -1,6 +1,7 @@
 import React from 'react';
-import { CronogramaBase, Linha, Evento, Intervalo } from './style';
-
+import { NichoLink ,CronogramaBase, Linha, Evento, Intervalo } from './style';
+import CronogramaCard from "./CronogramaCard";
+import Modal from "./../../Modal/Modal";
 function Cronograma(props) {
   
   let cores_fundo = ['#520082', '#3a006e'];
@@ -19,10 +20,23 @@ function Cronograma(props) {
       
       let fonte = cores_fonte[(t+i)%2]
 
+      let ModalOpen = () =>{
+        console.log("foi")
+      };
+
+
+      let Print = () =>{
+        console.log("Testando isso aqui logo");
+      }
+
+ 
+
       items.push(
-        <Evento style={{backgroundColor: cor, color: fonte}}>
-          <h4>{props.eventos[t][i]['titulo']}</h4>
-          <h5>{props.eventos[t][i]['palestrante']}</h5>
+
+      /*   <Evento style={{backgroundColor: cor, color: fonte}} onClick = {ModalOpen}>
+               
+          <h4 onClick = {ModalOpen}>{props.eventos[t][i]['titulo']}</h4>
+          <h5 onClick={()=>console.log("aqui esta")}>{props.eventos[t][i]['palestrante']}</h5>
           <div>
             <a>{props.eventos[t][i]['horaInicio']}</a>
             <a>{props.eventos[t][i]['horaFim']}</a>
@@ -30,19 +44,39 @@ function Cronograma(props) {
           <p>
             {props.eventos[t][i]['descricao']}
           </p>
-        </Evento>
+        
+      </Evento> */
+   
+      <CronogramaCard cor = {cor} fonte = {fonte} data = {props.eventos[t][i]} onClick={Print}/>
+
       )
     }
     periodos.push(items)
+
   }
 
+  let  teste = ()=>{
+    console.log("aqui")
+  }
+
+  let a = [1,2,3,4,5,6]; 
+
+  let  Imprimir = (x) =>{
+    console.log(x)
+    console.log("asdasd")
+  } 
+
   return (
-    <CronogramaBase>
+    <>
+    <CronogramaBase >
       <Linha>
         {periodos[0]}
+
+
+
       </Linha>
       <Intervalo style={{backgroundColor: '#1C043C'}}>
-        <b>Intervalo para Janta</b>
+        <b onClick = {teste}>Intervalo para Janta</b>
         <center>
           <div>
             <a>18:00</a>
@@ -54,7 +88,16 @@ function Cronograma(props) {
         {periodos[1]}
       </Linha>
      
+
+
+      <Modal display = "false" image= "https://cryptoid.com.br/wp-content/uploads/2016/04/Tim-Berners-Lee.jpg"
+      title = "Como usar a internet" Palestrante = "Tim Berners Lee" data = "25/12" horario = "13:00 - 14:00" 
+      resumo = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque libero at lacus faucibus posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac nunc mauris. Vivamus euismod tortor eget nisi vestibulum, in rhoncus velit egestas. Aliquam erat volutpat. Ut ac luctus orci. Cras molestie convallis"
+      />
+     
     </CronogramaBase>
+    </>
+     
   );
 }
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { LoadingDiv, GenericSize, Titulo, ArrowBaseLeft, ArrowBaseRight, Dots ,Spike, SpikeReverse} from './style';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -125,6 +125,7 @@ export default function CronogramaBox(/*{ TituloArray, DiaArray , HorarioInicioA
 
           {/* 22/09 */}
           <Cronograma
+
             eventos={[
               // Eventos Tarde                      
               [
@@ -363,7 +364,6 @@ export default function CronogramaBox(/*{ TituloArray, DiaArray , HorarioInicioA
             ]}
           />
         </Slider>
-
       </>
     );
 }
