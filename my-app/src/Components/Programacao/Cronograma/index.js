@@ -51,6 +51,7 @@ function Cronograma(props) {
     console.log("aqui")
   }
   return (
+    <>
     <CronogramaBase >
       <Linha>
         {periodos[0]}
@@ -69,9 +70,13 @@ function Cronograma(props) {
       </Linha>
 
 
-      
+      <Modal display = "false" image= "https://cryptoid.com.br/wp-content/uploads/2016/04/Tim-Berners-Lee.jpg"
+      title = "Como usar a internet" Palestrante = "Tim Berners Lee" data = "25/12" horario = "13:00 - 14:00" 
+      resumo = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque libero at lacus faucibus posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac nunc mauris. Vivamus euismod tortor eget nisi vestibulum, in rhoncus velit egestas. Aliquam erat volutpat. Ut ac luctus orci. Cras molestie convallis"
+      />
      
     </CronogramaBase>
+    </>
      
   );
 }

@@ -6,6 +6,7 @@ import {
   ArrowBaseLeft,
   ArrowBaseRight,
   Dots,
+  TituloProgramacao,
   Spike,
   SpikeReverse,
 } from "./style";
@@ -130,10 +131,9 @@ function Programacao({ JsonProgramacaoData }) {
 
   return (
     <>
-      <Titulo >Programação</Titulo>
-   <S.CronogramaBoxIndex   onClick = {()=>console.log("aqui")}>
+      <TituloProgramacao >Programação</TituloProgramacao>
+   <S.CronogramaBoxIndex   >
          <CronogramaBox
-         onClick = {()=>console.log("aqui")}
  
       />
     </S.CronogramaBoxIndex>  

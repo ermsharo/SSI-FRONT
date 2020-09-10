@@ -33,6 +33,23 @@ box-shadow: 0px 3px 8px 1px rgba(0,0,0,0.28);
   @media (max-width: 992px) {
   }
 `;
+
+
+
+ const Titulo=styled.h1`
+  color: white;
+  text-align: center;
+
+  margin-bottom: 80px;
+  font-size: 50px;
+  font-family: var(--fontTitulo);
+  @media (max-width: 500px){
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+`;
+
+
 const HeaderBoxMobile = styled.div`
   width: 100%;
   padding: 10px;
@@ -269,12 +286,12 @@ const MenuMobileDisplay = styled.div`
 `;
 
 
+
 function Site(/*{JsonData}*/) {
   const [count, setCount] = useState(1);
   const [Abre, setAbre] = useState(false);
   const [, setDisplayMobile] = useState({display:"none"});
   const [, setAnimationMenu] = useState({height :"0px"});
-  
 
   
   let root = document.documentElement;
@@ -299,10 +316,6 @@ function Site(/*{JsonData}*/) {
   return (
     <>
       <Fundo />
-      <Modal display = "false" image= "https://cryptoid.com.br/wp-content/uploads/2016/04/Tim-Berners-Lee.jpg"
-      title = "Como usar a internet" Palestrante = "Tim Berners Lee" data = "25/12" horario = "13:00 - 14:00" 
-      resumo = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque libero at lacus faucibus posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac nunc mauris. Vivamus euismod tortor eget nisi vestibulum, in rhoncus velit egestas. Aliquam erat volutpat. Ut ac luctus orci. Cras molestie convallis"
-      />
       <RegularHeader>
         <HeaderBox>
           <LogoBox onClick={handleClickBanner}>
@@ -360,6 +373,7 @@ function Site(/*{JsonData}*/) {
           <SliderItem ref={ref2}>
             {" "}
             <HeaderSpace></HeaderSpace>
+
             <ProgramacaoBoxHome>
             <Programacao  /*sheetsInfo = {sheetsInfo}  JsonProgramacaoData ={JsonData}*//>
             </ProgramacaoBoxHome>

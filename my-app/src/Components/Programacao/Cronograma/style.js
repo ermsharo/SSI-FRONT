@@ -1,10 +1,8 @@
 import styled from 'styled-components'
 
 export const CronogramaBase = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  align-items: center;
+display:block; 
+
 `;
 
 export const Linha = styled.div`
@@ -86,8 +84,9 @@ export const Intervalo = styled.div`
   width: 100%;
   color: white;
   text-align: center;
+  
   div {
-    margin-top: 0.5em;
+    margin-top: 2em;
     width: 150px;
     max-width: 80%;
     display: flex;

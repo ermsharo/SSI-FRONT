@@ -82,7 +82,7 @@ export const GenericSize = styled.div`
 export const Titulo=styled.h1`
   color: white;
   text-align: center;
-  margin: 50px 0;
+
   margin-bottom: 80px;
   font-size: 50px;
   font-family: var(--fontTitulo);
@@ -91,6 +91,20 @@ export const Titulo=styled.h1`
     margin-bottom: 50px;
   }
 `;
+
+
+export const TituloProgramacao =styled.div`
+  color: white;
+  text-align: center;
+margin-top:30px;
+  margin-bottom: 80px;
+  font-size: 50px;
+  font-family: var(--fontTitulo);
+
+  
+`;
+
+
 
 export const ArrowBaseLeft=styled.div`
   &::before{
