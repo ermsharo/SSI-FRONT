@@ -97,7 +97,7 @@ text-transform:uppercase;
 
     z-index:1000;
     text-align:center; 
-    font-size:50px; 
+    font-size:35px; 
     padding-top:20px;
 
     @media(max-width:995px){
@@ -130,6 +130,7 @@ margin:auto;
 color:white; 
 font-family: var(--fontCorpo);
 padding-top:20px;
+padding-bottom:40px;
 
 
 @media(max-width:995px){
@@ -160,8 +161,9 @@ grid-column-gap :10%;
 
 export const ModalStyleBox = styled.div`
     width:70vw;
+    height:auto;
     height:60vh; 
-  
+    overflow: scroll;
  
     z-index:11 !important;  
     background:rgb(22, 3, 48, 1);
