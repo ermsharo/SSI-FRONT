@@ -4,8 +4,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 //import useForceUpdate from 'use-force-update';
 import CronogramaBox from "../Programacao/CronogramaBox";
+import Modal from "../Modal/Modal";
+import { createStore, useStore } from "react-context-hook";
 
 function Programacao({JsonProgramacaoData}) {
+  
+ 
+  
   /*
   console.log("JsonDataSheets", JsonProgramacaoData)
   const JsonSheetsData = JsonProgramacaoData;
@@ -42,7 +47,7 @@ function Programacao({JsonProgramacaoData}) {
     setFirstTime(true);
 
     fetch(url).then((response) => {
-    
+                  
       return response.json()
     
       }).then((data) => {
@@ -126,7 +131,7 @@ let OrganizandoProgramacao = () =>{
 
   MiniBio.push(JsonData[14].content.$t);
   MiniBio.push(JsonData[22].content.$t);
-  MiniBio.push(JsonData[30].content.$t);
+  MiniBio.push(Jimport { createStore, useStore } from "react-context-hook";sonData[30].content.$t);
   MiniBio.push(JsonData[38].content.$t);
   MiniBio.push(JsonData[46].content.$t);
   MiniBio.push(JsonData[54].content.$t);
@@ -170,7 +175,9 @@ let OrganizandoProgramacao = () =>{
       />
      </GenericSize>
     </>
+ 
     </>
+  
   );
 }
 

@@ -13,6 +13,12 @@ import Programacao from "./Programacao/index";
 import CloseButton from "./CloseButton";
 import  "./MenuStyle.scss";
 import Modal from "./Modal/Modal";
+import { singletonHook } from 'react-singleton-hook';
+
+
+
+
+
 
 const HeaderBox = styled.div`
   width: 100%;
@@ -314,6 +320,8 @@ function Site(/*{JsonData}*/) {
 
   return (
     <>
+
+  {/*   <Modal /> */}
       <Fundo />
       <RegularHeader>
         <HeaderBox>

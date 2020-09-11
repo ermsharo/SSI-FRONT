@@ -26,7 +26,7 @@ function Cronograma(props) {
 
 
       let Print = () =>{
-        console.log("Testando isso aqui logo");
+        console.log("Testando isso aqui logo de uma vez");
       }
 
  
@@ -46,7 +46,7 @@ function Cronograma(props) {
           </p>
         
       </Evento> */
-   
+ 
       <CronogramaCard cor = {cor} fonte = {fonte} data = {props.eventos[t][i]} onClick={Print}/>
 
       )
@@ -67,7 +67,10 @@ function Cronograma(props) {
   } 
 
   return (
+    <div>
+
     <>
+ 
     <CronogramaBase >
       <Linha>
         {periodos[0]}
@@ -90,14 +93,16 @@ function Cronograma(props) {
      
 
 
-      <Modal display = "false" image= "https://cryptoid.com.br/wp-content/uploads/2016/04/Tim-Berners-Lee.jpg"
-      title = "Como usar a internet" Palestrante = "Tim Berners Lee" data = "25/12" horario = "13:00 - 14:00" 
-      resumo = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque libero at lacus faucibus posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac nunc mauris. Vivamus euismod tortor eget nisi vestibulum, in rhoncus velit egestas. Aliquam erat volutpat. Ut ac luctus orci. Cras molestie convallis"
-      />
+    
      
     </CronogramaBase>
+   {/*  <Modal display = "true" image= "https://cryptoid.com.br/wp-content/uploads/2016/04/Tim-Berners-Lee.jpg"
+      title = "Como usar a internet" Palestrante = "Tim Berners Lee" data = "25/12" horario = "13:00 - 14:00" 
+      resumo = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque libero at lacus faucibus posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac nunc mauris. Vivamus euismod tortor eget nisi vestibulum, in rhoncus velit egestas. Aliquam erat volutpat. Ut ac luctus orci. Cras molestie convallis"
+      /> */}
     </>
-     
+
+     </div>
   );
 }
 

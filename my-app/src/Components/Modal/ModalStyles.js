@@ -6,11 +6,15 @@ export const ModalStyleBackground = styled.div`
     height:100vh; 
     margin:auto;  
  
-    z-index:13 !important;  
+
     background:rgba(0,0,0,0.5);
-    position: fixed;
+    position: absolute !important ;
 
 
+    position:fixed;
+    left:0;
+    right:0;
+    z-index:110 !important;  
   
 
 
@@ -156,13 +160,12 @@ grid-column-gap :10%;
 
 export const ModalStyleBox = styled.div`
     width:70vw;
-    height:80vh; 
-    margin-left:15vw;  
-    margin-top:10vw;
+    height:60vh; 
+  
  
     z-index:11 !important;  
     background:rgb(22, 3, 48, 1);
-    position: fixed;
+ 
 
 `;
 
