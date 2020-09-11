@@ -23,6 +23,10 @@
     font-style: bold;
 }
 
+.ReactModal__Overlay--after-open {
+    background-color: rgba(0, 0, 0, 0.75) !important;
+}
+
 .slick-slider {
     margin-bottom: 60px;
 }

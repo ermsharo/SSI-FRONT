@@ -1,11 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { GenericSize, Titulo } from './style';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 //import useForceUpdate from 'use-force-update';
 import CronogramaBox from "../Programacao/CronogramaBox";
-import Modal from "../Modal/Modal";
-import { createStore, useStore } from "react-context-hook";
 
 function Programacao({JsonProgramacaoData}) {
   

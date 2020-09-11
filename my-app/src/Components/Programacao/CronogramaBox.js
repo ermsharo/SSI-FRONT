@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { LoadingDiv, GenericSize, Titulo, ArrowBaseLeft, ArrowBaseRight, Dots ,Spike, SpikeReverse} from './style';
+import React from 'react';
+import { ArrowBaseLeft, ArrowBaseRight, Dots } from './style';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -77,12 +77,12 @@ export default function CronogramaBox(/*{ TituloArray, DiaArray , HorarioInicioA
                   descricao:"Gosta de Big Data, análise de dados, e IoT? Então você tem que conhecer a Intelie, que oferece soluções inteligentes para diversos tipo de problemas no mercado, em várias áreas, incluindo Varejo, Gestao de Frota e Bancos e Seguradoras. Ficou curioso que quer saber mais? Visite o site: www.intelie.com.br/"
                 },
                 {
-                  titulo:'',
+                  titulo:'MLops: maximizando o valor da área de ciência de dados',
                   foto:'',
                   palestrante:'Palestrantes: Fernando Favoretti e Fernando Kenji',
                   horaInicio:'15:00',
                   horaFim:'16:00',
-                  descricao:''
+                  descricao:'Vamos falar um pouco de como estamos criando a área de MLOps na XP, passando sobre a história de criação do termo, relação com ciência de dados, importância da adoção e finalizando com alguns exemplos de projetos.'
                 },
                 {
                   titulo:'Painel Síndrome do Impostor',
@@ -105,7 +105,7 @@ export default function CronogramaBox(/*{ TituloArray, DiaArray , HorarioInicioA
                 },
                 {
                   titulo:'Processamento de linguagem natural no mundo real: desmistificando aplicações, apresentando desafios e o mercado de trabalho',
-                  foto:'https://drive.google.com/file/d/1X4ekq4VtBeZHY1VXhg9xrkr2Gcd7nShw/view?usp=sharing',
+                  foto:'',
                   palestrante:'Palestrante: André Barbosa',
                   horaInicio:'20:00',
                   horaFim:'21:00',
@@ -114,7 +114,7 @@ export default function CronogramaBox(/*{ TituloArray, DiaArray , HorarioInicioA
                 {
                   titulo:'',
                   foto:'',
-                  palestrante:'Palestrante:',
+                  palestrante:'Palestrante: Daniel Redondo',
                   horaInicio:'21:30',
                   horaFim:'22:30',
                   descricao:''
@@ -138,12 +138,12 @@ export default function CronogramaBox(/*{ TituloArray, DiaArray , HorarioInicioA
                   descricao:"Neste encontro iremos compartilhar as vivências e experiências de alguns líderes da Clearsale, líder em soluções antifraude no Brasil. Falaremos dos desafios tecnológicos e de negócio relacionados ao processamento de grandes volumes de transações e dados históricos, tratando aspectos de engenharia de dados e arquitetura de soluções em um ambiente de times multidisciplinares."
                 },
                 {
-                  titulo:'',
+                  titulo:'HPC, AI & Analytics - Iniciativas contra a Covid-19',
                   foto:'',
-                  palestrante:'Palestrante:',
+                  palestrante:'Palestrante: Patrícia Pampanelli',
                   horaInicio:'15:00',
                   horaFim:'16:00',
-                  descricao:""
+                  descricao:"A humanidade enfrenta hoje um dos seus maiores desafios: a pandemia de COVID-19. Nesta palestra vamos mostrar como data analytics, data science e HPC estão ajudando a sociedade a transpor estes desafios. Cientistas em todo o mundo estão utilizando o poder computacional das GPUs para pesquisar vacinas e buscar tratamentos mais eficazes. As pesquisas vão do sequecimento do vírus até análises de imagens médicas para prover um melhor diagnótico e tratamento dos pacientes."
                 },
                 {
                   titulo:'',
@@ -166,7 +166,7 @@ export default function CronogramaBox(/*{ TituloArray, DiaArray , HorarioInicioA
                 },
                 {
                   titulo:'Viver de Jogos? Práticas em estúdios brasileiros e vantagens em utilizar Unity',
-                  foto:'https://drive.google.com/file/d/1GRYTI_Wk6ZYJRtXqkGIDwquf0YQt48pz/view?usp=sharing',
+                  foto:'',
                   palestrante:'Palestrante: João Paulo Xavier',
                   horaInicio:'20:00',
                   horaFim:'21:00',
@@ -174,7 +174,7 @@ export default function CronogramaBox(/*{ TituloArray, DiaArray , HorarioInicioA
                 },
                 {
                   titulo:'Trapaças em jogos utilizando hardware',
-                  foto:'https://drive.google.com/file/d/1lreYdzF5U6UD-kIN4JvJkJGEXW9TecZW/view?usp=sharing',
+                  foto:'',
                   palestrante:'Palestrante: Julio Della Flora',
                   horaInicio:'21:30',
                   horaFim:'22:30',
@@ -199,7 +199,7 @@ export default function CronogramaBox(/*{ TituloArray, DiaArray , HorarioInicioA
                 },
                 {
                   titulo:'Uma breve introdução ao Haskell',
-                  foto:'https://drive.google.com/file/d/1CyF8COvsUoiAitTBGapF-T-rnFhCY95i/view?usp=sharing',
+                  foto:'',
                   palestrante:'Palestrante: Fabrício Olivetti',
                   horaInicio:'15:00',
                   horaFim:'16:00',
@@ -226,7 +226,7 @@ export default function CronogramaBox(/*{ TituloArray, DiaArray , HorarioInicioA
                 },
                 {
                   titulo:'Reaprendendo a aprender com Learnig 3.0',
-                  foto:'https://drive.google.com/file/d/1ZSJ_h420HJf5hN_KAjBto-MnWWgaZPmj/view?usp=sharing',
+                  foto:'',
                   palestrante:'Palestrante: Wanderson Borges',
                   horaInicio:'20:00',
                   horaFim:'21:00',
@@ -286,7 +286,7 @@ export default function CronogramaBox(/*{ TituloArray, DiaArray , HorarioInicioA
                 },
                 {
                   titulo:'Dicionário do Programador: A importância do conhecimento de base para se manter atualizado na área de tecnologia',
-                  foto:'https://drive.google.com/file/d/1ereLogtEJTY6hO-_kskjKg_W7LTS6bIF/view?usp=sharing',
+                  foto:'',
                   palestrante:'Palestrantes: Gabriel Fróes e Vanessa Weber (Codigo fonte TV)',
                   horaInicio:'20:00',
                   horaFim:'21:00',
@@ -295,7 +295,7 @@ export default function CronogramaBox(/*{ TituloArray, DiaArray , HorarioInicioA
                 {
                   titulo:'',
                   foto:'',
-                  palestrante:'Palestrante:',
+                  palestrante:'Palestrante: Genaro Costa',
                   horaInicio:'21:30',
                   horaFim:'22:30',
                   descricao:''
@@ -319,16 +319,16 @@ export default function CronogramaBox(/*{ TituloArray, DiaArray , HorarioInicioA
                 },
                 {
                   titulo:'Oportunidades e Preparação para Carreiras em TI',
-                  foto:'https://drive.google.com/file/d/1kZQhljwNU0HdtHBHxZMwsgnlMeO5msZ3/view',
+                  foto:'',
                   palestrante:'Palestrante: Marco Netto',
                   horaInicio:'15:00',
                   horaFim:'16:00',
                   descricao:"A palestra cobrirá possíveis direções de carreiras na área de TI (academia, startups, pequenas e grandes empresas, etc.), como se preparar durante os diferentes ciclos de desenvolvimento acadêmico (graduação, mestrado, doutorado), cuidados ao preparar curriculum, e tecnologias e habilidades que são importantes aprender agora e para os próximos anos."
                 },
                 {
-                  titulo:'',
+                  titulo:'Painel Carreira Acadêmica em Computação',
                   foto:'',
-                  palestrante:'Palestrante:',
+                  palestrante:'Palestrantes: Ariane Machado, Daniel Cordeiro, Luciano Araújo, Luciano Digiampietri e Marcelo Eler',
                   horaInicio:'16:30',
                   horaFim:'17:30',
                   descricao:""
@@ -337,16 +337,16 @@ export default function CronogramaBox(/*{ TituloArray, DiaArray , HorarioInicioA
               // Eventos Noite
               [
                 {
-                  titulo:'',
+                  titulo:'Machine Learning Operations',
                   foto:LogoDataLab,
-                  palestrante:'Palestrante:',
+                  palestrante:'Palestrante: Rafael Monteiro',
                   horaInicio:'18:30',
                   horaFim:'19:30',
-                  descricao:"",
+                  descricao:"Rafael Monteiro é Lead Data Scientist no DataLab Serasa Experian e conta com mais de 8 anos de experiência nas áreas de finanças, telecom e e-commerce. Entre seus principais interesses estão Big Data, High Performance Computing e Inteligência Artificial. Atua principalmente em sistemas de missão crítica que requerem alto desempenho e escalabidade, já passou por empresas como BM&FBovespa, Elo7 e Itaú Unibanco.",
                 },
                 {
                   titulo:'Alerta de invasão: ataques e histórias de uma Engenheira Social',
-                  foto:'https://drive.google.com/file/d/19s3KbHKNjcuU6gZelLZmRcPSCC_BGTSv/view?usp=sharing',
+                  foto:'',
                   palestrante:'Palestrante: Marina Ciavatta',
                   horaInicio:'20:00',
                   horaFim:'21:00',

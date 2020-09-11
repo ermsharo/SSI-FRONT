@@ -14,9 +14,7 @@ export const ModalStyleBackground = styled.div`
     position:fixed;
     left:0;
     right:0;
-    z-index:110 !important;  
-  
-
+    z-index:110 !important;
 
 `;
 
@@ -26,8 +24,7 @@ export const CloseButtonLine = styled.div`
 display:inline-flex; 
 
 justify-content: flex-end;
-width:92%;
-padding:10px;
+width:98%;
 padding-top:20px;
 
 
@@ -53,17 +50,10 @@ margin:auto;
 
 
 img{
-    width:220px;
-    height:220px;
-
-    border-radius:50%;
-
+    width:250px;
+    height:100%;
 
     @media(max-width:995px){
-        width:110px;
-    height:110px;
-
-
         margin:auto;
     }
 }
@@ -72,16 +62,17 @@ img{
 `;
 
 export const Palestrante = styled.div`
-  text-transform:uppercase;
     color:white; 
-    font-family: var(--fontTitulo);
-    font-size:30px;
+    font-family: var(--fontCorpo);
+    font-size:1.3em;
     text-align:center; 
     padding-bottom:10px; 
+    font-weight: 650;
 
 
     @media(max-width:995px){
-        font-size:20px;
+        font-size:1.2em;
+        padding-top: 10px;
     }
 
 
@@ -90,18 +81,16 @@ export const Palestrante = styled.div`
 
 
 export const NomePalestra = styled.div`
-text-transform:uppercase;
+    text-transform:uppercase;
     color:white; 
     font-family: var(--fontTitulo);
-    cursor:pointer; 
 
     z-index:1000;
     text-align:center; 
-    font-size:35px; 
+    font-size:1.9em; 
     padding-top:20px;
 
     @media(max-width:995px){
-        font-size:30px;
     }
 
 
@@ -110,14 +99,14 @@ text-transform:uppercase;
 `;
 
 export const Horario = styled.div`
-
-text-transform:uppercase;
+    font-weight: 650;
     color:white; 
-    font-family: var(--fontTitulo);
+    font-family: var(--fontCorpo);
     text-align:center; 
-    font-size:22px; 
+    font-size:1.1em;
     @media(max-width:995px){
-        font-size:19px;
+        font-size:1em;
+        padding-top: 10px;
     }
 
 
@@ -129,12 +118,13 @@ width:90%;
 margin:auto;
 color:white; 
 font-family: var(--fontCorpo);
-padding-top:20px;
+padding-top:40px;
 padding-bottom:40px;
+font-size: 1.15em;
 
-
-@media(max-width:995px){
-        font-size:12px;
+    @media(max-width:995px){
+        font-size:1.1em;
+        padding-top: 25px;
     }
 
 `;
@@ -144,11 +134,13 @@ display: grid;
 width:80%; 
 margin:auto; 
 
-grid-template-columns: 250px auto; 
-grid-column-gap :10%; 
+grid-template-columns: 300px auto; 
+grid-column-gap :5%; 
+grid-row-gap: 10%;
 
 @media(max-width:995px){
-    grid-template-columns: 100%; 
+    grid-template-columns: 100%;
+    grid-row-gap: 0%;
 }
 
 
@@ -162,7 +154,7 @@ grid-column-gap :10%;
 export const ModalStyleBox = styled.div`
     width:70vw;
     height:auto;
-    height:60vh; 
+    max-height:60vh; 
     overflow: scroll;
  
     z-index:11 !important;  
@@ -170,8 +162,10 @@ export const ModalStyleBox = styled.div`
     @media(max-width:995px){
         width:90vw;
     }
- 
 
+    @media(max-width:995px){
+        max-height: 80vh;
+    }
 `;
 
 export const CloseButton = styled.div`

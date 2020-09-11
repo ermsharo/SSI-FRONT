@@ -1,9 +1,6 @@
-import React, { useState } from "react";
-import * as S from "./CronogramaCardStyle";
-import { NichoLink, CronogramaBase, Linha, Evento, Intervalo } from "./style";
-import ReactDOM from "react-dom";
+import React from "react";
+import { Evento } from "./style";
 import ReactModal from "react-modal";
-import Modal from "../../Modal/Modal";
 import * as SM from "../../Modal/ModalStyles";
 import CloseButtonIcon from "../../Modal/CloseButton";
 
@@ -14,7 +11,7 @@ const customStyles = {
     right: "auto",
     bottom: "auto",
     marginRight: "-50%",
-    transform: "translate(-50%, -50%)",
+    transform: "translate(-50%, -45%)",
     display:'flex',
     BackgroundColor:'black',
     border: '1px solid black',
@@ -29,7 +26,6 @@ export default function CronogramaCard({ cor, fonte, data }) {
 
  
 
-  var subtitle;
   const [modalIsOpen, setIsOpen] = React.useState(false);
   function openModal() {
     setIsOpen(true);
@@ -44,20 +40,22 @@ export default function CronogramaCard({ cor, fonte, data }) {
     setIsOpen(false);
   }
 
+  /*
   const [ModalImage, setModalOpen] = useState(false);
-
-
+  */
+/*
   let ModalFunction = () => {
     //Muda a variavel global para abrir
   };
 
   console.log("dados aqui",data);
+*/
 
   return (
     <Evento style={{ backgroundColor: cor, color: fonte }}>
       <span onClick={openModal}>
         <h4>{data["titulo"]}</h4>
-        <h5 onClick={() => console.log("aqui esta")}>{data["palestrante"]}</h5>
+        <h5 /*onClick={() => console.log("aqui esta")}*/>{data["palestrante"]}</h5>
         <div>
           <a>{data["horaInicio"]}</a>
           <a>{data["horaFim"]}</a>
@@ -76,30 +74,32 @@ export default function CronogramaCard({ cor, fonte, data }) {
       >
 
   {/* <div><S.AquiEsta> */}
-  <SM.ModalStyleBox>
-          <SM.CloseButtonLine>
-            <SM.CloseButton onClick={closeModal}>
-              <CloseButtonIcon /> <closeButtonIcon />
-            </SM.CloseButton>
-          </SM.CloseButtonLine>
+      <SM.ModalStyleBox>
 
-          <SM.PalestraInfo>
-            <div>
-              <SM.PalestranteImage>
-                <img src={data['foto']} />
-              </SM.PalestranteImage>
-            </div>
-            <div>
-  <SM.NomePalestra>{data["titulo"]}</SM.NomePalestra>
-  <SM.Palestrante> {data["palestrante"]}</SM.Palestrante>
-              <SM.Horario>
-              {data["horaInicio"]} - 
-                {data["horaFim"]}
-              </SM.Horario>
-            </div>
-          </SM.PalestraInfo>
-          <SM.Resumo>{data["descricao"]}</SM.Resumo>
-        </SM.ModalStyleBox> 
+        <SM.CloseButtonLine>
+          <SM.CloseButton onClick={closeModal}>
+            <CloseButtonIcon /> <closeButtonIcon />
+          </SM.CloseButton>
+        </SM.CloseButtonLine>
+
+        <SM.PalestraInfo>
+          <>
+            <SM.PalestranteImage>
+              <img src={data['foto']} />
+            </SM.PalestranteImage>
+          </>
+          <>
+            <SM.NomePalestra>{data["titulo"]}</SM.NomePalestra>
+            <SM.Palestrante> {data["palestrante"]}</SM.Palestrante>
+            <SM.Horario>
+            {data["horaInicio"]} - {data["horaFim"]}
+            </SM.Horario>
+          </>
+        </SM.PalestraInfo>
+
+        <SM.Resumo>{data["descricao"]}</SM.Resumo>
+        
+      </SM.ModalStyleBox> 
     
     
 {/*     </S.AquiEsta></div> */}

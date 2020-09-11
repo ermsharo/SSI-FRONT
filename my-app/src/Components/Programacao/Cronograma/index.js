@@ -1,7 +1,6 @@
 import React from 'react';
-import { NichoLink ,CronogramaBase, Linha, Evento, Intervalo } from './style';
+import { CronogramaBase, Linha, Intervalo } from './style';
 import CronogramaCard from "./CronogramaCard";
-import Modal from "./../../Modal/Modal";
 function Cronograma(props) {
   
   let cores_fundo = ['#520082', '#3a006e'];
@@ -16,10 +15,10 @@ function Cronograma(props) {
         break;
       }
 
-      let cor = cores_fundo[(t+i)%2]
+      let valorCor = cores_fundo[(t+i)%2]
       
-      let fonte = cores_fonte[(t+i)%2]
-
+      let valorFonte = cores_fonte[(t+i)%2]
+      /*
       let ModalOpen = () =>{
         console.log("foi")
       };
@@ -28,6 +27,7 @@ function Cronograma(props) {
       let Print = () =>{
         console.log("Testando isso aqui logo de uma vez");
       }
+      */
 
  
 
@@ -47,7 +47,7 @@ function Cronograma(props) {
         
       </Evento> */
  
-      <CronogramaCard cor = {cor} fonte = {fonte} data = {props.eventos[t][i]} onClick={Print}/>
+      <CronogramaCard cor = {valorCor} fonte = {valorFonte} data = {props.eventos[t][i]} key={t + '' + i} />
 
       )
     }
@@ -55,16 +55,19 @@ function Cronograma(props) {
 
   }
 
+  let a = [1,2,3,4,5,6]; 
+ 
+  /*
+  
   let  teste = ()=>{
     console.log("aqui")
   }
-
-  let a = [1,2,3,4,5,6]; 
 
   let  Imprimir = (x) =>{
     console.log(x)
     console.log("asdasd")
   } 
+  */
 
   return (
     <div>
@@ -79,7 +82,7 @@ function Cronograma(props) {
 
       </Linha>
       <Intervalo style={{backgroundColor: '#1C043C'}}>
-        <b onClick = {teste}>Intervalo para Janta</b>
+        <b>Intervalo para Janta</b>
         <center>
           <div>
             <a>18:00</a>

@@ -12,11 +12,6 @@ import Fundo from "./Fundo/Fundo";
 import Programacao from "./Programacao/index";
 import CloseButton from "./CloseButton";
 import  "./MenuStyle.scss";
-import Modal from "./Modal/Modal";
-import { singletonHook } from 'react-singleton-hook';
-
-
-
 
 
 
@@ -41,7 +36,7 @@ box-shadow: 0px 3px 8px 1px rgba(0,0,0,0.28);
 `;
 
 
-
+/*
  const Titulo=styled.h1`
   color: white;
   text-align: center;
@@ -54,7 +49,7 @@ box-shadow: 0px 3px 8px 1px rgba(0,0,0,0.28);
     margin-bottom: 50px;
   }
 `;
-
+*/
 
 const HeaderBoxMobile = styled.div`
   width: 100%;
@@ -149,15 +144,15 @@ const HeaderSpace = styled.div`
   height: 60px;
 `;
 
-
+/*
 const ProgramacaoBoxHome= styled.div`
 
-/*   border: 2px solid blue;
-  background-color: red; */
+  //border: 2px solid blue;
+  //background-color: red;
 position:relative; 
 z-index:10 !important;
 `;
-
+*/
 
 /*
 const HeaderUlBoxMobile = styled.ul`
