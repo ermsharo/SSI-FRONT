@@ -26,7 +26,7 @@ export const CloseButtonLine = styled.div`
 display:inline-flex; 
 
 justify-content: flex-end;
-width:96%;
+width:92%;
 padding:10px;
 padding-top:20px;
 
@@ -167,6 +167,9 @@ export const ModalStyleBox = styled.div`
  
     z-index:11 !important;  
     background:rgb(22, 3, 48, 1);
+    @media(max-width:995px){
+        width:90vw;
+    }
  
 
 `;
