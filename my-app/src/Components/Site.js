@@ -137,6 +137,7 @@ const HamburguerMenu = styled.div`
   left:10px;
   cursor: pointer;
   height:0px;
+  
 `;
 
 const HeaderSpace = styled.div`
@@ -283,6 +284,7 @@ const handleClickApoioMobile = () => {
 
 const MenuMobileDisplay = styled.div`
   display:block;
+  z-index:100;
 `;
 
 
@@ -353,7 +355,7 @@ function Site(/*{JsonData}*/) {
           </LogoBox>
         </HeaderBoxMobile>
         <MenuMobileDisplay>
-        <div className = "HeaderUlBoxMobile" >
+        <div className = "HeaderUlBoxMobile" style={{  zIndex:100 }}>
           <li onClick={handleClickBannerMobile}>Início</li>
           <li onClick={handleClickProgramacaoMobile}>Programação</li>
           <li onClick={handleClickInfoMobile}>Informações Gerais</li>
@@ -370,7 +372,7 @@ function Site(/*{JsonData}*/) {
           <SliderItem ref={ref1}>
             {" "}
             <HeaderSpace></HeaderSpace>
-            <Banner handleClickInfo={handleClickInfo}  />
+            <Banner handleClickProgramacao={handleClickProgramacao}  />
           </SliderItem>
           <SliderItem ref={ref2}>
             {" "}

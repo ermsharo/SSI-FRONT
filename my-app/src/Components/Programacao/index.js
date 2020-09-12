@@ -1,5 +1,5 @@
 import React from 'react';
-import { GenericSize, Titulo } from './style';
+import { GenericSize, Titulo, Subtitulo } from './style';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 //import useForceUpdate from 'use-force-update';
@@ -161,6 +161,9 @@ let OrganizandoProgramacao = () =>{
       <Titulo>
         Programação
       </Titulo>
+      <Subtitulo>
+        Clique em uma palestra para ver mais detalhes!
+      </Subtitulo>
       <CronogramaBox
         //TituloArray = {ArrayTitulo}  
         //DiaArray = {ArrayDia} 

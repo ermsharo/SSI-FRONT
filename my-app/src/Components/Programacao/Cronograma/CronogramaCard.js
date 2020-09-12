@@ -14,7 +14,7 @@ const customStyles = {
     transform: "translate(-50%, -45%)",
     display:'flex',
     BackgroundColor:'black',
-    border: '1px solid black',
+    border: '5px solid #520082',
     padding:'0px'
    
   },
@@ -83,22 +83,21 @@ export default function CronogramaCard({ cor, fonte, data }) {
         </SM.CloseButtonLine>
 
         <SM.PalestraInfo>
-          <>
+          <div>
+            
+          </div>
+          <div>
             <SM.PalestranteImage>
               <img src={data['foto']} />
             </SM.PalestranteImage>
-          </>
-          <>
-            <SM.NomePalestra>{data["titulo"]}</SM.NomePalestra>
             <SM.Palestrante> {data["palestrante"]}</SM.Palestrante>
+            <SM.NomePalestra>{data["titulo"]}</SM.NomePalestra>
             <SM.Horario>
-            {data["horaInicio"]} - {data["horaFim"]}
+              {data["horaInicio"]} - {data["horaFim"]}
             </SM.Horario>
-          </>
-        </SM.PalestraInfo>
-
-        <SM.Resumo>{data["descricao"]}</SM.Resumo>
-        
+            <SM.Resumo>{data["descricao"]}</SM.Resumo>
+          </div>
+        </SM.PalestraInfo>        
       </SM.ModalStyleBox> 
     
     

@@ -65,8 +65,8 @@ class Banner extends Component {
               }}>
                   Inscrição
               </ButtonBanner>
-              <ButtonBanner onClick={this.props.handleClickInfo}>
-                  Informações
+              <ButtonBanner onClick={this.props.handleClickProgramacao}>
+                  Programação
               </ButtonBanner>
           </ButtonAreaBanner>
       </GenericSize>

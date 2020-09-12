@@ -8,12 +8,24 @@ import LogoIntelie from '../../assets/img/patrocinio/intelie.svg';
 import LogoCia from '../../assets/img/patrocinio/ciadeestagios.png';
 import LogoClearSale from '../../assets/img/patrocinio/clearsaleBranco2.svg';
 import LogoMicrostrategy from '../../assets/img/patrocinio/microstrategyBranco2.svg';
-import LogoQuarta from '../../assets/img/patrocinio/alura.png';
+import LogoAlura from '../../assets/img/patrocinio/alura.png';
 import LogoDataBootcamp from '../../assets/img/patrocinio/databootcamp_white.png';
 import LogoNelogica from '../../assets/img/patrocinio/nelogica.svg';
 import LogoStone from '../../assets/img/patrocinio/stoneBranco.svg';
 import LogoCWI from '../../assets/img/patrocinio/cwi.png';
 import LogoDataLab from '../../assets/img/patrocinio/kinghostBranco.svg';
+import FelipeFernando from '../../assets/img/palestrantes/FelipeFernando.png';
+import CamilaCarlaFernanda from '../../assets/img/palestrantes/CamilaCarlaFernanda.png';
+import AndreBarbosa from '../../assets/img/palestrantes/AndreBarbosa.jpg';
+import PatriciaPampanelli from '../../assets/img/palestrantes/PatriciaPampanelli.jpeg';
+import JoaoXavier from '../../assets/img/palestrantes/JoaoXavier.jfif';
+import JulioFlora from '../../assets/img/palestrantes/JulioDellaFlora.jpg';
+import FabricioOlivetti from '../../assets/img/palestrantes/FabricioOlivetti.jpg';
+import WandersonBorges from '../../assets/img/palestrantes/WandersonBorges.jpg';
+import Violeta from '../../assets/img/palestrantes/Violeta.png';
+import CodigoFonte from '../../assets/img/palestrantes/CodigoFonte.jpg';
+import MarcoNetto from '../../assets/img/palestrantes/MarcoNetto.jpg';
+import MarinaCiavatta from '../../assets/img/palestrantes/MarinaCiavatta.png';
 
 function ArrowRight(props) {
   const { className, style, onClick } = props;
@@ -74,19 +86,19 @@ export default function CronogramaBox(/*{ TituloArray, DiaArray , HorarioInicioA
                   palestrante:'Palestrante: D.Sc. Augusto Borella Hougaz',
                   horaInicio:'13:30',
                   horaFim:'14:30',
-                  descricao:"Gosta de Big Data, análise de dados, e IoT? Então você tem que conhecer a Intelie, que oferece soluções inteligentes para diversos tipo de problemas no mercado, em várias áreas, incluindo Varejo, Gestao de Frota e Bancos e Seguradoras. Ficou curioso que quer saber mais? Visite o site: www.intelie.com.br/"
+                  descricao:"Gosta de Big Data, análise de dados, e IoT? Então você tem que conhecer a Intelie, que oferece soluções inteligentes para diversos tipos de problemas no mercado, em várias áreas, incluindo Varejo, Gestao de Frota e Bancos e Seguradoras. Ficou curioso que quer saber mais? Visite o site: www.intelie.com.br"
                 },
                 {
                   titulo:'MLops: maximizando o valor da área de ciência de dados',
-                  foto:'',
+                  foto:FelipeFernando,
                   palestrante:'Palestrantes: Fernando Favoretti e Fernando Kenji',
                   horaInicio:'15:00',
                   horaFim:'16:00',
-                  descricao:'Vamos falar um pouco de como estamos criando a área de MLOps na XP, passando sobre a história de criação do termo, relação com ciência de dados, importância da adoção e finalizando com alguns exemplos de projetos.'
+                  descricao:'Vamos falar um pouco de como estamos criando a área de MLOps na XP, passando sobre a história de criação do termo, relação com ciência de dados, importância da adoção e finalizando com alguns exemplos de projetos. Fernando Favoretti, formado em SI e cursando o mestrado em SI, possui especialização em investimentos e private banking, atualmente é cientista de dados sênior na XP Investimentos atuando como lead da área de MLops. Felipe Kenji, formado em SI, atualmente trabalha como engenheiro de machine learning sênior na XP Investimentos, focando na construção da área de MLops.'
                 },
                 {
                   titulo:'Painel Síndrome do Impostor',
-                  foto:'',
+                  foto:CamilaCarlaFernanda,
                   palestrante:'Palestrantes: Camila Muniz, Carla Vieira, e Fernanda Bernardo',
                   horaInicio:'16:30',
                   horaFim:'17:30',
@@ -105,16 +117,16 @@ export default function CronogramaBox(/*{ TituloArray, DiaArray , HorarioInicioA
                 },
                 {
                   titulo:'Processamento de linguagem natural no mundo real: desmistificando aplicações, apresentando desafios e o mercado de trabalho',
-                  foto:'',
+                  foto:AndreBarbosa,
                   palestrante:'Palestrante: André Barbosa',
                   horaInicio:'20:00',
                   horaFim:'21:00',
                   descricao:''
                 },
                 {
-                  titulo:'',
+                  titulo:'Em breve...',
                   foto:'',
-                  palestrante:'Palestrante: Daniel Redondo',
+                  palestrante:'',//'Palestrante: Daniel Redondo',
                   horaInicio:'21:30',
                   horaFim:'22:30',
                   descricao:''
@@ -139,16 +151,16 @@ export default function CronogramaBox(/*{ TituloArray, DiaArray , HorarioInicioA
                 },
                 {
                   titulo:'HPC, AI & Analytics - Iniciativas contra a Covid-19',
-                  foto:'',
+                  foto:PatriciaPampanelli,
                   palestrante:'Palestrante: Patrícia Pampanelli',
                   horaInicio:'15:00',
                   horaFim:'16:00',
                   descricao:"A humanidade enfrenta hoje um dos seus maiores desafios: a pandemia de COVID-19. Nesta palestra vamos mostrar como data analytics, data science e HPC estão ajudando a sociedade a transpor estes desafios. Cientistas em todo o mundo estão utilizando o poder computacional das GPUs para pesquisar vacinas e buscar tratamentos mais eficazes. As pesquisas vão do sequecimento do vírus até análises de imagens médicas para prover um melhor diagnótico e tratamento dos pacientes."
                 },
                 {
-                  titulo:'',
+                  titulo:'Em breve...',
                   foto:'',
-                  palestrante:'Palestrante:',
+                  palestrante:'',//'Palestrante:',
                   horaInicio:'16:30',
                   horaFim:'17:30',
                   descricao:""
@@ -166,15 +178,15 @@ export default function CronogramaBox(/*{ TituloArray, DiaArray , HorarioInicioA
                 },
                 {
                   titulo:'Viver de Jogos? Práticas em estúdios brasileiros e vantagens em utilizar Unity',
-                  foto:'',
+                  foto:JoaoXavier,
                   palestrante:'Palestrante: João Paulo Xavier',
                   horaInicio:'20:00',
                   horaFim:'21:00',
-                  descricao:'Uma conversa sobre o que ir atrás quando se quer trabalhar com jogos, um pouco sobre práticas de trabalho dentro de um estúdio consolidado e uma demonstração de como a Unity facilita parte do trabalho tanto para programadores quanto para outras pessoas da equipe.'
+                  descricao:'Uma conversa sobre o que ir atrás quando se quer trabalhar com jogos, um pouco sobre práticas de trabalho dentro de um estúdio consolidado e uma demonstração de como a Unity facilita parte do trabalho tanto para programadores quanto para outras pessoas da equipe. João Xavier, programador na Tapps Games a 2 anos e programador Unity a 7, é formado em Design de Games pela Anhembi Morumbi, tendo experiência formada por várias startups de advergames e contato com a comunidade local e internacional do mercado de jogos. João é viciado em café, game jams e boardgames, e nunca larga aquela noite virada de programação e/ou jogatina.'
                 },
-                {
+                  {
                   titulo:'Trapaças em jogos utilizando hardware',
-                  foto:'',
+                  foto:JulioFlora,
                   palestrante:'Palestrante: Julio Della Flora',
                   horaInicio:'21:30',
                   horaFim:'22:30',
@@ -190,16 +202,16 @@ export default function CronogramaBox(/*{ TituloArray, DiaArray , HorarioInicioA
               // Eventos Tarde                      
               [
                 {
-                  titulo:'',
-                  foto:LogoQuarta,
-                  palestrante:'Palestrante:',
+                  titulo:'Em breve...',
+                  foto:LogoAlura,
+                  palestrante:'',//'Palestrante:',
                   horaInicio:'13:30',
                   horaFim:'14:30',
                   descricao:""
                 },
                 {
                   titulo:'Uma breve introdução ao Haskell',
-                  foto:'',
+                  foto:FabricioOlivetti,
                   palestrante:'Palestrante: Fabrício Olivetti',
                   horaInicio:'15:00',
                   horaFim:'16:00',
@@ -226,16 +238,16 @@ export default function CronogramaBox(/*{ TituloArray, DiaArray , HorarioInicioA
                 },
                 {
                   titulo:'Reaprendendo a aprender com Learnig 3.0',
-                  foto:'',
+                  foto:WandersonBorges,
                   palestrante:'Palestrante: Wanderson Borges',
                   horaInicio:'20:00',
                   horaFim:'21:00',
-                  descricao:'Estamos vivendo uma era de mudança, onde a forma como as pessoas se relacionam, aprendem, produzem e consomem está sendo impactada de forma estrutural e irreversível. Diante desse cenário é preciso se adaptar e se preparar para essa transformação e para o futuro.'
+                  descricao:'Estamos vivendo uma era de mudança, onde a forma como as pessoas se relacionam, aprendem, produzem e consomem está sendo impactada de forma estrutural e irreversível. Diante desse cenário é preciso se adaptar e se preparar para essa transformação e para o futuro. Wanderson é Especialista em Agilidade, Engenheiro de Software, Geek, Marido, Pai do Brian e da Evelin e Guitarrista nas horas vagas.'
                 },
                 {
-                  titulo:'',
+                  titulo:'Em breve...',
                   foto:'',
-                  palestrante:'Palestrante:',
+                  palestrante:'', //'Palestrante:',
                   horaInicio:'21:30',
                   horaFim:'22:30',
                   descricao:''
@@ -255,19 +267,19 @@ export default function CronogramaBox(/*{ TituloArray, DiaArray , HorarioInicioA
                   palestrante:'Palestrante: Gabriel Fioravante',
                   horaInicio:'13:30',
                   horaFim:'14:30',
-                  descricao:"A Nelogica atua no fornecimento de informações e no desenvolvimento de aplicações avançadas para o mercado financeiro. Através da criação de softwares inovadores, proporciona aos investidores um processo de tomada de decisão muito mais seguro, estruturado e preciso. A empresa possui como maior característica o diferencial tecnológico, concentrando esforços em sistemas de análise, acompanhamento e negociação de ativos. Quer conhecer mais sobre a empresas? Acesse www.nelogica.com.br"
+                  descricao:"Gabriel é Analista da Nelogica, investidor e entusiasta sincero do mercado. A Nelogica atua no fornecimento de informações e no desenvolvimento de aplicações avançadas para o mercado financeiro. Através da criação de softwares inovadores, proporciona aos investidores um processo de tomada de decisão muito mais seguro, estruturado e preciso. A empresa possui como maior característica o diferencial tecnológico, concentrando esforços em sistemas de análise, acompanhamento e negociação de ativos. Quer conhecer mais sobre a empresas? Acesse www.nelogica.com.br"
                 },
                 {
-                  titulo:'',
+                  titulo:'Em breve...',
                   foto:'',
-                  palestrante:'Palestrante:',
+                  palestrante:'', //'Palestrante:',,
                   horaInicio:'15:00',
                   horaFim:'16:00',
                   descricao:""
                 },
                 {
                   titulo:'Painel o que a indústria acha que está faltando na nossa formação? ',
-                  foto:'',
+                  foto:Violeta,
                   palestrante:'Palestrantes: Violeta Sun, Luísa Agurra, Marlúcio Júnior e Mário Delvas',
                   horaInicio:'16:30',
                   horaFim:'17:30',
@@ -277,25 +289,25 @@ export default function CronogramaBox(/*{ TituloArray, DiaArray , HorarioInicioA
               // Eventos Noite
               [
                 {
-                  titulo:'',
+                  titulo:'Em breve...',
                   foto:LogoStone,
-                  palestrante:'Palestrante:',
+                  palestrante:'', //'Palestrante:',
                   horaInicio:'18:30',
                   horaFim:'19:30',
                   descricao:"",
                 },
                 {
                   titulo:'Dicionário do Programador: A importância do conhecimento de base para se manter atualizado na área de tecnologia',
-                  foto:'',
+                  foto:CodigoFonte,
                   palestrante:'Palestrantes: Gabriel Fróes e Vanessa Weber (Codigo fonte TV)',
                   horaInicio:'20:00',
                   horaFim:'21:00',
                   descricao:'Através de um bate papo descontraído, o casal Gabriel Fróes e Vanessa Weber (do canal Código Fonte TV), contarão das suas motivações para a criação do canal, da importância do conhecimento de base da computação para carreira, das dificuldades e das soluções encontradas para se manter atualizados no mundo da Tecnologia. Além de abordar alguns dos temas e tecnologias relevantes para a área na atualidade e o que grandes empresas buscam nos profissionais de TI.'
                 },
                 {
-                  titulo:'',
+                  titulo:'Em breve...',
                   foto:'',
-                  palestrante:'Palestrante: Genaro Costa',
+                  palestrante:'', //'Palestrante: Genaro Costa',
                   horaInicio:'21:30',
                   horaFim:'22:30',
                   descricao:''
@@ -315,11 +327,11 @@ export default function CronogramaBox(/*{ TituloArray, DiaArray , HorarioInicioA
                   palestrante:'Palestrante: Fábio Junqueira',
                   horaInicio:'13:30',
                   horaFim:'14:30',
-                  descricao:"Desde 1991, a CWI Software está no mercado desenvolvendo softwares de alta qualidade. A empresa possui uma trajetória reconhecida no mercado e conta com um histórico de soluções entregues nas mais diversas tecnologias e segmentos de atuação, incluindo, mas não limitado a, inteligência artificial, fazendo o uso de técnicas de linguagem natural em chatbots, e a utilização de redes neurais e técnicas de deep learning que permite o reconhecimento de imagens e vozes. Quer conhecer mais sobre a empresa? Acesse <a href='https://cwi.com.br/#ecossistema' target='_blank'>https://cwi.com.br/#ecossistema</a>"
+                  descricao:"Desde 1991, a CWI Software está no mercado desenvolvendo softwares de alta qualidade. A empresa possui uma trajetória reconhecida no mercado e conta com um histórico de soluções entregues nas mais diversas tecnologias e segmentos de atuação, incluindo, mas não limitado a, inteligência artificial, fazendo o uso de técnicas de linguagem natural em chatbots, e a utilização de redes neurais e técnicas de deep learning que permite o reconhecimento de imagens e vozes. O palestrante Fábio é um Engenheiro de Software movido a desafios e chimarrão, que começou a programar com 14 anos e nunca mais parou. Quer conhecer mais sobre a empresa? Acesse cwi.com.br/#ecossistema"
                 },
                 {
                   titulo:'Oportunidades e Preparação para Carreiras em TI',
-                  foto:'',
+                  foto:MarcoNetto,
                   palestrante:'Palestrante: Marco Netto',
                   horaInicio:'15:00',
                   horaFim:'16:00',
@@ -338,7 +350,7 @@ export default function CronogramaBox(/*{ TituloArray, DiaArray , HorarioInicioA
               [
                 {
                   titulo:'Machine Learning Operations',
-                  foto:LogoDataLab,
+                  foto:'', //LogoDataLab,
                   palestrante:'Palestrante: Rafael Monteiro',
                   horaInicio:'18:30',
                   horaFim:'19:30',
@@ -346,16 +358,16 @@ export default function CronogramaBox(/*{ TituloArray, DiaArray , HorarioInicioA
                 },
                 {
                   titulo:'Alerta de invasão: ataques e histórias de uma Engenheira Social',
-                  foto:'',
+                  foto:MarinaCiavatta,
                   palestrante:'Palestrante: Marina Ciavatta',
                   horaInicio:'20:00',
                   horaFim:'21:00',
-                  descricao:'Você já ouviu falar de Engenharia Social? Também conhecida como "Hacking Humano", é uma das principais ameaças de Segurança para empresas e para indivíduos. Inúmeros golpes e ataques que vemos hoje em dia são frutos de Engenharia Social usada por criminosos para roubar dados e documentos importantes das pessoas. Nesta palestra você vai conhecer os principais golpes e como eles funcionam, além de como se proteger. Tudo isso será contado por uma Engenheira Social que é contratada como uma "espiã da vida real" por grandes empresas para invadi-las e ensinar a detectar esses ataques antes que se tornem tragédias.'
+                  descricao:'Você já ouviu falar de Engenharia Social? Também conhecida como "Hacking Humano", é uma das principais ameaças de Segurança para empresas e para indivíduos. Inúmeros golpes e ataques que vemos hoje em dia são frutos de Engenharia Social usada por criminosos para roubar dados e documentos importantes das pessoas. Nesta palestra você vai conhecer os principais golpes e como eles funcionam, além de como se proteger. Tudo isso será contado por uma Engenheira Social que é contratada como uma "espiã da vida real" por grandes empresas para invadi-las e ensinar a detectar esses ataques antes que se tornem tragédias. Marina Ciavatta é Engenheira Social especializada em invasões físicas e treinamentos de Conscientização em Segurança da Informação. Como pentester física já invadiu algumas das maiores empresas brasileiras, em todas as áreas. Foi líder do maior programa de voluntariado para eventos de hacking e tecnologia, tendo treinado mais de 1.500 pessoas. Aficionada por hacking humano (Engenharia Social) e Lock Picking, tem muitas histórias pra contar e dicas de ataques e defesa na manga.'
                 },
                 {
-                  titulo:'',
+                  titulo:'Em breve...',
                   foto:'',
-                  palestrante:'Palestrante:',
+                  palestrante:'', //'Palestrante:',
                   horaInicio:'21:30',
                   horaFim:'22:30',
                   descricao:''

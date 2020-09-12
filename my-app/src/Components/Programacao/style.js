@@ -82,12 +82,24 @@ export const GenericSize = styled.div`
 export const Titulo=styled.h1`
   color: white;
   text-align: center;
-
-  margin-bottom: 80px;
+  
+  margin-bottom: 30px;
   font-size: 50px;
   font-family: var(--fontTitulo);
   @media (max-width: 500px){
     font-size: 40px;
+  }
+`;
+
+export const Subtitulo=styled.h4`
+  color: white;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 80px;
+  font-size: 20px;
+  font-family: var(--fontCorpo);
+  @media (max-width: 500px){
+    font-size: 16px;
     margin-bottom: 50px;
   }
 `;

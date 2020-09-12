@@ -39,25 +39,15 @@ display:flex;
 export const PalestranteImage = styled.div`
 padding:10px;
 margin:auto;
+width: 300px;
+display: flex;
+flex-direction: column;
+align-content: center;
 
-
-@media(max-width:995px){
-  display: inline-flex; 
-  align-content:center;
-  margin:auto; 
-  width:100%
+    img{
+        width:100%;
+        height:auto;
     }
-
-
-img{
-    width:250px;
-    height:100%;
-
-    @media(max-width:995px){
-        margin:auto;
-    }
-}
-
 
 `;
 
@@ -104,9 +94,10 @@ export const Horario = styled.div`
     font-family: var(--fontCorpo);
     text-align:center; 
     font-size:1.1em;
+    padding-top: 20px;
+
     @media(max-width:995px){
         font-size:1em;
-        padding-top: 10px;
     }
 
 
@@ -121,6 +112,7 @@ font-family: var(--fontCorpo);
 padding-top:40px;
 padding-bottom:40px;
 font-size: 1.15em;
+text-align: justify;
 
     @media(max-width:995px){
         font-size:1.1em;
@@ -130,17 +122,15 @@ font-size: 1.15em;
 `;
 
 export const PalestraInfo = styled.div`
-display: grid; 
-width:80%; 
+display: flex; 
+width:90%; 
 margin:auto; 
-
-grid-template-columns: 300px auto; 
-grid-column-gap :5%; 
-grid-row-gap: 10%;
+flex-direction: row;
+align-content: center;
+justify-content: center;
 
 @media(max-width:995px){
-    grid-template-columns: 100%;
-    grid-row-gap: 0%;
+    flex-direction: column;
 }
 
 
@@ -156,9 +146,9 @@ export const ModalStyleBox = styled.div`
     height:auto;
     max-height:60vh; 
     overflow: scroll;
- 
+    overflow-x:hidden;
     z-index:11 !important;  
-    background:rgb(22, 3, 48, 1);
+    background:#520082;
     @media(max-width:995px){
         width:90vw;
     }

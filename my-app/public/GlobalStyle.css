@@ -24,7 +24,11 @@
 }
 
 .ReactModal__Overlay--after-open {
-    background-color: rgba(0, 0, 0, 0.75) !important;
+    background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.ReactModal__Content {
+    border-radius: 10px !important;
 }
 
 .slick-slider {
