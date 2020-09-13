@@ -33,7 +33,12 @@ export const Evento = styled.div`
   cursor:pointer;
   font-size: 0.9em;
   width: 100%;
-  height: 300px;
+  height: 350px;
+
+  @media (max-width: 500px){
+    height: 400px;
+  }
+
   &:hover{
     transform: scale(1.005);
     -webkit-box-shadow: 4px 4px 8px 0px rgba(255,255,255,0.5), -4px -4px 8px 0px rgba(255,255,255,0.5);
@@ -93,8 +98,7 @@ export const Evento = styled.div`
     padding: 0.2em 1em;
     width: auto;
     font-size: 0.9em;
-    margin: 0;
-    margin-top: 10px;
+    margin: 10px 0;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -108,7 +112,6 @@ export const Evento = styled.div`
 export const Intervalo = styled.div`
   padding: 1em;
   font-size: 0.9em;
-  width: 100%;
   color: white;
   text-align: center;
   

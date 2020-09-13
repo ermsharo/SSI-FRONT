@@ -61,6 +61,7 @@ export default function CronogramaCard({ cor, fonte, data }) {
           <a>{data["horaFim"]}</a>
         </div>
         <p>{data["descricao"]}</p>
+        <center><a style={{fontWeight:'650'}}>Veja mais</a></center>
       </span>
 
       {/*    chamando o modal direto no componente */}
